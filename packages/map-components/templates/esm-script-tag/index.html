@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map component ESM CDN template</title>
+    <link rel="icon" href="data:;base64,=" />
+    <style>
+      html,
+      body {
+        background-color: var(--calcite-ui-foreground-2);
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+    <!-- Load the ArcGIS Maps SDK for JavaScript -->
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/next/@arcgis/core/assets/esri/themes/dark/main.css"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "@arcgis/core/": "https://jsdev.arcgis.com/next/@arcgis/core/"
+        }
+      }
+    </script>
+    <!-- Load the Map Components -->
+    <script
+      type="module"
+      src="https://www.unpkg.com/@arcgis/map-components@next/dist/arcgis-map-components/arcgis-map-components.esm.js"
+    ></script>
+  </head>
+  <body>
+    <arcgis-map item-id="d5dda743788a4b0688fe48f43ae7beb9">
+      <arcgis-expand>
+        <arcgis-search position="top-right"></arcgis-search>
+      </arcgis-expand>
+      <arcgis-legend position="bottom-left"></arcgis-legend>
+    </arcgis-map>
+  </body>
+</html>

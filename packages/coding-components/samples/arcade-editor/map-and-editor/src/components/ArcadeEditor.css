@@ -1,0 +1,9 @@
+.editor-wrapper {
+  display: flex;
+  height: 95vh;
+  min-height: 400px;
+}
+
+arcgis-arcade-editor {
+  max-width: 99%;
+}

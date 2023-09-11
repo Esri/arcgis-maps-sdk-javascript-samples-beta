@@ -1,0 +1,17 @@
+{
+  "name": "multiple-arcade-editors-in-gatsby",
+  "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@arcgis/coding-components": "next",
+    "@arcgis/core": "next",
+    "gatsby": "^5.12.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

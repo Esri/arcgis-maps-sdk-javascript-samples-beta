@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Arcade editor AMD template</title>
+
+    <style>
+      html {
+        background-color: var(--calcite-ui-foreground-2);
+      }
+      .editor-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 4rem 2rem;
+        height: 70vh;
+        min-height: 400px;
+      }
+      arcgis-arcade-editor {
+        max-width: 80%;
+      }
+    </style>
+    <!-- favicon.ico -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+    <link rel="favicon icon" />
+
+    <!-- Load the ArcGIS Maps SDK for JavaScript-->
+    <link rel="stylesheet" href="https://js.arcgis.com/next/@arcgis/core/assets/esri/themes/dark/main.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "@arcgis/core/": "https://jsdev.arcgis.com/next/@arcgis/core/"
+        }
+      }
+    </script>
+
+    <!-- Load Calcite Components. Note this could be after loading the ArcGIS JS-API but before loading the Arcade Components  -->
+    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/1.4.0/calcite.css" />
+    <script type="module" src="https://js.arcgis.com/calcite-components/1.4.0/calcite.esm.js"></script>
+
+    <!-- Load the Arcade Components -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.unpkg.com/@arcgis/coding-components@next/dist/arcgis-coding-components/arcgis-coding-components.css"
+    />
+    <script
+      type="module"
+      src="https://www.unpkg.com/@arcgis/coding-components@next/dist/arcgis-coding-components/arcgis-coding-components.esm.js"
+    ></script>
+  </head>
+  <body>
+    <div class="editor-wrapper">
+      <arcgis-arcade-editor />
+    </div>
+    <calcite-scrim id="scrim" loading></calcite-scrim>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
