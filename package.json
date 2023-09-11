@@ -1,5 +1,5 @@
 {
-  "name": "arcgis-maps-sdk-javascript-samples",
+  "name": "arcgis-maps-sdk-javascript",
   "packageManager": "yarn@3.6.1",
   "private": true,
   "license": "SEE LICENSE IN LICENSE.md",
