@@ -17,7 +17,7 @@
     "strictNullChecks": false,
     "strict": true,
     "target": "es5",
-    "useUnknownInCatchVariables": false, 
+    "useUnknownInCatchVariables": false
   },
   "include": ["src"]
 }

@@ -52,9 +52,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arcgis/coding-components@npm:next":
-  version: 1.0.0-beta.9
-  resolution: "@arcgis/coding-components@npm:1.0.0-beta.9"
+"@arcgis/coding-components-react@npm:next":
+  version: 1.0.0-beta.1
+  resolution: "@arcgis/coding-components-react@npm:1.0.0-beta.1"
+  dependencies:
+    "@arcgis/coding-components": 1.0.0-beta.11
+  peerDependencies:
+    react: ^18
+    react-dom: ^18
+  checksum: 46f7bd18559c86aaec6cde386fc3c9d479215d1ffff7afc346b4b994b17530525cf68ff31d66f61bea1e8e476d74b566181e98dbd040e791cfc676df7a92c16f
+  languageName: node
+  linkType: hard
+
+"@arcgis/coding-components@npm:1.0.0-beta.11, @arcgis/coding-components@npm:next":
+  version: 1.0.0-beta.11
+  resolution: "@arcgis/coding-components@npm:1.0.0-beta.11"
   dependencies:
     "@arcgis/arcade-languageservice": 1.22.0-next.10
     "@esri/calcite-components": ^1.3.0
@@ -63,46 +75,46 @@ __metadata:
     vscode-languageserver-types: ^3.17.3
   peerDependencies:
     "@arcgis/core": ">=4.28.0-next <4.29"
-  checksum: 7299a5e01383b4726f058ecb37ba46b75e35d09dbbd238993b05074ba9058b4421f5c69e0d140556c1a0f5f58060ce19b713ab5f92f0f6e37248489259829895
+  checksum: 00b46b6e52a11dfdf2f62a440d7b70c60793847640104aa98641ca841e0bf950b318c2b48a959d1bf8a399a3b6ceff20ae72258daef946c14f96ac8a8ebc5770
   languageName: node
   linkType: hard
 
 "@arcgis/core@npm:>=4.28.0-next <4.29, @arcgis/core@npm:next":
-  version: 4.28.0-next.20230911
-  resolution: "@arcgis/core@npm:4.28.0-next.20230911"
+  version: 4.28.0-next.20230912
+  resolution: "@arcgis/core@npm:4.28.0-next.20230912"
   dependencies:
     "@esri/arcgis-html-sanitizer": ~3.0.1
     "@esri/calcite-colors": ~6.1.0
     "@esri/calcite-components": ^1.7.0
     "@popperjs/core": ~2.11.8
-    "@zip.js/zip.js": ~2.7.28
+    "@zip.js/zip.js": ~2.7.29
     focus-trap: ~7.5.2
-    luxon: ~3.4.2
+    luxon: ~3.4.3
     sortablejs: ~1.15.0
-  checksum: da5138fed0137d326bb0b1028f4a96525b756b4a4f7adbb76c10c89737cf9fd3c3733ab96183a09157fecec4465662182369e17e9de610864dab86fbe030ced3
+  checksum: 8a6b948c3404972c5fc4c613f4946fefb61180d06356805ec7eec3966665cb2431b9f7eb4467c4738cad8c1275da71ac58c2e464210097b7d3fa40cc5a245316
   languageName: node
   linkType: hard
 
 "@arcgis/map-components-react@npm:next":
-  version: 1.0.0-beta.14
-  resolution: "@arcgis/map-components-react@npm:1.0.0-beta.14"
+  version: 1.0.0-beta.16
+  resolution: "@arcgis/map-components-react@npm:1.0.0-beta.16"
   dependencies:
-    "@arcgis/map-components": 1.0.0-beta.16
+    "@arcgis/map-components": 1.0.0-beta.18
   peerDependencies:
     react: ^18
     react-dom: ^18
-  checksum: 8d26a9a3ee7b9cffc5a7b08963c0f077a436bc75ac9cbf256a4f31783df8d7e6e9d3ec6c2be57a38a29345aab87ecbe9da8d2ec700e46746c6a256ae4de04c11
+  checksum: 2155238450dcdc26a5ab24bc2d75c8551761b28338eb61dcb373e4a35b384b8756dfd923d89a54fbbc19b69cc37744b4c807f4faa88383f62e91153215642aa7
   languageName: node
   linkType: hard
 
-"@arcgis/map-components@npm:1.0.0-beta.16, @arcgis/map-components@npm:next":
-  version: 1.0.0-beta.16
-  resolution: "@arcgis/map-components@npm:1.0.0-beta.16"
+"@arcgis/map-components@npm:1.0.0-beta.18, @arcgis/map-components@npm:next":
+  version: 1.0.0-beta.18
+  resolution: "@arcgis/map-components@npm:1.0.0-beta.18"
   dependencies:
     "@arcgis/core": ">=4.28.0-next <4.29"
     "@esri/calcite-components": ^1.3.0
     "@stencil/core": 2.22.3
-  checksum: 4867e46adb6742fa89f823751325bcd06e2b54466f0f5270e32efc09fcfaf23ff7be025182d563f3898a4eeb76b39ec4afa20e9598812187db2232681aa390ef
+  checksum: 5d7298c14e5a2c9b0fef363f8b446037a0a992ebb097ef97479253bdd7476bc86c6f66fc876c53c574314e93aa96cbc9a3bb2852f4a30ccfdd551ce0827692cb
   languageName: node
   linkType: hard
 
@@ -2333,9 +2345,9 @@ __metadata:
   linkType: hard
 
 "@eslint-community/regexpp@npm:^4.4.0, @eslint-community/regexpp@npm:^4.6.1":
-  version: 4.8.0
-  resolution: "@eslint-community/regexpp@npm:4.8.0"
-  checksum: 601e6d033d556e98e8c929905bef335f20d7389762812df4d0f709d9b4d2631610dda975fb272e23b5b68e24a163b3851b114c8080a0a19fb4c141a1eff6305b
+  version: 4.8.1
+  resolution: "@eslint-community/regexpp@npm:4.8.1"
+  checksum: 82d62c845ef42b810f268cfdc84d803a2da01735fb52e902fd34bdc09f92464a094fd8e4802839874b000b2f73f67c972859e813ba705233515d3e954f234bf2
   languageName: node
   linkType: hard
 
@@ -2396,6 +2408,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@esri/calcite-components-react@npm:next":
+  version: 1.8.1-next.1
+  resolution: "@esri/calcite-components-react@npm:1.8.1-next.1"
+  dependencies:
+    "@esri/calcite-components": ^1.8.1-next.1
+  peerDependencies:
+    react: ">=16.7"
+    react-dom: ">=16.7"
+  checksum: 71b0574cdda3a43999497bf2152440331d6bcb28d280bee79ed6368ed235f0c3378a7633357f683c30e9d89d51460cb9d48f178cf7a6af737c88ff11734281c2
+  languageName: node
+  linkType: hard
+
 "@esri/calcite-components@npm:^1.3.0, @esri/calcite-components@npm:^1.7.0":
   version: 1.8.0
   resolution: "@esri/calcite-components@npm:1.8.0"
@@ -2414,9 +2438,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@esri/calcite-components@npm:next":
-  version: 1.8.1-next.0
-  resolution: "@esri/calcite-components@npm:1.8.1-next.0"
+"@esri/calcite-components@npm:^1.8.1-next.1, @esri/calcite-components@npm:next":
+  version: 1.8.1-next.1
+  resolution: "@esri/calcite-components@npm:1.8.1-next.1"
   dependencies:
     "@floating-ui/dom": 1.5.1
     "@stencil/core": 2.22.3
@@ -2428,7 +2452,7 @@ __metadata:
     form-request-submit-polyfill: 2.0.0
     lodash-es: 4.17.21
     sortablejs: 1.15.0
-  checksum: 653765ca0d4fe1dc2a7dac559889133424ed7c569616a4fc62b08de0bce29673e07890f837506fabb257f939c219262fc6cfdb02ad33375f43304a5cac5f92cd
+  checksum: 60cb71c1b119b76e1356854f6a953dbaf4e3824c26cbc033927ff465388a61f145d4aaec3b39990cad9b0424c3fec93472558035ceb5e10e12a741ed2ef07725
   languageName: node
   linkType: hard
 
@@ -4827,7 +4851,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^18.0.9":
+"@types/react-dom@npm:18.2.7, @types/react-dom@npm:^18.0.9":
   version: 18.2.7
   resolution: "@types/react-dom@npm:18.2.7"
   dependencies:
@@ -4836,7 +4860,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^18.0.26":
+"@types/react@npm:*, @types/react@npm:18.2.21, @types/react@npm:^18.0.26":
   version: 18.2.21
   resolution: "@types/react@npm:18.2.21"
   dependencies:
@@ -4950,9 +4974,9 @@ __metadata:
   linkType: hard
 
 "@types/trusted-types@npm:^2.0.2":
-  version: 2.0.3
-  resolution: "@types/trusted-types@npm:2.0.3"
-  checksum: 4794804bc4a4a173d589841b6d26cf455ff5dc4f3e704e847de7d65d215f2e7043d8757e4741ce3a823af3f08260a8d04a1a6e9c5ec9b20b7b04586956a6b005
+  version: 2.0.4
+  resolution: "@types/trusted-types@npm:2.0.4"
+  checksum: 5256c4576cd1c90d33ddd9cc9cbd4f202b39c98cbe8b7f74963298f9eb2159c285ea5c25a6181b4c594d8d75641765bff85d72c2d251ad076e6529ce0eeedd1c
   languageName: node
   linkType: hard
 
@@ -5473,7 +5497,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zip.js/zip.js@npm:~2.7.28":
+"@zip.js/zip.js@npm:~2.7.29":
   version: 2.7.29
   resolution: "@zip.js/zip.js@npm:2.7.29"
   checksum: b23f60f890f45683313cd527fa109ee54b01340e8118b91c571890850554e11606bfeb42c5532fee398d4b69f1f439f146d728e93990dab7906ab6ce51110f5e
@@ -5859,29 +5883,17 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "arcade-editor-react-template@workspace:packages/coding-components/templates/arcade-editor/react"
   dependencies:
-    "@arcgis/coding-components": next
+    "@arcgis/coding-components-react": next
     "@arcgis/core": next
+    "@esri/calcite-components-react": next
+    "@types/react": 18.2.21
+    "@types/react-dom": 18.2.7
     ncp: ^2.0.0
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-scripts: 5.0.1
+    react: 18.2.0
+    react-dom: 18.2.0
+    react-scripts: latest
     resolve-pkg: 2.0.0
-  languageName: unknown
-  linkType: soft
-
-"arcade-editor-react-ts-template@workspace:packages/coding-components/templates/arcade-editor/react-typescript":
-  version: 0.0.0-use.local
-  resolution: "arcade-editor-react-ts-template@workspace:packages/coding-components/templates/arcade-editor/react-typescript"
-  dependencies:
-    "@arcgis/coding-components": next
-    "@arcgis/core": next
-    "@types/react": ^18.0.26
-    "@types/react-dom": ^18.0.9
-    ncp: ^2.0.0
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-scripts: 5.0.1
-    typescript: ^4.9.4
+    typescript: 4.9.5
   languageName: unknown
   linkType: soft
 
@@ -6969,9 +6981,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001517, caniuse-lite@npm:^1.0.30001520":
-  version: 1.0.30001532
-  resolution: "caniuse-lite@npm:1.0.30001532"
-  checksum: 613abeb15e03dde307d543195a7860f7ba7450c9c9262d45642b2c8fbe097914fa060d68c8647f9d443947b1f62b09d891858bde7d2cac94fae8133a0b518b28
+  version: 1.0.30001533
+  resolution: "caniuse-lite@npm:1.0.30001533"
+  checksum: 1ffb2d69f817ee5f13351cb01c26a98ac61515809a6ce355305df3fbc6de6391a58466c1dcad1f322231b1ddc59bdda9bc52b9480cac100c3ff2f5782e859eb1
   languageName: node
   linkType: hard
 
@@ -8720,9 +8732,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.477":
-  version: 1.4.514
-  resolution: "electron-to-chromium@npm:1.4.514"
-  checksum: 571a78404ee986e99eb0f53390dee9b231d317fb1857a2b0745e6d05f4038115b026012e356eb55fef1808160f8cacbc6796d0b731b2372c4fd9b133ccc30af5
+  version: 1.4.517
+  resolution: "electron-to-chromium@npm:1.4.517"
+  checksum: e6a6643bf9cd4fe60d0ab902167e5b04bf183a6abbc246d7e4125ef4f76e3b3ff9847dcd34caaf545d9c6ee13ca9ef87ebe29fa11f64f6a0b369b40ed435dec8
   languageName: node
   linkType: hard
 
@@ -13819,7 +13831,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"luxon@npm:~3.4.2":
+"luxon@npm:~3.4.3":
   version: 3.4.3
   resolution: "luxon@npm:3.4.3"
   checksum: 3eade81506224d038ed24035a0cd0dd4887848d7eba9361dce9ad8ef81380596a68153240be3988721f9690c624fb449fcf8fd8c3fc0681a6a8496faf48e92a3
@@ -16787,7 +16799,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^18.2.0":
+"react-dom@npm:18.2.0, react-dom@npm:^18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
   dependencies:
@@ -16841,7 +16853,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-scripts@npm:5.0.1":
+"react-scripts@npm:5.0.1, react-scripts@npm:latest":
   version: 5.0.1
   resolution: "react-scripts@npm:5.0.1"
   dependencies:
@@ -16922,7 +16934,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^18.2.0":
+"react@npm:18.2.0, react@npm:^18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
@@ -19466,6 +19478,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typescript@npm:4.9.5":
+  version: 4.9.5
+  resolution: "typescript@npm:4.9.5"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: ee000bc26848147ad423b581bd250075662a354d84f0e06eb76d3b892328d8d4440b7487b5a83e851b12b255f55d71835b008a66cbf8f255a11e4400159237db
+  languageName: node
+  linkType: hard
+
 "typescript@npm:^4.6.4 || ^5.0.0":
   version: 5.2.2
   resolution: "typescript@npm:5.2.2"
@@ -19476,13 +19498,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.9.4":
+"typescript@patch:typescript@4.9.5#~builtin<compat/typescript>":
   version: 4.9.5
-  resolution: "typescript@npm:4.9.5"
+  resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: ee000bc26848147ad423b581bd250075662a354d84f0e06eb76d3b892328d8d4440b7487b5a83e851b12b255f55d71835b008a66cbf8f255a11e4400159237db
+  checksum: ab417a2f398380c90a6cf5a5f74badd17866adf57f1165617d6a551f059c3ba0a3e4da0d147b3ac5681db9ac76a303c5876394b13b3de75fdd5b1eaa06181c9d
   languageName: node
   linkType: hard
 
@@ -19493,16 +19515,6 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 07106822b4305de3f22835cbba949a2b35451cad50888759b6818421290ff95d522b38ef7919e70fb381c5fe9c1c643d7dea22c8b31652a717ddbd57b7f4d554
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@^4.9.4#~builtin<compat/typescript>":
-  version: 4.9.5
-  resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: ab417a2f398380c90a6cf5a5f74badd17866adf57f1165617d6a551f059c3ba0a3e4da0d147b3ac5681db9ac76a303c5876394b13b3de75fdd5b1eaa06181c9d
   languageName: node
   linkType: hard
 

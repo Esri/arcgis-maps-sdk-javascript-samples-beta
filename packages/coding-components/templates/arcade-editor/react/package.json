@@ -1,30 +1,36 @@
 {
   "name": "arcade-editor-react-template",
   "private": true,
+  "dependencies": {
+    "@arcgis/coding-components-react": "next",
+    "@arcgis/core": "next",
+    "@esri/calcite-components-react": "next",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
     "postinstall": "npm run copy",
     "copy": "npm run copy-arcade && npm run copy-calcite",
     "copy-arcade": "node ./scripts/copy-coding-component-assets.js",
     "copy-calcite": "node ./scripts/copy-calcite-component-assets.js"
   },
-  "dependencies": {
-    "@arcgis/coding-components": "next",
-    "@arcgis/core": "next",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
-  },
   "devDependencies": {
     "ncp": "^2.0.0",
-    "resolve-pkg": "2.0.0"
+    "react-scripts": "latest",
+    "resolve-pkg": "2.0.0",
+    "typescript": "4.9.5"
   },
   "browserslist": {
     "production": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
     ],
     "development": [
       "last 1 chrome version",
