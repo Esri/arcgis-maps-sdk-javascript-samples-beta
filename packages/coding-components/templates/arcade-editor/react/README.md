@@ -1,6 +1,6 @@
 # Arcade editor React sample
 
-This repository showcases how to integrate the ArcGIS Arcade Editor using React.
+This repository showcases how to integrate the Arcade Editor using React.
 
 This sample was bootstrapped with [Create React App](https://github.com/facebook/).
 
