@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "postinstall": "husky install",
-    "update": "yarn up @esri/calcite-components@next @arcgis/core@next @arcgis/map-components@next @arcgis/coding-components@next"
+    "update": "yarn up @esri/calcite-components@next @arcgis/core@next @arcgis/map-components@next @arcgis/coding-components@next @arcgis/coding-components-react@next @arcgis/coding-components-angular@next"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
