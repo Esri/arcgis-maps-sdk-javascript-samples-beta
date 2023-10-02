@@ -1,4 +1,4 @@
-# Arcade editor ESM Webpack sample
+# Arcade editor ESM Webpack template
 
 This repository showcases how to integrate the Arcade editor using webpack.
 

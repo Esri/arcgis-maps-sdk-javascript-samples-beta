@@ -1,8 +1,8 @@
-# Arcade editor React sample
+# Arcade editor React template
 
 This repository showcases how to integrate the Arcade Editor using React.
 
-This sample was bootstrapped with [Create React App](https://github.com/facebook/).
+This template was bootstrapped with [Create React App](https://github.com/facebook/).
 
 ```
 yarn create react-app [NAME]

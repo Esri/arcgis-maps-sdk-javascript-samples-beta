@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'map-components-angular-sample';
+  title = 'map-components-angular-template';
   onViewReady(event: any) {
     console.log('Map View ready', event);
   }

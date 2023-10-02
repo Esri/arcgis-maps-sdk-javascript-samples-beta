@@ -2,7 +2,7 @@ import WebMap from "@arcgis/core/WebMap.js";
 
 /**
  * Simple data loader against public data.
- * For this sample we are using the Popup profile.
+ * For this template we are using the Popup profile.
  * For the profile definition, we need a web map and a feature layer
  * For the test data, we need a web map, a feature layer and a feature set.
  */

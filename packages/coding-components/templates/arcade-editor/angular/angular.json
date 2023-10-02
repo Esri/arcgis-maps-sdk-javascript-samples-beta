@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "arcade-editor-angular-sample": {
+    "arcade-editor-angular-template": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/arcade-editor-angular-sample",
+            "outputPath": "dist/arcade-editor-angular-template",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -35,8 +35,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "10mb"
                 }
               ],
               "outputHashing": "all"
@@ -56,10 +56,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "arcade-editor-angular-sample:build:production"
+              "browserTarget": "arcade-editor-angular-template:build:production"
             },
             "development": {
-              "browserTarget": "arcade-editor-angular-sample:build:development"
+              "browserTarget": "arcade-editor-angular-template:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -67,7 +67,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "arcade-editor-angular-sample:build"
+            "browserTarget": "arcade-editor-angular-template:build"
           }
         },
         "test": {

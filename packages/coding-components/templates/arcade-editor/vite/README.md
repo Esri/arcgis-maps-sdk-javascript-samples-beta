@@ -1,4 +1,4 @@
-# Arcade editor Vite sample
+# Arcade editor Vite template
 
 This project showcases how to integrate the Arcade editor using vite.
 

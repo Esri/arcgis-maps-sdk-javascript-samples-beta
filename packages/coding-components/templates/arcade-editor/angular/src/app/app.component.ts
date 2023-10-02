@@ -4,7 +4,8 @@ import { IEditorProfileDefinition, IPredefinedProfile } from "@arcgis/coding-com
 import { IEditorTestContext } from "@arcgis/coding-components/dist/types/utils/arcade-executor";
 
 // Calcite Components
-import "@esri/calcite-components/dist/components/calcite-scrim";
+// import "@esri/calcite-components/dist/components/calcite-scrim";
+// import "@arcgis/coding-components/dist/components/arcgis-arcade-editor";
 
 @Component({
   selector: "app-root",
@@ -12,8 +13,6 @@ import "@esri/calcite-components/dist/components/calcite-scrim";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  title = "arcade-editor-angular-sample";
-
   // Property to track loading state
   public isLoading: boolean = true;
 

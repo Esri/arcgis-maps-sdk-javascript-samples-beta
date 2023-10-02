@@ -9,7 +9,8 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, ComponentLibraryModule],
-  // Must be included since Calcite doesn't have an Angular wrapper yet
+  // imports: [BrowserModule],
+  // Must be included for component packages that don't have an Angular wrapper
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent],
