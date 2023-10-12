@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-    <title>Arcade editor AMD template</title>
+    <title>Arcade editor ESM template</title>
 
     <style>
       html {
@@ -21,9 +21,8 @@
         max-width: 80%;
       }
     </style>
-    <!-- favicon.ico -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
-    <link rel="favicon icon" />
+
+    <link rel="icon" href="data:;base64,=" />
 
     <!-- Load the ArcGIS Maps SDK for JavaScript-->
     <link rel="stylesheet" href="https://js.arcgis.com/next/@arcgis/core/assets/esri/themes/dark/main.css" />
@@ -35,11 +34,11 @@
       }
     </script>
 
-    <!-- Load Calcite Components. Note this could be after loading the ArcGIS JS-API but before loading the Arcade Components  -->
-    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/1.8.0/calcite.css" />
-    <script type="module" src="https://js.arcgis.com/calcite-components/1.8.0/calcite.esm.js"></script>
+    <!-- Load Calcite Components. Note this could be after loading the ArcGIS Maps SDK for JS but before loading the Coding Components  -->
+    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/1.9.2/calcite.css" />
+    <script type="module" src="https://js.arcgis.com/calcite-components/1.9.2/calcite.esm.js"></script>
 
-    <!-- Load the Arcade Components -->
+    <!-- Load the Coding Components -->
     <link
       rel="stylesheet"
       type="text/css"

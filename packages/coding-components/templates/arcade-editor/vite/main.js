@@ -6,7 +6,7 @@ import { setAssetPath } from "@arcgis/coding-components/dist/components";
 import "@arcgis/coding-components/dist/components/arcgis-arcade-editor";
 import "@esri/calcite-components/dist/components/calcite-scrim";
 
-// Can only set the asset path once for Arcade and Calcite components
+// Can only set the asset path once for Coding and Calcite components
 setAssetPath(`${location.origin}${location.pathname}assets`);
 
 (async () => {

@@ -21,18 +21,17 @@
         max-width: 80%;
       }
     </style>
-    <!-- favicon.ico -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
-    <link rel="favicon icon" />
 
-    <!-- Load Calcite Components. Note this could be after loading the ArcGIS JS-API but before loading the Arcade Components  -->
-    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/1.8.0/calcite.css" />
-    <script type="module" src="https://js.arcgis.com/calcite-components/1.8.0/calcite.esm.js"></script>
+    <link rel="icon" href="data:;base64,=" />
 
-    <!-- Load the ArcGIS JS-API -->
+    <!-- Load Calcite Components. Note this could be after loading the ArcGIS Maps SDK for JS but before loading the Coding Components  -->
+    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/1.9.2/calcite.css" />
+    <script type="module" src="https://js.arcgis.com/calcite-components/1.9.2/calcite.esm.js"></script>
+
+    <!-- Load the ArcGIS Maps SDK for JavaScript -->
     <script src="https://js.arcgis.com/next/"></script>
 
-    <!-- Load the Arcade Components -->
+    <!-- Load the Coding Components -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -42,6 +41,7 @@
       type="module"
       src="https://cdn.jsdelivr.net/npm/@arcgis/coding-components@next/dist/arcgis-coding-components/arcgis-coding-components.esm.js"
     ></script>
+    
   </head>
   <body>
     <div class="editor-wrapper">
