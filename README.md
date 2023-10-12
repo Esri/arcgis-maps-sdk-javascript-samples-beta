@@ -1,6 +1,6 @@
-# ArcGIS Maps SDK for JavaScript
+# ArcGIS Maps SDK for JavaScript Samples
 
-This repository contains code samples and templates for ArcGIS Maps SDK for JavaScript.
+This repository contains code samples and templates for coding with the ArcGIS Maps SDK for JavaScript.
 
 If you are looking for the ArcGIS Maps SDK for JavaScript core package, it is available on [npm](https://www.npmjs.com/package/@arcgis/core).
 
