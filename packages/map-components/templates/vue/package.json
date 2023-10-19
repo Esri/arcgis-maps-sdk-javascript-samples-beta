@@ -1,0 +1,20 @@
+{
+  "name": "map-components-vue-template",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@arcgis/core": "next",
+    "@arcgis/map-components": "next",
+    "@esri/calcite-components": "next",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "vite": "^4.5.0"
+  }
+}
