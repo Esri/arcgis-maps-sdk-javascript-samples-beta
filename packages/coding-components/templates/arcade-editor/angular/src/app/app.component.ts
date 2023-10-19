@@ -13,6 +13,8 @@ import { IEditorTestContext } from "@arcgis/coding-components/dist/types/utils/a
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
+  title = 'arcade-editor-angular-template';
+
   // Property to track loading state
   public isLoading: boolean = true;
 

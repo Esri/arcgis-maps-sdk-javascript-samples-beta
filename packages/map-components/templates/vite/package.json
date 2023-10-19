@@ -13,6 +13,6 @@
     "@esri/calcite-components": "next"
   },
   "devDependencies": {
-    "vite": "^4.4.4"
+    "vite": "^4.5.0"
   }
 }

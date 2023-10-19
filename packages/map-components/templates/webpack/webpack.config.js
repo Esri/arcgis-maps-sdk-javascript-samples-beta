@@ -49,6 +49,7 @@ module.exports = {
             <body>
               <arcgis-map item-id="d5dda743788a4b0688fe48f43ae7beb9">
                 <arcgis-search position="top-right"></arcgis-search>
+                <arcgis-legend position="bottom-left"></arcgis-search>
               </arcgis-map>
             </body>
           </html>`,

@@ -1,4 +1,5 @@
 import WebMap from "@arcgis/core/WebMap";
+import type FeatureLayer from "@arcgis/core/layers/FeatureLayer";
 
 /**
  * Simple data loader against public data.
@@ -12,7 +13,7 @@ export async function loadData(): Promise<any> {
   });
   await webMap.loadAll();
 
-  const featureLayer = webMap.findLayerById("17c807fd286-layer-47") as __esri.FeatureLayer;
+  const featureLayer = webMap.findLayerById("17c807fd286-layer-47") as FeatureLayer;
 
   const featureSet = await featureLayer.queryFeatures({
     where: "1=1",

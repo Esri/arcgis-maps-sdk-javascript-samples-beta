@@ -47,7 +47,7 @@ onMounted(async () => {
     // Make changes to the editor's options
     editorInstance.updateOptions({
       // Enable the minimap in the editor
-      minimap: { enabled: true },
+      // minimap: { enabled: true },
     });
 
     // Remove the scrim from the UI
@@ -73,7 +73,7 @@ onMounted(async () => {
     <div class="editor-wrapper">
       <arcgis-arcade-editor
         ref="editor"
-        :script="`'this text is long enough for you to see in the minimap'; \n\n\n\n\n'this text too';`"
+        :script="`$feature;`"
         :profile="toRaw(profile)"
         :testData="toRaw(testData)"
         @scriptChange="
@@ -92,30 +92,3 @@ onMounted(async () => {
     <calcite-scrim ref="scrim" loading />
   </div>
 </template>
-
-<!-- Import the styles required for the arcade editor to fully function -->
-<style>
-@import "@esri/calcite-components/dist/calcite/calcite.css";
-@import "@arcgis/core/assets/esri/themes/light/main.css";
-@import "@arcgis/coding-components/dist/arcgis-coding-components/arcgis-coding-components.css";
-
-.editor-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 70vh;
-  min-height: 400px;
-  position: relative;
-}
-
-arcgis-arcade-editor {
-  flex: 1 1 auto;
-}
-
-calcite-scrim {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-</style>
