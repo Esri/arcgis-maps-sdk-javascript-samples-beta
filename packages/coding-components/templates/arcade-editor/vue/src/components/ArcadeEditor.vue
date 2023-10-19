@@ -3,9 +3,6 @@ import { ref, onMounted, toRaw } from "vue";
 
 import { loadData } from "../utils/load-data";
 
-import "@arcgis/coding-components/dist/components/arcgis-arcade-editor";
-import "@esri/calcite-components/dist/components/calcite-scrim";
-
 // Read more about ref() at https://vuejs.org/api/reactivity-core.html#ref
 const editor = ref(null);
 const profile = ref(null);

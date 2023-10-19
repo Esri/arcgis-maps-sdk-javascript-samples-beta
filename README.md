@@ -1,4 +1,4 @@
-# ArcGIS Maps SDK for JavaScript Samples
+# ArcGIS Maps SDK for JavaScript samples ([beta](https://developers.arcgis.com/javascript/latest/faq/#what-does-the-beta-tag-mean))
 
 This repository contains code samples and templates for coding with the ArcGIS Maps SDK for JavaScript.
 

@@ -1,10 +1,21 @@
-import { setAssetPath } from "@arcgis/coding-components/dist/components";
+// Lazy loading ESM
+import { defineCustomElements as defineCodingElements } from "@arcgis/coding-components/dist/loader";
+import { defineCustomElements as defineCalciteElements } from "@esri/calcite-components/dist/loader"
 
-// Can only set the asset path once for Arcade and Calcite components
-setAssetPath(`${location.origin}${location.pathname}assets`);
+defineCodingElements(window, {
+  resourcesUrl: "./assets",
+});
 
-import "@arcgis/coding-components/dist/components/arcgis-arcade-editor";
-import "@esri/calcite-components/dist/components/calcite-scrim";
+defineCalciteElements(window, {
+  resourcesUrl: "./assets",
+});
+
+// Pure ESM
+// import { setAssetPath } from "@arcgis/coding-components/dist/components";
+// import "@arcgis/coding-components/dist/components/arcgis-arcade-editor";
+// import "@esri/calcite-components/dist/components/calcite-scrim";
+
+// setAssetPath(`${location.origin}${location.pathname}assets`);
 
 import { loadData } from "./load-data";
 

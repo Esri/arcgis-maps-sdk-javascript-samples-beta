@@ -1,4 +1,4 @@
-# Coding Components (BETA)
+# Coding components (beta)
 
 These templates and samples are for [@arcgis/coding-components](https://www.npmjs.com/package/@arcgis/coding-components)
 

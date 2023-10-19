@@ -5409,9 +5409,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"arcgis-maps-sdk-javascript-samples@workspace:.":
+"arcgis-maps-sdk-javascript-samples-beta@workspace:.":
   version: 0.0.0-use.local
-  resolution: "arcgis-maps-sdk-javascript-samples@workspace:."
+  resolution: "arcgis-maps-sdk-javascript-samples-beta@workspace:."
   dependencies:
     "@commitlint/cli": ^17.6.7
     "@commitlint/config-conventional": ^17.6.7

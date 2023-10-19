@@ -1,6 +1,6 @@
 # Arcade editor React template
 
-This repository showcases how to integrate the Arcade Editor using React.
+This repository showcases how to integrate the Arcade editor using React.
 
 This template was bootstrapped with [Create React App](https://github.com/facebook/).
 
@@ -18,7 +18,7 @@ Requires [`react-scripts`](https://www.npmjs.com/package/react-scripts) >= 5.0.0
 
 ### Install dependencies
 
-Installs any package that the Arcade Editor depends on.
+Installs any package that the Arcade editor depends on.
 
 ```
 yarn install

@@ -41,7 +41,7 @@ module.exports = {
   plugins: [
     // This plugin simplifies creation of HTML files to serve your webpack bundles.
     new HtmlWebPackPlugin({
-      title: "Arcade editor webpack template",
+      title: "Arcade editor Webpack template",
       favicon: "./src/icons/favicon.png",
       chunksSortMode: "none",
       meta: {
