@@ -1,0 +1,13 @@
+{
+  "name": "use-map-components",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.5.0"
+  }
+}

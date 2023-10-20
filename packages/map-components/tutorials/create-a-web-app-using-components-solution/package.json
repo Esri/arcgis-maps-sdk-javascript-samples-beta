@@ -1,0 +1,16 @@
+{
+  "name": "use-map-components",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@arcgis/map-components": "next"
+  },
+  "devDependencies": {
+    "vite": "^4.5.0"
+  }
+}
