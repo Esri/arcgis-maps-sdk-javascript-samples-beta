@@ -24,7 +24,7 @@ import { defineCustomElements as defineCalciteElements } from "@esri/calcite-com
 
 /**
  * Define the custom elements on the window using the Calcite Components
- * distribution build. Use the CDN-hosted assets. When using the CDN-hosted assets,
+ * Use the CDN-hosted assets. When using the CDN-hosted assets,
  * you need to keep the version number in the path the same as the version of
  * `@esri/calcite-components` installed as a dependency of `@arcgis/map-components`.
  */
@@ -33,7 +33,7 @@ defineCalciteElements(window, {
 });
 
 /**
- * Use the Map Components distribution build to define and lazy load the custom map elements.
+ * Use the Map Components to define and lazy load the custom map elements.
  */
 defineMapElements();
 
@@ -45,7 +45,8 @@ document
   .querySelector("arcgis-layer-list")
   .addEventListener("widgetReady", (event) => {
     /**
-     * Get a reference to the layer list widget from the `event.detail` object.
+     * Get a reference to the ArcGIS Maps SDK for JavaScript `LayerList` widget
+     * from the `event.detail` object.
      */
     const layerList = event.detail.widget;
     /**
@@ -70,7 +71,8 @@ document
   .querySelector("arcgis-map")
   .addEventListener("viewReady", async (event) => {
     /**
-     * Get a reference to the view from the `event.detail` object.
+     * Get a reference to the ArcGIS Maps SDK for JavaScript `MapView`
+     * from the `event.detail` object.
      */
     const view = event.detail.view;
 
