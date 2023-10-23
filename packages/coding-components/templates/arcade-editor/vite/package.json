@@ -8,8 +8,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@arcgis/coding-components": "next",
-    "@arcgis/core": "next"
+    "@arcgis/coding-components": "~4.28.0-beta.39",
+    "@arcgis/core": "~4.28.0",
+    "@esri/calcite-components": "^1.9.2"
   },
   "devDependencies": {
     "resolve-pkg": "^2.0.0",

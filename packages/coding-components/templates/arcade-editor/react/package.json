@@ -2,9 +2,9 @@
   "name": "arcade-editor-react-template",
   "private": true,
   "dependencies": {
-    "@arcgis/coding-components-react": "next",
-    "@arcgis/core": "next",
-    "@esri/calcite-components-react": "next",
+    "@arcgis/coding-components-react": "~4.28.0-beta.39",
+    "@arcgis/core": "~4.28.0",
+    "@esri/calcite-components-react": "^1.9.2",
     "@types/react": "18.2.25",
     "@types/react-dom": "18.2.7",
     "react": "18.2.0",

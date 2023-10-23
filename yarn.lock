@@ -362,146 +362,109 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arcgis/arcade-languageservice@npm:4.28.0-beta.34":
-  version: 4.28.0-beta.34
-  resolution: "@arcgis/arcade-languageservice@npm:4.28.0-beta.34"
+"@arcgis/arcade-languageservice@npm:4.28.0-beta.39":
+  version: 4.28.0-beta.39
+  resolution: "@arcgis/arcade-languageservice@npm:4.28.0-beta.39"
   dependencies:
     vscode-languageserver-textdocument: ^1.0.9
     vscode-languageserver-types: ^3.17.3
-  checksum: 21d82c1a3732b68739c9bfd03d5ca365d76ad3ef440b5214d662813607d648fed5fe1aed7675c4243c856743cebf251751c4cb43cb7867c919b89d23a014aa9f
+  checksum: ba4e118ccdfe72ca8635e69d4289e2e8b087609b380fd9bc574e929dd280230bcda45bf475631c260c9bd7241b4a19e0217ab8cfee4e3e0e557096d25a65820a
   languageName: node
   linkType: hard
 
-"@arcgis/arcade-languageservice@npm:4.28.0-beta.35":
-  version: 4.28.0-beta.35
-  resolution: "@arcgis/arcade-languageservice@npm:4.28.0-beta.35"
+"@arcgis/coding-components-angular@npm:~4.28.0-beta.39":
+  version: 4.28.0-beta.39
+  resolution: "@arcgis/coding-components-angular@npm:4.28.0-beta.39"
   dependencies:
-    vscode-languageserver-textdocument: ^1.0.9
-    vscode-languageserver-types: ^3.17.3
-  checksum: 3c119d0b429a730a2b2a37a76dd2b47368054e5519e95a67209ebc30fdb97d3352f77ad3b31c25366bc9438c754a8a35606a5c00430ac2a5a8cb608098f56770
-  languageName: node
-  linkType: hard
-
-"@arcgis/coding-components-angular@npm:next":
-  version: 4.28.0-beta.34
-  resolution: "@arcgis/coding-components-angular@npm:4.28.0-beta.34"
-  dependencies:
-    "@arcgis/coding-components": 4.28.0-beta.34
+    "@arcgis/coding-components": 4.28.0-beta.39
     tslib: ^2.3.0
   peerDependencies:
     "@angular/common": ^16.2.0
     "@angular/core": ^16.2.0
-    "@arcgis/core": ">=4.28.0-rc <4.29"
-  checksum: 803431dbf5e52b12314aca2f832f6604174b271e1020c4c149231db0211e97d1e99786e363371c24202d64bc85b232d91f0bad020c0407d877a687f6cac86d25
+    "@arcgis/core": ~4.28.0
+  checksum: 64b79c7ffb8413e926633adcd45233cbaff219e8773dba9498f173ea36fc94867e5822332f2eeb854d4fe8718b75a3d2d9c74c97fd3bc551475f4d6482ba2640
   languageName: node
   linkType: hard
 
-"@arcgis/coding-components-react@npm:next":
-  version: 4.28.0-beta.35
-  resolution: "@arcgis/coding-components-react@npm:4.28.0-beta.35"
+"@arcgis/coding-components-react@npm:~4.28.0-beta.39":
+  version: 4.28.0-beta.39
+  resolution: "@arcgis/coding-components-react@npm:4.28.0-beta.39"
   dependencies:
-    "@arcgis/coding-components": 4.28.0-beta.35
+    "@arcgis/coding-components": 4.28.0-beta.39
   peerDependencies:
-    "@arcgis/core": ">=4.28.0-rc <4.29"
+    "@arcgis/core": ~4.28.0
     react: ^18
     react-dom: ^18
-  checksum: f79e30d2dffcee8e3d34d66c7248ec71a3e11af51e415b079e55d465f1438ae86d70485a39c118d30f74d58acc3b763025236b26a7a488c36c02101ab5e87457
+  checksum: ecaad40c7e90db26e18ab11f583d09d755c63921aa3b6562edbd8d6d234baf36884137ed19ddf428378908c7e8b0a9bca9608014822b3b42f5064ea79315d736
   languageName: node
   linkType: hard
 
-"@arcgis/coding-components@npm:4.28.0-beta.34":
-  version: 4.28.0-beta.34
-  resolution: "@arcgis/coding-components@npm:4.28.0-beta.34"
+"@arcgis/coding-components@npm:4.28.0-beta.39, @arcgis/coding-components@npm:~4.28.0-beta.39":
+  version: 4.28.0-beta.39
+  resolution: "@arcgis/coding-components@npm:4.28.0-beta.39"
   dependencies:
-    "@arcgis/arcade-languageservice": 4.28.0-beta.34
+    "@arcgis/arcade-languageservice": 4.28.0-beta.39
     "@stencil/core": 2.22.3
     monaco-editor: ^0.39.0
     vscode-languageserver-types: ^3.17.3
   peerDependencies:
-    "@arcgis/core": ">=4.28.0-rc <4.29"
+    "@arcgis/core": ~4.28.0
     "@esri/calcite-components": ">=1.7.0 <2.0.0"
-  checksum: c76b42f7b1fd71902b43b7ec40669c2f1fe1f9fe1994317d37e635e4bce64bdf69027cda594cb933a8da0383b019c104a2740da112019d65dfc2601022de3bf9
+  checksum: cf2af6da6f65feb258d705d31ca15c6a5f1391bb28ee88a08a1b3eee6523362efffecfc1e89bd7b05e63423344be88db1b085eb9809e0863d4d92d6bff51fea6
   languageName: node
   linkType: hard
 
-"@arcgis/coding-components@npm:4.28.0-beta.35, @arcgis/coding-components@npm:next":
-  version: 4.28.0-beta.35
-  resolution: "@arcgis/coding-components@npm:4.28.0-beta.35"
-  dependencies:
-    "@arcgis/arcade-languageservice": 4.28.0-beta.35
-    "@stencil/core": 2.22.3
-    monaco-editor: ^0.39.0
-    vscode-languageserver-types: ^3.17.3
-  peerDependencies:
-    "@arcgis/core": ">=4.28.0-rc <4.29"
-    "@esri/calcite-components": ">=1.7.0 <2.0.0"
-  checksum: 2e062836ebda4a03b5307bcca4de7ad67acc14a97774c5449e1e2e7734ae8183def2fb11cd662579ac622328d4348dc99eb99698f694d8abc8ea82e96e932bd0
-  languageName: node
-  linkType: hard
-
-"@arcgis/core@npm:next":
-  version: 4.29.0-next.20231004
-  resolution: "@arcgis/core@npm:4.29.0-next.20231004"
+"@arcgis/core@npm:~4.28.0":
+  version: 4.28.0
+  resolution: "@arcgis/core@npm:4.28.0"
   dependencies:
     "@esri/arcgis-html-sanitizer": ~3.0.1
     "@esri/calcite-colors": ~6.1.0
-    "@esri/calcite-components": ^1.7.0
+    "@esri/calcite-components": ^1.9.2
     "@popperjs/core": ~2.11.8
     "@zip.js/zip.js": ~2.7.29
     focus-trap: ~7.5.3
     luxon: ~3.4.3
     sortablejs: ~1.15.0
-  checksum: 4d9365581bbc4f2a121ab94804affb402ba0fd5a9e135423fc79dfc2192c5aab0b429c887bad59b72dbde58d171fafb444ac1fe8961be9d28c5f8f0284b9de8a
+  checksum: b0010cdd1e6baec4a8283e985312a664e1b7b84e6d5402693647e146a46c4c398f28594383aee3f6708fb9c3771b79fc95fd4bb758674dfbaf7787ba45922f10
   languageName: node
   linkType: hard
 
-"@arcgis/map-components-angular@npm:next":
-  version: 4.28.0-beta.34
-  resolution: "@arcgis/map-components-angular@npm:4.28.0-beta.34"
+"@arcgis/map-components-angular@npm:>=4.28.0-beta.39 < 4.29":
+  version: 4.28.0-beta.39
+  resolution: "@arcgis/map-components-angular@npm:4.28.0-beta.39"
   dependencies:
-    "@arcgis/map-components": 4.28.0-beta.34
+    "@arcgis/map-components": 4.28.0-beta.39
     tslib: ^2.3.0
   peerDependencies:
     "@angular/common": ^16.2.0
     "@angular/core": ^16.2.0
-    "@arcgis/core": ">=4.28.0-rc <4.29"
-  checksum: c4295d939db0141f03e535786db8c69208914400eee1baa3c883b5fd7853cfdc5532e155cdf1a65e576751096bb6ea8a6cd77e7380e33d54e6c4eccd0dc56894
+    "@arcgis/core": ~4.28.0
+  checksum: 342bb570418d2ee3940a5bb0344766d09664e9dca1a08233c497a682c1922e2cd64bb596eed3223ccdaf8d1c628a10cdaa2f1c4b60bdc4f25bbb5f91106e25a9
   languageName: node
   linkType: hard
 
-"@arcgis/map-components-react@npm:next":
-  version: 4.28.0-beta.35
-  resolution: "@arcgis/map-components-react@npm:4.28.0-beta.35"
+"@arcgis/map-components-react@npm:>=4.28.0-beta.39 < 4.29":
+  version: 4.28.0-beta.39
+  resolution: "@arcgis/map-components-react@npm:4.28.0-beta.39"
   dependencies:
-    "@arcgis/map-components": 4.28.0-beta.35
+    "@arcgis/map-components": 4.28.0-beta.39
   peerDependencies:
     react: ^18
     react-dom: ^18
-  checksum: fa3faf2bec54df96b39c8e47e7cacdd97b9d6e6cfb70068e62cec9a8fd459f7e2fcffb5e40b7c0f9bd30bafb8deac0359aadb74ca030f1f4cee6e7c64350cb58
+  checksum: 35f5cd6a445005a831c102cf2d2094e63b403e401aa4bea598f417d63497b802f6091fa6502b2d6c290f6930f85aa4bd6791efb1b50feccc40815bd185ced654
   languageName: node
   linkType: hard
 
-"@arcgis/map-components@npm:4.28.0-beta.34":
-  version: 4.28.0-beta.34
-  resolution: "@arcgis/map-components@npm:4.28.0-beta.34"
+"@arcgis/map-components@npm:4.28.0-beta.39, @arcgis/map-components@npm:>=4.28.0-beta.39 < 4.29":
+  version: 4.28.0-beta.39
+  resolution: "@arcgis/map-components@npm:4.28.0-beta.39"
   dependencies:
     "@stencil/core": 2.22.3
   peerDependencies:
-    "@arcgis/core": ">=4.28.0-rc <4.29"
+    "@arcgis/core": ~4.28.0
     "@esri/calcite-components": ">=1.7.0 <2.0.0"
-  checksum: 01bf6bca01bce622c22ee883d00b0143e7c2dce1afa75b9df6c67530503d74ae0ebfec0a568a07e541d0846d9b034fc1dc1f51967c1acca051ff43cc43e55c77
-  languageName: node
-  linkType: hard
-
-"@arcgis/map-components@npm:4.28.0-beta.35, @arcgis/map-components@npm:next":
-  version: 4.28.0-beta.35
-  resolution: "@arcgis/map-components@npm:4.28.0-beta.35"
-  dependencies:
-    "@stencil/core": 2.22.3
-  peerDependencies:
-    "@arcgis/core": ">=4.28.0-rc <4.29"
-    "@esri/calcite-components": ">=1.7.0 <2.0.0"
-  checksum: 2423bbe81211e5ee3d54374fcd0da699df6e785096c9ec5e8dca22ce2b1bcc8085ece645e51807ac84f741397c068d4ab73c553265d05afb7b3bc916a5ab0e6b
+  checksum: b9f529b1a7c6a58704006a4c716943dcc9051bd08bec619176a4fe77162495cca4265adf79ca1ec50e08710ae70667a6cc271e320e801f1942ec93afd9afa328
   languageName: node
   linkType: hard
 
@@ -3064,38 +3027,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@esri/calcite-components-react@npm:next":
-  version: 1.10.0-next.2
-  resolution: "@esri/calcite-components-react@npm:1.10.0-next.2"
+"@esri/calcite-components-react@npm:^1.9.2":
+  version: 1.9.2
+  resolution: "@esri/calcite-components-react@npm:1.9.2"
   dependencies:
-    "@esri/calcite-components": ^1.10.0-next.2
+    "@esri/calcite-components": ^1.9.2
   peerDependencies:
     react: ">=16.7"
     react-dom: ">=16.7"
-  checksum: 8ac5cde3402c10a0b1bc839569e300a2f08c15bb3600c2e83788d1c19c262cb6c2a2cb910c5593f6b23a29d4801b10cee805caf1bd03c3fc8069e6569a7fca03
+  checksum: addf2f2c6036f934d8bea5e4747927c2451f7cd1f23652798d0c6b62776f58c9d1e99ab4e93bd2d6dbabfca89803d83944ec93943cf8001a6c24633e22082d1c
   languageName: node
   linkType: hard
 
-"@esri/calcite-components@npm:^1.10.0-next.2, @esri/calcite-components@npm:next":
-  version: 1.10.0-next.2
-  resolution: "@esri/calcite-components@npm:1.10.0-next.2"
-  dependencies:
-    "@floating-ui/dom": 1.5.3
-    "@stencil/core": 2.22.3
-    "@types/color": 3.0.4
-    color: 4.2.3
-    composed-offset-position: 0.0.4
-    dayjs: 1.11.10
-    focus-trap: 7.5.3
-    form-request-submit-polyfill: 2.0.0
-    lodash-es: 4.17.21
-    sortablejs: 1.15.0
-    timezone-groups: 0.8.0
-  checksum: ae040704f8362831aa55ee1926c36e6dd118b0132284f570033f396e2e2f69ddcfe1afc12890e5ce4d8b96a481c852ea1cfc01b6dab03d48bf851de6c76cf838
-  languageName: node
-  linkType: hard
-
-"@esri/calcite-components@npm:^1.7.0":
+"@esri/calcite-components@npm:^1.9.2":
   version: 1.9.2
   resolution: "@esri/calcite-components@npm:1.9.2"
   dependencies:
@@ -5335,7 +5279,8 @@ __metadata:
     "@angular/platform-browser": ^16.2.0
     "@angular/platform-browser-dynamic": ^16.2.0
     "@angular/router": ^16.2.0
-    "@arcgis/coding-components-angular": next
+    "@arcgis/coding-components-angular": ~4.28.0-beta.39
+    "@arcgis/core": ~4.28.0
     "@stencil/core": 2.22.3
     "@types/sortablejs": ^1.15.3
     karma: ~6.4.0
@@ -5352,9 +5297,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "arcade-editor-react-template@workspace:packages/coding-components/templates/arcade-editor/react"
   dependencies:
-    "@arcgis/coding-components-react": next
-    "@arcgis/core": next
-    "@esri/calcite-components-react": next
+    "@arcgis/coding-components-react": ~4.28.0-beta.39
+    "@arcgis/core": ~4.28.0
+    "@esri/calcite-components-react": ^1.9.2
     "@types/react": 18.2.25
     "@types/react-dom": 18.2.7
     ncp: ^2.0.0
@@ -5370,8 +5315,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "arcade-editor-vite-template@workspace:packages/coding-components/templates/arcade-editor/vite"
   dependencies:
-    "@arcgis/coding-components": next
-    "@arcgis/core": next
+    "@arcgis/coding-components": ~4.28.0-beta.39
+    "@arcgis/core": ~4.28.0
+    "@esri/calcite-components": ^1.9.2
     resolve-pkg: ^2.0.0
     vite: ^4.5.0
     vite-plugin-static-copy: ^0.16.0
@@ -5382,8 +5328,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "arcade-editor-vue-template@workspace:packages/coding-components/templates/arcade-editor/vue"
   dependencies:
-    "@arcgis/coding-components": next
-    "@arcgis/core": next
+    "@arcgis/coding-components": ~4.28.0-beta.39
+    "@arcgis/core": ~4.28.0
+    "@esri/calcite-components": ^1.9.2
     "@vitejs/plugin-vue": ^4.1.0
     resolve-pkg: ^2.0.0
     vite: ^4.5.0
@@ -5396,8 +5343,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "arcade-editor-webpack-template@workspace:packages/coding-components/templates/arcade-editor/webpack"
   dependencies:
-    "@arcgis/coding-components": next
-    "@arcgis/core": next
+    "@arcgis/coding-components": ~4.28.0-beta.39
+    "@arcgis/core": ~4.28.0
+    "@esri/calcite-components": ^1.9.2
     copy-webpack-plugin: ^11.0.0
     css-loader: ^6.7.2
     html-webpack-plugin: ^5.5.0
@@ -6858,6 +6806,25 @@ __metadata:
   checksum: dc339ebea427898c9e03bf01b56ba7afbac07fc7d2a2d5a15d6e9c14de98275a9565da949375aee1809591c152c0a3877bb86dbeaf74d5bd5aaa79955ad9e7a0
   languageName: node
   linkType: hard
+
+"create-a-web-app-using-components-initial@workspace:packages/map-components/tutorials/create-a-web-app-using-components-initial":
+  version: 0.0.0-use.local
+  resolution: "create-a-web-app-using-components-initial@workspace:packages/map-components/tutorials/create-a-web-app-using-components-initial"
+  dependencies:
+    vite: ^4.5.0
+  languageName: unknown
+  linkType: soft
+
+"create-a-web-app-using-components-solution@workspace:packages/map-components/tutorials/create-a-web-app-using-components-solution":
+  version: 0.0.0-use.local
+  resolution: "create-a-web-app-using-components-solution@workspace:packages/map-components/tutorials/create-a-web-app-using-components-solution"
+  dependencies:
+    "@arcgis/core": ~4.28.0
+    "@arcgis/map-components": ">=4.28.0-beta.39 < 4.29"
+    "@esri/calcite-components": ^1.9.2
+    vite: ^4.5.0
+  languageName: unknown
+  linkType: soft
 
 "create-require@npm:^1.1.0":
   version: 1.1.1
@@ -8943,15 +8910,6 @@ __metadata:
   dependencies:
     tabbable: ^6.2.0
   checksum: 1eee29d18c152ef08849a5cfd6d462a6741ec15f08938a9d87336d47807f07dbfff2e6405b16b5ce96745eb86b60f3dcdd87b63f0ad240e47252254d2c248d40
-  languageName: node
-  linkType: hard
-
-"focus-trap@npm:7.5.3":
-  version: 7.5.3
-  resolution: "focus-trap@npm:7.5.3"
-  dependencies:
-    tabbable: ^6.2.0
-  checksum: aa81c209fe2c7e0460e97bdceaa716504acdfcd0353e5a5a0a1a826760d82c4ef7035b0613e636e73dbe4c3c20711d9d928566bff23c4b0108f4638af71aea76
   languageName: node
   linkType: hard
 
@@ -11971,7 +11929,9 @@ __metadata:
     "@angular/platform-browser": ^16.2.0
     "@angular/platform-browser-dynamic": ^16.2.0
     "@angular/router": ^16.2.0
-    "@arcgis/map-components-angular": next
+    "@arcgis/core": ~4.28.0
+    "@arcgis/map-components-angular": ">=4.28.0-beta.39 < 4.29"
+    "@esri/calcite-components": ^1.9.2
     "@stencil/core": 2.22.3
     karma: ~6.4.0
     karma-chrome-launcher: ~3.2.0
@@ -11987,9 +11947,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "map-components-react-template@workspace:packages/map-components/templates/react"
   dependencies:
-    "@arcgis/core": next
-    "@arcgis/map-components-react": next
-    "@esri/calcite-components": next
+    "@arcgis/core": ~4.28.0
+    "@arcgis/map-components-react": ">=4.28.0-beta.39 < 4.29"
+    "@esri/calcite-components": ^1.9.2
     react: ^18.2.0
     react-dom: ^18.2.0
     react-scripts: 5.0.1
@@ -12000,9 +11960,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "map-components-vite-template@workspace:packages/map-components/templates/vite"
   dependencies:
-    "@arcgis/core": next
-    "@arcgis/map-components": next
-    "@esri/calcite-components": next
+    "@arcgis/core": ~4.28.0
+    "@arcgis/map-components": ">=4.28.0-beta.39 < 4.29"
+    "@esri/calcite-components": ^1.9.2
     vite: ^4.5.0
   languageName: unknown
   linkType: soft
@@ -12011,9 +11971,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "map-components-vue-template@workspace:packages/map-components/templates/vue"
   dependencies:
-    "@arcgis/core": next
-    "@arcgis/map-components": next
-    "@esri/calcite-components": next
+    "@arcgis/core": ~4.28.0
+    "@arcgis/map-components": ">=4.28.0-beta.39 < 4.29"
+    "@esri/calcite-components": ^1.9.2
     "@vitejs/plugin-vue": ^4.1.0
     vite: ^4.5.0
     vue: ^3.3.4
@@ -12024,9 +11984,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "map-components-webpack-template@workspace:packages/map-components/templates/webpack"
   dependencies:
-    "@arcgis/core": next
-    "@arcgis/map-components": next
-    "@esri/calcite-components": next
+    "@arcgis/core": ~4.28.0
+    "@arcgis/map-components": ">=4.28.0-beta.39 < 4.29"
+    "@esri/calcite-components": ^1.9.2
     css-loader: ^6.7.2
     html-webpack-plugin: ^5.5.0
     style-loader: ^3.3.1

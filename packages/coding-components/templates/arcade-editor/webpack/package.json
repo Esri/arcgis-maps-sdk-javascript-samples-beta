@@ -6,8 +6,9 @@
     "start": "webpack-dev-server --mode development --open"
   },
   "dependencies": {
-    "@arcgis/coding-components": "next",
-    "@arcgis/core": "next"
+    "@arcgis/coding-components": "~4.28.0-beta.39",
+    "@arcgis/core": "~4.28.0",
+    "@esri/calcite-components": "^1.9.2"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",

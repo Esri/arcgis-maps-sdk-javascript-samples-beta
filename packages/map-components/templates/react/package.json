@@ -6,9 +6,9 @@
     "build": "react-scripts build"
   },
   "dependencies": {
-    "@arcgis/core": "next",
-    "@arcgis/map-components-react": "next",
-    "@esri/calcite-components": "next",
+    "@arcgis/core": "~4.28.0",
+    "@arcgis/map-components-react": ">=4.28.0-beta.39 < 4.29",
+    "@esri/calcite-components": "^1.9.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
