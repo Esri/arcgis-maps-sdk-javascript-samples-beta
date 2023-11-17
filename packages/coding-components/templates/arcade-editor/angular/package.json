@@ -22,7 +22,7 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
-    "@arcgis/coding-components-angular": "~4.28.0-beta.39",
+    "@arcgis/coding-components-angular": ">=4.28.0-beta.39 < 4.29",
     "@arcgis/core": "~4.28.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
