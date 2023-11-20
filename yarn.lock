@@ -362,55 +362,80 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arcgis/arcade-languageservice@npm:4.28.0-beta.39":
-  version: 4.28.0-beta.39
-  resolution: "@arcgis/arcade-languageservice@npm:4.28.0-beta.39"
+"@arcgis/arcade-languageservice@npm:4.28.0-beta.40":
+  version: 4.28.0-beta.40
+  resolution: "@arcgis/arcade-languageservice@npm:4.28.0-beta.40"
   dependencies:
     vscode-languageserver-textdocument: ^1.0.9
     vscode-languageserver-types: ^3.17.3
-  checksum: ba4e118ccdfe72ca8635e69d4289e2e8b087609b380fd9bc574e929dd280230bcda45bf475631c260c9bd7241b4a19e0217ab8cfee4e3e0e557096d25a65820a
+  checksum: fe43d45b21c34fb86f0e9f84a1d297efa286878160af9bd01fb7762e8b24eba4d7cf265cfa18ec76f1831f6ff7ad6aa2bfbcb1bf838c8fabf708d22f6b9b61e4
   languageName: node
   linkType: hard
 
-"@arcgis/coding-components-angular@npm:~4.28.0-beta.39":
-  version: 4.28.0-beta.39
-  resolution: "@arcgis/coding-components-angular@npm:4.28.0-beta.39"
+"@arcgis/arcade-languageservice@npm:4.28.0-beta.41":
+  version: 4.28.0-beta.41
+  resolution: "@arcgis/arcade-languageservice@npm:4.28.0-beta.41"
   dependencies:
-    "@arcgis/coding-components": 4.28.0-beta.39
+    vscode-languageserver-textdocument: ^1.0.9
+    vscode-languageserver-types: ^3.17.3
+  checksum: 487e9f6b1287b66d184341e175ffc7f0ff9f6fddfc746c6b964dddfa3591e2631e9894a91884412e05a50a99dbbd801e918eef4c24c185e875cfd51ad0377ce0
+  languageName: node
+  linkType: hard
+
+"@arcgis/coding-components-angular@npm:>=4.28.0-beta.39 < 4.29":
+  version: 4.28.0-beta.40
+  resolution: "@arcgis/coding-components-angular@npm:4.28.0-beta.40"
+  dependencies:
+    "@arcgis/coding-components": 4.28.0-beta.40
     tslib: ^2.3.0
   peerDependencies:
     "@angular/common": ^16.2.0
     "@angular/core": ^16.2.0
     "@arcgis/core": ~4.28.0
-  checksum: 64b79c7ffb8413e926633adcd45233cbaff219e8773dba9498f173ea36fc94867e5822332f2eeb854d4fe8718b75a3d2d9c74c97fd3bc551475f4d6482ba2640
+  checksum: 65aeafa2ff637e6194c79cb1c025d2c6b8d5a2c6260ce11e725b3ca646ecb405949c9ccfb09a6c3286e491c8b9d66b05a10d3627de2b359782d3b80a00b11412
   languageName: node
   linkType: hard
 
-"@arcgis/coding-components-react@npm:~4.28.0-beta.39":
-  version: 4.28.0-beta.39
-  resolution: "@arcgis/coding-components-react@npm:4.28.0-beta.39"
+"@arcgis/coding-components-react@npm:>=4.28.0-beta.39 < 4.29":
+  version: 4.28.0-beta.41
+  resolution: "@arcgis/coding-components-react@npm:4.28.0-beta.41"
   dependencies:
-    "@arcgis/coding-components": 4.28.0-beta.39
+    "@arcgis/coding-components": 4.28.0-beta.41
   peerDependencies:
     "@arcgis/core": ~4.28.0
     react: ^18
     react-dom: ^18
-  checksum: ecaad40c7e90db26e18ab11f583d09d755c63921aa3b6562edbd8d6d234baf36884137ed19ddf428378908c7e8b0a9bca9608014822b3b42f5064ea79315d736
+  checksum: 3d4ca893ded189e619d8c0394b3dfc0b6d05964aca4355eff4c4bd8a5634698d1034991b0930c971bdd9ceb8228391b40a59e2e5d93ab6e7561c686a6669b026
   languageName: node
   linkType: hard
 
-"@arcgis/coding-components@npm:4.28.0-beta.39, @arcgis/coding-components@npm:~4.28.0-beta.39":
-  version: 4.28.0-beta.39
-  resolution: "@arcgis/coding-components@npm:4.28.0-beta.39"
+"@arcgis/coding-components@npm:4.28.0-beta.40":
+  version: 4.28.0-beta.40
+  resolution: "@arcgis/coding-components@npm:4.28.0-beta.40"
   dependencies:
-    "@arcgis/arcade-languageservice": 4.28.0-beta.39
+    "@arcgis/arcade-languageservice": 4.28.0-beta.40
     "@stencil/core": 2.22.3
     monaco-editor: ^0.39.0
     vscode-languageserver-types: ^3.17.3
   peerDependencies:
     "@arcgis/core": ~4.28.0
     "@esri/calcite-components": ">=1.7.0 <2.0.0"
-  checksum: cf2af6da6f65feb258d705d31ca15c6a5f1391bb28ee88a08a1b3eee6523362efffecfc1e89bd7b05e63423344be88db1b085eb9809e0863d4d92d6bff51fea6
+  checksum: 5168a909ad42e2cb603c65cb9f501176026ac2fe1caaa312034799dc0037bb32f5cdc8746e709c7177d00f3680c422c34b383f921e56c1768111014bea392be1
+  languageName: node
+  linkType: hard
+
+"@arcgis/coding-components@npm:4.28.0-beta.41, @arcgis/coding-components@npm:>=4.28.0-beta.39 < 4.29":
+  version: 4.28.0-beta.41
+  resolution: "@arcgis/coding-components@npm:4.28.0-beta.41"
+  dependencies:
+    "@arcgis/arcade-languageservice": 4.28.0-beta.41
+    "@stencil/core": 2.22.3
+    monaco-editor: ^0.39.0
+    vscode-languageserver-types: ^3.17.3
+  peerDependencies:
+    "@arcgis/core": ~4.28.0
+    "@esri/calcite-components": ">=1.7.0 <2.0.0"
+  checksum: 19b3a3dd61f7fb7e54885e333158428c0fd5518ecfa3f879dbb0af1a82a0b08860a9249d4c0acf58bbc2e4f7290ef330ea528510a6eab4d753553f1c7ec589f1
   languageName: node
   linkType: hard
 
@@ -5279,7 +5304,7 @@ __metadata:
     "@angular/platform-browser": ^16.2.0
     "@angular/platform-browser-dynamic": ^16.2.0
     "@angular/router": ^16.2.0
-    "@arcgis/coding-components-angular": ~4.28.0-beta.39
+    "@arcgis/coding-components-angular": ">=4.28.0-beta.39 < 4.29"
     "@arcgis/core": ~4.28.0
     "@stencil/core": 2.22.3
     "@types/sortablejs": ^1.15.3
@@ -5297,7 +5322,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "arcade-editor-react-template@workspace:packages/coding-components/templates/arcade-editor/react"
   dependencies:
-    "@arcgis/coding-components-react": ~4.28.0-beta.39
+    "@arcgis/coding-components-react": ">=4.28.0-beta.39 < 4.29"
     "@arcgis/core": ~4.28.0
     "@esri/calcite-components-react": ^1.9.2
     "@types/react": 18.2.25
@@ -5315,7 +5340,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "arcade-editor-vite-template@workspace:packages/coding-components/templates/arcade-editor/vite"
   dependencies:
-    "@arcgis/coding-components": ~4.28.0-beta.39
+    "@arcgis/coding-components": ">=4.28.0-beta.39 < 4.29"
     "@arcgis/core": ~4.28.0
     "@esri/calcite-components": ^1.9.2
     resolve-pkg: ^2.0.0
@@ -5328,7 +5353,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "arcade-editor-vue-template@workspace:packages/coding-components/templates/arcade-editor/vue"
   dependencies:
-    "@arcgis/coding-components": ~4.28.0-beta.39
+    "@arcgis/coding-components": ">=4.28.0-beta.39 < 4.29"
     "@arcgis/core": ~4.28.0
     "@esri/calcite-components": ^1.9.2
     "@vitejs/plugin-vue": ^4.1.0
@@ -5343,7 +5368,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "arcade-editor-webpack-template@workspace:packages/coding-components/templates/arcade-editor/webpack"
   dependencies:
-    "@arcgis/coding-components": ~4.28.0-beta.39
+    "@arcgis/coding-components": ">=4.28.0-beta.39 < 4.29"
     "@arcgis/core": ~4.28.0
     "@esri/calcite-components": ^1.9.2
     copy-webpack-plugin: ^11.0.0

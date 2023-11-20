@@ -1,5 +1,7 @@
 # Arcade editor React template
 
+📁 **[Click here to download this directory as a ZIP file](https://download-directory.github.io?url=https://github.com/Esri/arcgis-maps-sdk-javascript-samples-beta/tree/main/packages/coding-components/templates/arcade-editor/react)** 📁
+
 This repository showcases how to integrate the Arcade editor using React.
 
 This template was bootstrapped with [Create React App](https://github.com/facebook/).
