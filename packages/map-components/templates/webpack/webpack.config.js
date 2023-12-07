@@ -12,68 +12,62 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-
 const path = require("path");
 
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
+
 module.exports = {
-  entry: ["./src/index.css", "./src/index.js"],
-
-  output: {
-    filename: "[id][name].js",
-    chunkFilename: "[id][name].js",
-    path: path.resolve(__dirname, "dist"),
-    clean: true,
+  entry: {
+    index: ["./src/index.css", "./src/index.js"]
   },
-
-  devtool: "source-map",
-
+  node: false,
+  optimization: {
+    minimizer: [
+      new TerserPlugin({extractComments: false}),
+    ],
+  },  
+  output: {
+    path: path.join(__dirname, "dist"),
+    chunkFilename: "chunks/[id].js",
+    publicPath: "",
+    clean: true
+  },
   devServer: {
     static: {
       directory: path.join(__dirname, "dist"),
     },
     compress: true,
-    port: 9000,
+    port: 3001,
   },
-
   module: {
     rules: [
       {
+        test: /\.js$/,
+        enforce: "pre",
+        use: ["source-map-loader"],
+      },
+      {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"], // Collect CSS and insert them into the page
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader"
+        ]
       },
-    ],
+    ]
   },
-
   plugins: [
-    // This plugin simplifies creation of HTML files to serve your webpack bundles.
     new HtmlWebPackPlugin({
-      title: "Map components webpack template",
+      title: "ArcGIS Maps SDK  for JavaScript",
+      template: "./public/index.html",
+      filename: "./index.html",
       chunksSortMode: "none",
-      meta: {
-        viewport:
-          "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=no",
-      },
-      templateContent: `
-        <!DOCTYPE html>
-          <html dir="ltr" lang="en">
-            <head>
-              <meta charset="utf-8">
-            </head>
-            <body>
-              <arcgis-map item-id="d5dda743788a4b0688fe48f43ae7beb9">
-                <arcgis-search position="top-right"></arcgis-search>
-                <arcgis-legend position="bottom-left"></arcgis-search>
-              </arcgis-map>
-            </body>
-          </html>`,
+      inlineSource: ".(css)$"
     }),
-  ],
-
-  // Resolve property for importing files
-  resolve: {
-    modules: [path.resolve(__dirname, "/src"), "node_modules/"],
-    extensions: [".js", ".css"],
-  },
+    new MiniCssExtractPlugin({
+      filename: "[name].[chunkhash].css",
+      chunkFilename: "[id].css"
+    })
+  ]
 };
