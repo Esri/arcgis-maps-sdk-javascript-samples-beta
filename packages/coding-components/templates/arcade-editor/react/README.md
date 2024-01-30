@@ -1,51 +1,41 @@
-# Arcade editor React template
+# Arcade editor React using Vite template
 
 📁 **[Click here to download this directory as a ZIP file](https://download-directory.github.io?url=https://github.com/Esri/arcgis-maps-sdk-javascript-samples-beta/tree/main/packages/coding-components/templates/arcade-editor/react)** 📁
 
-This repository showcases how to integrate the Arcade editor using React.
+This repository showcases how to integrate the Arcade editor with [React](https://react.dev/).
 
-This template was bootstrapped with [Create React App](https://github.com/facebook/).
+## Get started
 
-```
-yarn create react-app [NAME]
-```
+The project was created using [`yarn create vite`](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) with the [React template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react).
 
-## Dependencies
+### Commands
 
-Requires [`react-scripts`](https://www.npmjs.com/package/react-scripts) >= 5.0.0
+#### Dev
 
-> If you'd prefer not to use `react-scripts` >= 5.0.0, then you may need additional loaders and/or plugins in your configuration (`webpack.config.js`, `babel.config.js`, etc.).
-
-## Project setup
-
-### Install dependencies
-
-Installs any package that the Arcade editor depends on.
+Start local server
 
 ```
-yarn install
+vite
 ```
 
-### Start the development server
+#### Build
 
-Open [http://localhost:3000](http://localhost:3000) to view the Editor in your browser. The page will reload when you make changes. You may also see any lint errors in the console.
-
-```
-yarn run start
-```
-
-### Generate the production-ready compiled code
-
-Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+Build the project to the specified output folder (`/dist`)
 
 ```
-yarn run build
+vite build
 ```
 
-## Resources
+#### Preview
 
-[React documentation](https://reactjs.org/).
+Start local server to serve the specified output folder. You must run `build` before `preview`
 
-[Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+vite preview
+```
 
-[Defining custom elements](https://stenciljs.com/docs/custom-elements-bundle)
+## Learn More
+
+You can learn more in the [Vite guides](https://vitejs.dev/guide/).
+
+To learn React, check out the [React documentation](https://react.dev/).
