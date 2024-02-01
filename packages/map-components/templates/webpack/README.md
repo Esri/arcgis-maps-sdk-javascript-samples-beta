@@ -1,3 +1,9 @@
 # Map components Webpack template
 
-📁 **[Click here to download this directory as a ZIP file](https://download-directory.github.io?url=https://github.com/Esri/arcgis-maps-sdk-javascript-samples-beta/tree/main/packages/map-components/templates/webpack)** 📁
+## Quick links
+
+🔗 **[ArcGIS Maps SDK for JavaScript samples beta repo](https://github.com/Esri/arcgis-maps-sdk-javascript-samples-beta/tree/main)**
+
+📁 **[Download this directory as a ZIP file](https://download-directory.github.io?url=https://github.com/Esri/arcgis-maps-sdk-javascript-samples-beta/tree/main/packages/map-components/templates/webpack)** 
+
+💻 **[Open this template in an online IDE (StackBlitz)](https://stackblitz.com/github/Esri/arcgis-maps-sdk-javascript-samples-beta/tree/main/packages/map-components/templates/webpack)** 
