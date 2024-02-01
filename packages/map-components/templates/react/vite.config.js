@@ -13,14 +13,12 @@
  * limitations under the License.
  */
 
-var ncp = require("ncp").ncp;
-var resolvePkg = require("resolve-pkg");
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-ncp.limit = 16;
-
-ncp(resolvePkg("@arcgis/coding-components/dist/arcgis-coding-components/assets/"), "./public/assets/", function (err) {
-  if (err) {
-    return console.error(err);
-  }
-  console.log("Coding components assets copied!");
+export default defineConfig({
+  plugins: [react()],
+  build: {
+    outDir: "dist",
+  },
 });

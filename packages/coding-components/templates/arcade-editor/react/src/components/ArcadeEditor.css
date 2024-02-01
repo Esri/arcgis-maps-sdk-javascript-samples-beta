@@ -1,5 +1,5 @@
-@import "~@esri/calcite-components/dist/calcite/calcite.css";
-@import "~@arcgis/coding-components/dist/arcgis-coding-components/arcgis-coding-components.css";
+@import "@esri/calcite-components/dist/calcite/calcite.css";
+@import "@arcgis/coding-components/dist/arcgis-coding-components/arcgis-coding-components.css";
 
 html,
 body {

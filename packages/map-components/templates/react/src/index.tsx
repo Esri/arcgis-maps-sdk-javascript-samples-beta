@@ -5,7 +5,7 @@ import { ArcgisMap, ArcgisSearch, ArcgisLegend } from "@arcgis/map-components-re
 
 import "@arcgis/core/assets/esri/themes/dark/main.css";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <React.StrictMode>
     <ArcgisMap item-id="d5dda743788a4b0688fe48f43ae7beb9">
