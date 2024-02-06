@@ -6510,6 +6510,7 @@ __metadata:
     "@angular/platform-browser": "npm:^17.0.0"
     "@angular/platform-browser-dynamic": "npm:^17.0.0"
     "@angular/router": "npm:^17.0.0"
+    "@arcgis/coding-components": "npm:>=4.28.0-beta.39 < 4.29"
     "@arcgis/coding-components-angular": "npm:>=4.28.0-beta.39 < 4.29"
     "@arcgis/core": "npm:~4.28.0"
     "@types/jasmine": "npm:~5.1.0"
@@ -6520,7 +6521,6 @@ __metadata:
     karma-coverage: "npm:~2.2.0"
     karma-jasmine: "npm:~5.1.0"
     karma-jasmine-html-reporter: "npm:~2.1.0"
-    ncp: "npm:^2.0.0"
     rxjs: "npm:~7.8.0"
     tslib: "npm:^2.3.0"
     typescript: "npm:~5.2.2"
@@ -10769,15 +10769,6 @@ __metadata:
   bin:
     nanoid: bin/nanoid.cjs
   checksum: ac1eb60f615b272bccb0e2b9cd933720dad30bf9708424f691b8113826bb91aca7e9d14ef5d9415a6ba15c266b37817256f58d8ce980c82b0ba3185352565679
-  languageName: node
-  linkType: hard
-
-"ncp@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "ncp@npm:2.0.0"
-  bin:
-    ncp: ./bin/ncp
-  checksum: b2a915b79eac43ababf256d0ba515b9dc5da2072b133946ccd168aab17e364bf0fcc7bcc68f2f3105aeeef389d56aeaedbb827122f7c4434104ae2aae1e002a6
   languageName: node
   linkType: hard
 

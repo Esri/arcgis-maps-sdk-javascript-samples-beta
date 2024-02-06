@@ -6,11 +6,7 @@
     "start": "ng serve -o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "postinstall": "npm run copy",
-    "copy": "npm run copy-coding && npm run copy-calcite",
-    "copy-coding": "node ./scripts/copy-coding-component-assets.js",
-    "copy-calcite": "node ./scripts/copy-calcite-component-assets.js"
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +18,7 @@
     "@angular/platform-browser": "^17.0.0",
     "@angular/platform-browser-dynamic": "^17.0.0",
     "@angular/router": "^17.0.0",
+    "@arcgis/coding-components": ">=4.28.0-beta.39 < 4.29",
     "@arcgis/coding-components-angular": ">=4.28.0-beta.39 < 4.29",
     "@arcgis/core": "~4.28.0",
     "rxjs": "~7.8.0",
@@ -40,7 +37,6 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "ncp": "^2.0.0",
     "typescript": "~5.2.2"
   }
 }
