@@ -13,14 +13,18 @@
  * limitations under the License.
  */
 
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import ArcadeEditor from './components/ArcadeEditor';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import ArcadeEditor from "./components/ArcadeEditor";
+import { defineCustomElements as defineCalciteElements } from "@esri/calcite-components/dist/loader";
+import { defineCustomElements as defineCodingElements } from "@arcgis/coding-components/dist/loader";
 
-import { setAssetPath } from '@arcgis/coding-components/dist/components';
-setAssetPath(window.location.href);
+// define custom elements in the browser, and load the assets from the CDN
+// FIXME: develop scheme to use correct/matching version of assets
+defineCodingElements(window, { resourcesUrl: "https://js.arcgis.com/coding-components/4.28/assets" });
+defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-components/2.4.0/assets" });
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ArcadeEditor />
