@@ -13,31 +13,10 @@
  * limitations under the License.
  */
 
-import { defineConfig, normalizePath } from "vite";
-import { viteStaticCopy } from "vite-plugin-static-copy";
-import resolvePkg from "resolve-pkg";
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  plugins: [
-    viteStaticCopy({
-      targets: [
-        {
-          src: normalizePath(
-            resolvePkg(
-              "@arcgis/coding-components/dist/arcgis-coding-components/assets/"
-            )
-          ),
-          dest: "./",
-        },
-        {
-          src: normalizePath(
-            resolvePkg("@esri/calcite-components/dist/calcite/assets/")
-          ),
-          dest: "./",
-        },
-      ],
-    }),
-  ],
+  plugins: [],
   build: {
     outDir: "dist",
   },

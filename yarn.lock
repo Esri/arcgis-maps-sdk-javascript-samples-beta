@@ -6894,9 +6894,7 @@ __metadata:
     "@arcgis/coding-components": "npm:>=4.28.0-beta.39 < 4.29"
     "@arcgis/core": "npm:~4.28.0"
     "@esri/calcite-components": "npm:^1.9.2"
-    resolve-pkg: "npm:^2.0.0"
     vite: "npm:^5.0.12"
-    vite-plugin-static-copy: "npm:^1.0.1"
   languageName: unknown
   linkType: soft
 
