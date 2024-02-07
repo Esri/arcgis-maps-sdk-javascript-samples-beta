@@ -14,8 +14,6 @@
  */
 
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
-const resolvePkg = require("resolve-pkg");
 
 const path = require("path");
 
@@ -76,23 +74,6 @@ module.exports = {
               <calcite-scrim id="scrim" loading />
             </body>
           </html>`,
-    }),
-    // This plugin copies entire directories to the build directory.
-    new CopyPlugin({
-      patterns: [
-        // Grabs the web workers, api files, profiles, and translations we need
-        {
-          from: resolvePkg(
-            "@arcgis/coding-components/dist/arcgis-coding-components/assets"
-          ),
-          to: path.resolve(__dirname, "dist/assets"),
-        },
-        // Copy the Calcite component assets locally to our build.
-        {
-          from: resolvePkg("@esri/calcite-components/dist/calcite/assets"),
-          to: path.resolve(__dirname, "dist/assets"),
-        },
-      ],
     }),
   ],
 
