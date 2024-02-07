@@ -15,10 +15,8 @@
 
 import { fileURLToPath, URL } from "node:url";
 
-import { defineConfig, normalizePath } from "vite";
+import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import { viteStaticCopy } from "vite-plugin-static-copy";
-import resolvePkg from "resolve-pkg";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -30,25 +28,7 @@ export default defineConfig({
             ["arcgis-arcade-editor", "calcite-scrim"].includes(tag),
         },
       },
-    }),
-    viteStaticCopy({
-      targets: [
-        {
-          src: normalizePath(
-            resolvePkg(
-              "@arcgis/coding-components/dist/arcgis-coding-components/assets/"
-            )
-          ),
-          dest: "./",
-        },
-        {
-          src: normalizePath(
-            resolvePkg("@esri/calcite-components/dist/calcite/assets/")
-          ),
-          dest: "./",
-        },
-      ],
-    }),
+    })
   ],
   resolve: {
     alias: {
