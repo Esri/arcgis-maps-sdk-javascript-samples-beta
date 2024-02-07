@@ -8,11 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@arcgis/core": "~4.28.0",
-    "@arcgis/map-components-react": ">=4.28.0-beta.39 < 4.29",
-    "@esri/calcite-components": "^1.9.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "@arcgis/core": ">=4.29.0-next.20240207",
+    "@arcgis/map-components-react": ">=4.29.0-beta.100 < 4.30",
+    "@esri/calcite-components": "^2.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.48",

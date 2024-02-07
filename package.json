@@ -1,13 +1,12 @@
 {
   "name": "arcgis-maps-sdk-javascript-samples-beta",
-  "packageManager": "yarn@4.0.2",
-  "private": true,
-  "license": "SEE LICENSE IN LICENSE.md",
   "description": "Code samples and templates for ArcGIS Maps SDK for JavaScript",
+  "private": true,
   "workspaces": [
     "packages/*",
     "packages/**/*"
   ],
+  "license": "SEE LICENSE IN LICENSE.md",
   "scripts": {
     "postinstall": "husky install",
     "update": "yarn up @esri/calcite-components@next @arcgis/core@next @arcgis/map-components@next @arcgis/coding-components@next @arcgis/coding-components-react@next @arcgis/coding-components-angular@next"
@@ -16,6 +15,8 @@
     "@commitlint/cli": "^17.6.7",
     "@commitlint/config-conventional": "^17.6.7",
     "husky": "^8.0.3",
-    "prettier": "^3.0.0"
-  }
+    "prettier": "^3.0.0",
+    "syncpack": "^12.3.0"
+  },
+  "packageManager": "yarn@4.0.2"
 }
