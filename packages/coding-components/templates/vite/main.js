@@ -22,7 +22,7 @@ import { defineCustomElements as defineCodingElements } from "@arcgis/coding-com
 
 // define custom elements in the browser, and load the assets from the CDN
 defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-components/2.4.0/assets" });
-defineCodingElements(window, { resourcesUrl: "https://js.arcgis.com/coding-components/4.28/assets" });
+defineCodingElements(window, { resourcesUrl: "https://js.arcgis.com/coding-components/next/assets" });
 
 (async () => {
   // Get the Arcade editor element
