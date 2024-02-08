@@ -29,13 +29,15 @@ import { defineCustomElements as defineCalciteElements } from "@esri/calcite-com
  * `@esri/calcite-components` installed as a dependency of `@arcgis/map-components`.
  */
 defineCalciteElements(window, {
-  resourcesUrl: "https://js.arcgis.com/calcite-components/1.9.2/assets",
+  resourcesUrl: "https://js.arcgis.com/calcite-components/2.4.0/assets",
 });
 
 /**
  * Use the Map Components to define and lazy load the custom map elements.
  */
-defineMapElements();
+defineMapElements(window, {
+  resourcesUrl: "https://js.arcgis.com/map-components/next/assets",
+});
 
 /**
  * Use `document.querySelector()` to get a reference to the `arcgis-layer-list` component.
