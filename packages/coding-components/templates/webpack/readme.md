@@ -24,56 +24,20 @@ yarn run start
 yarn run build
 ```
 
-## Bundling details
-
-### Config
-
-Both the Calcite components and coding components assets need to be copied over to our `/dist` folder for Stencil to load them properly.
-
-```
-// webpack.config.js
-const CopyPlugin = require("copy-webpack-plugin");
-
-module.exports = {
-  plugins: [
-    new CopyPlugin({
-      patterns: [
-        {
-          from: path.resolve(
-            __dirname,
-            "node_modules/@arcgis/coding-components/dist/arcgis-coding-components/assets"
-          ),
-          to: path.resolve(__dirname, "dist/assets"),
-        },
-        {
-          from: path.resolve(
-            __dirname,
-            "node_modules/@esri/calcite-components/dist/calcite/assets"
-          ),
-          to: path.resolve(__dirname, "dist/assets"),
-        },
-      ],
-    }),
-  ],
-};
-```
-
 #### JS
 
 We imported the components we need for the coding components by following [Stencil's instructions for integrating components without a JavaScript framework](https://stenciljs.com/docs/javascript).
 
 ```
 import { defineCustomElements as defineCalciteElements } from "@esri/calcite-components/dist/loader";
-import { defineCustomElements as defineArcadeEditorElements } from "@arcgis/coding-components/dist/loader";
+import { defineCustomElements as defineCodingElements } from "@arcgis/coding-components/dist/loader";
 
-defineCalciteElements();
-defineArcadeEditorElements();
+// define custom elements in the browser, and load the assets from the CDN
+defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-components/2.4.0/assets" });
+defineCodingElements(window, { resourcesUrl: "https://js.arcgis.com/coding-components/next/assets" });
 ```
 
 We use [`src/index.js`](./src/index.js) to load our data, define our custom elements, and utilize various kinds of properties in the editor. It is a must to define both the Calcite and Coding elements.
-
-> **Note**: If you change your config to copy the assets somewhere else, you can change the asset path for the components in index.js. 
-> Example: `defineCalciteElements(window, { resourcesUrl: "assets/___folder_name___/" });`
 
 #### CSS
 
