@@ -41,66 +41,54 @@ defineMapElements(window, {
 
 /**
  * Use `document.querySelector()` to get a reference to the `arcgis-layer-list` component.
- * Add an event listener for the `arcgis-layer-list` component's `widgetReady` event.
+ * Add an event listener for the `arcgis-layer-list` component's `arcgisLayerListReady` event.
  */
-document
-  .querySelector("arcgis-layer-list")
-  .addEventListener("widgetReady", (event) => {
-    /**
-     * Get a reference to the ArcGIS Maps SDK for JavaScript `LayerList` widget
-     * from the `event.detail` object.
-     */
-    const layerList = event.detail.widget;
-    /**
-     * Add a listItemCreatedFunction to the layer list.
-     * This function will add a legend in the list item panel for all layers except group layers.
-     */
-    layerList.listItemCreatedFunction = (event) => {
-      const item = event.item;
-      if (item.layer.type !== "group") {
-        item.panel = {
-          content: "legend",
-        };
-      }
-    };
-  });
+document.querySelector("arcgis-layer-list").addEventListener("arcgisLayerListReady", (event) => {
+  /**
+   * Get a reference to the ArcGIS Maps SDK for JavaScript `LayerList` widget
+   * from the `event.detail` object.
+   */
+  const arcgisLayerList = event.target;
+  /**
+   * Add a listItemCreatedFunction to the layer list.
+   * This function will add a legend in the list item panel for all layers except group layers.
+   */
+  arcgisLayerList.listItemCreatedFunction = (event) => {
+    const { item } = event;
+    if (item.layer.type !== "group") {
+      item.panel = {
+        content: "legend"
+      };
+    }
+  };
+});
 
 /**
  * Use `document.querySelector()` to get a reference to the `arcgis-map` component.
- * Add an event listener for the `arcgis-map` component's `viewReady` event.
+ * Add an event listener for the `arcgis-map` component's `arcgisViewReadyChange` event.
  */
-document
-  .querySelector("arcgis-map")
-  .addEventListener("viewReady", async (event) => {
-    /**
-     * Get a reference to the ArcGIS Maps SDK for JavaScript `MapView`
-     * from the `event.detail` object.
-     */
-    const view = event.detail.view;
+document.querySelector("arcgis-map").addEventListener("arcgisViewReadyChange", (event) => {
+  /**
+   * Create a constant for the map's portal item.
+   */
+  const { portalItem } = event.target.map;
 
-    /**
-     * Get a reference to the map's portal item
-     */
-    const portalItem = view.map.portalItem;
+  /**
+   * Set properties on the `calcite-navigation-logo`
+   * from the properties of the portal item.
+   */
+  const navigationLogo = document.querySelector("calcite-navigation-logo");
+  navigationLogo.heading = portalItem.title;
+  navigationLogo.description = portalItem.snippet;
+  navigationLogo.thumbnail = portalItem.thumbnailUrl;
 
-    /**
-     * Set properties on the `calcite-navigation-logo`
-     * from the properties of the 'view.map.portalItem`.
-     */
-    const navigationLogo = document.querySelector("calcite-navigation-logo");
-    navigationLogo.heading = portalItem.title;
-    navigationLogo.description = portalItem.snippet;
-    navigationLogo.thumbnail = portalItem.thumbnailUrl;
+  /**
+   * Find the accidental deaths layer in the `view.map.layers` collection.
+   */
+  const layer = view.map.layers.find((layer) => layer.id === "Accidental_Deaths_8938");
 
-    /**
-     * Find the accidental deaths layer in the `view.map.layers` collection.
-     */
-    const layer = view.map.layers.find(
-      (layer) => layer.id === "Accidental_Deaths_8938"
-    );
-
-    /**
-     * Modify the layer's popup template title.
-     */
-    layer.popupTemplate.title = "Accidental Deaths";
-  });
+  /**
+   * Modify the layer's popup template title.
+   */
+  layer.popupTemplate.title = "Accidental Deaths";
+});
