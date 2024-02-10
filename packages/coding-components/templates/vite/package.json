@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@arcgis/coding-components": "next",
-    "@arcgis/core": "next",
+    "@arcgis/core": "rc",
     "@esri/calcite-components": "*"
   },
   "devDependencies": {

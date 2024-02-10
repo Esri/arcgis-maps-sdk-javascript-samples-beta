@@ -341,61 +341,61 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arcgis/arcade-languageservice@npm:4.29.0-beta.100":
-  version: 4.29.0-beta.100
-  resolution: "@arcgis/arcade-languageservice@npm:4.29.0-beta.100"
+"@arcgis/arcade-languageservice@npm:4.29.0-beta.104":
+  version: 4.29.0-beta.104
+  resolution: "@arcgis/arcade-languageservice@npm:4.29.0-beta.104"
   dependencies:
     vscode-languageserver-textdocument: "npm:^1.0.9"
     vscode-languageserver-types: "npm:^3.17.3"
-  checksum: 0951d9aaed3e53decfa7317d5bc90fc992a14b5f5e5c0d24e0bf3ff808c3a64dedad0e73f05b9bde3fce941a8867760bf35b3b3c798280726d1f32db748b36c5
+  checksum: 8592ecd85a093b86c2b865d35ece3f99e5c9614f32c68ed52c4ebb8fe305f30494c5cf54b23863c600b8c9de847d6c40e708f1cab5f4d90ea14d4cb32ee02de8
   languageName: node
   linkType: hard
 
-"@arcgis/coding-components-angular@npm:>=4.29.0-beta.100 < 4.30":
-  version: 4.29.0-beta.100
-  resolution: "@arcgis/coding-components-angular@npm:4.29.0-beta.100"
+"@arcgis/coding-components-angular@npm:next":
+  version: 4.29.0-beta.104
+  resolution: "@arcgis/coding-components-angular@npm:4.29.0-beta.104"
   dependencies:
-    "@arcgis/coding-components": "npm:4.29.0-beta.100"
+    "@arcgis/coding-components": "npm:4.29.0-beta.104"
     tslib: "npm:^2.3.0"
   peerDependencies:
     "@angular/common": ^17.1.0
     "@angular/core": ^17.1.0
     "@arcgis/core": ">=4.29.0-next <4.30"
-  checksum: ea443cfd4ed05fc72c5988d6767011d58c1b29eaacec17a5b373f26baee003980a3af0fa7b163f5b0cacbea3377943987aa41300d2ab7dc403a5ea741b1374d1
+  checksum: 533f8e7ecac5b37a8f5023143462302773b70f48455c6aabc652088e982515a9a25c4081ef502313941262de35e7691313b73aaa3b5023ded6b5a94c98d57b83
   languageName: node
   linkType: hard
 
-"@arcgis/coding-components-react@npm:>=4.29.0-beta.100 < 4.30":
-  version: 4.29.0-beta.100
-  resolution: "@arcgis/coding-components-react@npm:4.29.0-beta.100"
+"@arcgis/coding-components-react@npm:next":
+  version: 4.29.0-beta.104
+  resolution: "@arcgis/coding-components-react@npm:4.29.0-beta.104"
   dependencies:
-    "@arcgis/coding-components": "npm:4.29.0-beta.100"
+    "@arcgis/coding-components": "npm:4.29.0-beta.104"
   peerDependencies:
     "@arcgis/core": ">=4.29.0-next <4.30"
     react: ">=18.0.0 <19.0.0"
     react-dom: ">=18.0.0 <19.0.0"
-  checksum: 95e82a097ce24733ed7b5206005355d0e5880bb638f13a2ad802349430d5b83486e2bced30ecbc7b97f9e86a567f17bbb8fb071ec046e57c61f2844e4ae7d292
+  checksum: 089af9619c6536ebeafe01e5595193ff5c37e4ee8ffb16b0eb60199f55d001d1fb969b19a7f5194be4642655e55fcdf7d2004ef32b181b97a700112a894d011f
   languageName: node
   linkType: hard
 
-"@arcgis/coding-components@npm:4.29.0-beta.100, @arcgis/coding-components@npm:>=4.29.0-beta.100 < 4.30":
-  version: 4.29.0-beta.100
-  resolution: "@arcgis/coding-components@npm:4.29.0-beta.100"
+"@arcgis/coding-components@npm:4.29.0-beta.104, @arcgis/coding-components@npm:next":
+  version: 4.29.0-beta.104
+  resolution: "@arcgis/coding-components@npm:4.29.0-beta.104"
   dependencies:
-    "@arcgis/arcade-languageservice": "npm:4.29.0-beta.100"
+    "@arcgis/arcade-languageservice": "npm:4.29.0-beta.104"
     "@stencil/core": "npm:^4.10.0"
     monaco-editor: "npm:^0.45.0"
     vscode-languageserver-types: "npm:^3.17.3"
   peerDependencies:
     "@arcgis/core": ">=4.29.0-next <4.30"
     "@esri/calcite-components": ">=2.2.0 <3.0.0"
-  checksum: d30e418aa821b815068d3f2a56a807d9c8ee410f60f894853a28c4232d8e5bbe2caa295a9a8b67df0b32305a7450bcc06c1ac24b0f1959631f6b32bb68e3aa38
+  checksum: 7f35152d6ec06b163e161f552ef4463e0b1e778bfaa44f15d8e4e25da937ddefbac8f9a458d537f669999fab5d91fb0aa0114a01dd958266cec7403392aba9ce
   languageName: node
   linkType: hard
 
-"@arcgis/core@npm:>=4.29.0-next.20240207":
-  version: 4.29.0-next.20240207
-  resolution: "@arcgis/core@npm:4.29.0-next.20240207"
+"@arcgis/core@npm:rc":
+  version: 4.29.0-next.20240209
+  resolution: "@arcgis/core@npm:4.29.0-next.20240209"
   dependencies:
     "@esri/arcgis-html-sanitizer": "npm:~3.0.1"
     "@esri/calcite-colors": "npm:~6.1.0"
@@ -405,46 +405,46 @@ __metadata:
     "@zip.js/zip.js": "npm:~2.7.34"
     luxon: "npm:~3.4.4"
     sortablejs: "npm:~1.15.2"
-  checksum: 7fa706c4c97045e7ae862c6949ec51908a6f206faab0060aaaf585df3cb69df67bb704977043323c1463bc82ec7781b74a3d973e1e56c18cd08804a5100932c8
+  checksum: 4bd96ce941b4947554cd860ddf6776f40fc01bc19151f3e9840d859bfbfc1b51b4391e47ee3ff2052ff457789346761e50b8182f7513734d04202b0fa1bb8460
   languageName: node
   linkType: hard
 
-"@arcgis/map-components-angular@npm:>=4.29.0-beta.100 < 4.30":
-  version: 4.29.0-beta.100
-  resolution: "@arcgis/map-components-angular@npm:4.29.0-beta.100"
+"@arcgis/map-components-angular@npm:next":
+  version: 4.29.0-beta.104
+  resolution: "@arcgis/map-components-angular@npm:4.29.0-beta.104"
   dependencies:
-    "@arcgis/map-components": "npm:4.29.0-beta.100"
+    "@arcgis/map-components": "npm:4.29.0-beta.104"
     tslib: "npm:^2.3.0"
   peerDependencies:
     "@angular/common": ^17.1.0
     "@angular/core": ^17.1.0
     "@arcgis/core": ">=4.29.0-next <4.30"
-  checksum: 185b7e77481996f442188c62f7f7fd691f3c997fa91157019530896a0d51acf452e7c434d2df6fec2e6718573a089ad5765dd158b33c252ee5aae751662d2daf
+  checksum: ef9501e621cbb040f304a9e7a35b1803d7e8a76915a966a8b25daaf81060d8256edf24668eb8fe17741ab900275367f4e1e009943fa0f255b0595f39c03abb75
   languageName: node
   linkType: hard
 
-"@arcgis/map-components-react@npm:>=4.29.0-beta.100 < 4.30":
-  version: 4.29.0-beta.100
-  resolution: "@arcgis/map-components-react@npm:4.29.0-beta.100"
+"@arcgis/map-components-react@npm:next":
+  version: 4.29.0-beta.104
+  resolution: "@arcgis/map-components-react@npm:4.29.0-beta.104"
   dependencies:
-    "@arcgis/map-components": "npm:4.29.0-beta.100"
+    "@arcgis/map-components": "npm:4.29.0-beta.104"
   peerDependencies:
     "@arcgis/core": ">=4.29.0-next <4.30"
     react: ">=18.0.0 <19.0.0"
     react-dom: ">=18.0.0 <19.0.0"
-  checksum: d592628919f7f96b521e4ac920f9b3b3f3ff3fcb0aa88c7b84477f0370a8b3ae239913c516bd1c218fc9e4bebbf1064e1c4ae030f0729780307e783a9fb575de
+  checksum: dc920c284b86d6cfcba1dc41e645010c96925de2987decd3675f5366ea6aa8aa3783d0f77503bb7353e429c292854a043bc0b33ca875e42e7ff82f99a951420d
   languageName: node
   linkType: hard
 
-"@arcgis/map-components@npm:4.29.0-beta.100, @arcgis/map-components@npm:>=4.29.0-beta.100 < 4.30":
-  version: 4.29.0-beta.100
-  resolution: "@arcgis/map-components@npm:4.29.0-beta.100"
+"@arcgis/map-components@npm:4.29.0-beta.104, @arcgis/map-components@npm:next":
+  version: 4.29.0-beta.104
+  resolution: "@arcgis/map-components@npm:4.29.0-beta.104"
   dependencies:
     "@stencil/core": "npm:^4.10.0"
   peerDependencies:
     "@arcgis/core": ">=4.29.0-next <4.30"
     "@esri/calcite-components": ">=2.2.0 <3.0.0"
-  checksum: 64bb48db0fd3d9c8885f6d5be4ca3ff3342ebe0d0653f5519871170a8b37142fc4cd3552f306929404471c3788b11941e5969c0eb275eaa84da8813ec6c46424
+  checksum: 37463a9072d46ea028faec230e82bbb9d668fdb4610c391826858d02331dd8f2e38b0fb198f754e6b53b626849b3e4fddab4b52c8b80a9866425cd99961f86b1
   languageName: node
   linkType: hard
 
@@ -921,7 +921,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/parser@npm:^7.1.0, @babel/parser@npm:^7.14.7, @babel/parser@npm:^7.20.15, @babel/parser@npm:^7.20.7, @babel/parser@npm:^7.21.3, @babel/parser@npm:^7.22.15, @babel/parser@npm:^7.23.0":
+"@babel/parser@npm:^7.1.0, @babel/parser@npm:^7.14.7, @babel/parser@npm:^7.20.7, @babel/parser@npm:^7.22.15, @babel/parser@npm:^7.23.0":
   version: 7.23.0
   resolution: "@babel/parser@npm:7.23.0"
   bin:
@@ -2603,7 +2603,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@esri/calcite-components@npm:^2.4.0":
+"@esri/calcite-components@npm:*, @esri/calcite-components@npm:^2.4.0":
   version: 2.4.0
   resolution: "@esri/calcite-components@npm:2.4.0"
   dependencies:
@@ -3346,7 +3346,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/estree@npm:1.0.5":
+"@types/estree@npm:1.0.5, @types/estree@npm:^1.0.5":
   version: 1.0.5
   resolution: "@types/estree@npm:1.0.5"
   checksum: 7de6d928dd4010b0e20c6919e1a6c27b61f8d4567befa89252055fad503d587ecb9a1e3eab1b1901f923964d7019796db810b7fd6430acb26c32866d126fd408
@@ -3797,115 +3797,102 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/compiler-core@npm:3.3.4":
-  version: 3.3.4
-  resolution: "@vue/compiler-core@npm:3.3.4"
+"@vue/compiler-core@npm:3.4.18":
+  version: 3.4.18
+  resolution: "@vue/compiler-core@npm:3.4.18"
   dependencies:
-    "@babel/parser": "npm:^7.21.3"
-    "@vue/shared": "npm:3.3.4"
+    "@babel/parser": "npm:^7.23.9"
+    "@vue/shared": "npm:3.4.18"
+    entities: "npm:^4.5.0"
     estree-walker: "npm:^2.0.2"
     source-map-js: "npm:^1.0.2"
-  checksum: bce178d7b12ca4a7e9397911f936e427c787779a8905804a124b53f899d68f7cb7b73223843ae920e413376bc0ecfbca7980af11fbeeb56c3e05490e9a48dcb2
+  checksum: 1df0be6fd0256808e4778048dfe3b41283853ca1911ad43bbee059d29a93edf51169b5252e052d6aeed0bb862cb5ef7482a26e49662ec2b5247445e9aaf35e8d
   languageName: node
   linkType: hard
 
-"@vue/compiler-dom@npm:3.3.4":
-  version: 3.3.4
-  resolution: "@vue/compiler-dom@npm:3.3.4"
+"@vue/compiler-dom@npm:3.4.18":
+  version: 3.4.18
+  resolution: "@vue/compiler-dom@npm:3.4.18"
   dependencies:
-    "@vue/compiler-core": "npm:3.3.4"
-    "@vue/shared": "npm:3.3.4"
-  checksum: c85d5480472c36cca988359167eb5af3f00ccd1d61aa8643313977f52945b14a6a9e7bac03878500b767ac1ff16e7dab22ea62a419ffc565037a462530004353
+    "@vue/compiler-core": "npm:3.4.18"
+    "@vue/shared": "npm:3.4.18"
+  checksum: 25c7595fa514ce2d613debdc547ca77339273335afb7044a62a785104a6a63f60993d43e440cb24a08ee8399656e77e0d0b28967e7422f799cb48299e151a06b
   languageName: node
   linkType: hard
 
-"@vue/compiler-sfc@npm:3.3.4":
-  version: 3.3.4
-  resolution: "@vue/compiler-sfc@npm:3.3.4"
+"@vue/compiler-sfc@npm:3.4.18":
+  version: 3.4.18
+  resolution: "@vue/compiler-sfc@npm:3.4.18"
   dependencies:
-    "@babel/parser": "npm:^7.20.15"
-    "@vue/compiler-core": "npm:3.3.4"
-    "@vue/compiler-dom": "npm:3.3.4"
-    "@vue/compiler-ssr": "npm:3.3.4"
-    "@vue/reactivity-transform": "npm:3.3.4"
-    "@vue/shared": "npm:3.3.4"
+    "@babel/parser": "npm:^7.23.9"
+    "@vue/compiler-core": "npm:3.4.18"
+    "@vue/compiler-dom": "npm:3.4.18"
+    "@vue/compiler-ssr": "npm:3.4.18"
+    "@vue/shared": "npm:3.4.18"
     estree-walker: "npm:^2.0.2"
-    magic-string: "npm:^0.30.0"
-    postcss: "npm:^8.1.10"
+    magic-string: "npm:^0.30.6"
+    postcss: "npm:^8.4.33"
     source-map-js: "npm:^1.0.2"
-  checksum: c749b542d8d3b893e245142db5e6f55592a81aa602bf781a86643c525fad876d1924504eb3808d8b704cf05a510985ca336917942bc81cd7ae8197e82167ab97
+  checksum: 25d3e581517cc5412aafdf2284810133fda2fa2399cdfed6edba6170d034b7d8b6fc705e39763e5ae2c6b29e52374daf6c91e1a84c380185ae69f094e5bb7d84
   languageName: node
   linkType: hard
 
-"@vue/compiler-ssr@npm:3.3.4":
-  version: 3.3.4
-  resolution: "@vue/compiler-ssr@npm:3.3.4"
+"@vue/compiler-ssr@npm:3.4.18":
+  version: 3.4.18
+  resolution: "@vue/compiler-ssr@npm:3.4.18"
   dependencies:
-    "@vue/compiler-dom": "npm:3.3.4"
-    "@vue/shared": "npm:3.3.4"
-  checksum: e971e3f4472a6d041c1657bdcee2d95c42569ab27d2af524b7937b86a6908723bce9673e2dc75663b95272932412a96297322c0f31ddcacaaba460e1a076509f
+    "@vue/compiler-dom": "npm:3.4.18"
+    "@vue/shared": "npm:3.4.18"
+  checksum: 00f67e63311194c0ae2a88d175dd2b7c58f1f972a6ee961f8038b5f8915135978ce05df140feb5a349b0d8cfce82a9e1e7476a676651309357c9df89e4d972b2
   languageName: node
   linkType: hard
 
-"@vue/reactivity-transform@npm:3.3.4":
-  version: 3.3.4
-  resolution: "@vue/reactivity-transform@npm:3.3.4"
+"@vue/reactivity@npm:3.4.18":
+  version: 3.4.18
+  resolution: "@vue/reactivity@npm:3.4.18"
   dependencies:
-    "@babel/parser": "npm:^7.20.15"
-    "@vue/compiler-core": "npm:3.3.4"
-    "@vue/shared": "npm:3.3.4"
-    estree-walker: "npm:^2.0.2"
-    magic-string: "npm:^0.30.0"
-  checksum: b6801f44efc33c04084736893838b5fc1e5be747efda75e46de34af8bbf921c72f20b13b2bdbc59051bbeee51bf5727aa3bd7eeebb97f40c6f450b2ac562cb4d
+    "@vue/shared": "npm:3.4.18"
+  checksum: 1d2a9d51c3d9aec621f880607164a7dac3f1385221d3f40629d551fef0ad3fc00188ccdfb06fe34f83eeb71f6900adad6bdb913b9bae02e27c3af7adfcab906d
   languageName: node
   linkType: hard
 
-"@vue/reactivity@npm:3.3.4":
-  version: 3.3.4
-  resolution: "@vue/reactivity@npm:3.3.4"
+"@vue/runtime-core@npm:3.4.18":
+  version: 3.4.18
+  resolution: "@vue/runtime-core@npm:3.4.18"
   dependencies:
-    "@vue/shared": "npm:3.3.4"
-  checksum: 39c80d83e6e046c086f1f5db53c9e9e806ddf6e90bb2d0ea33f60da85c4747cae26d34959ae1f5b2a4b9e2822fc74701c996aa43ab1c727d2d4887e0ed0c8023
+    "@vue/reactivity": "npm:3.4.18"
+    "@vue/shared": "npm:3.4.18"
+  checksum: 429e7ae320465b7f60fe09062af645de0d20bd291bf80b58b934a8dedfd24fbb5374a292845496f40efdbd05e04e6ad13d32f1cceb7d42b348f7e972846fb88f
   languageName: node
   linkType: hard
 
-"@vue/runtime-core@npm:3.3.4":
-  version: 3.3.4
-  resolution: "@vue/runtime-core@npm:3.3.4"
+"@vue/runtime-dom@npm:3.4.18":
+  version: 3.4.18
+  resolution: "@vue/runtime-dom@npm:3.4.18"
   dependencies:
-    "@vue/reactivity": "npm:3.3.4"
-    "@vue/shared": "npm:3.3.4"
-  checksum: a057d811c2e5c38ab7a332f9769a9457772933c87a1627903b00cb156d253e43271c6f0f731d7b19c747c85bcc21b885f2b3e36e9e2d862cc298c47fcf8bd3b9
+    "@vue/runtime-core": "npm:3.4.18"
+    "@vue/shared": "npm:3.4.18"
+    csstype: "npm:^3.1.3"
+  checksum: ad10f42efb91981e95444a7c957399b2ca8b1fba7690402a5c3fea02efb5ab2829f3557dabe204d2f2e96a169744b24e3d811edcd6573be056e1ebc34671b0f3
   languageName: node
   linkType: hard
 
-"@vue/runtime-dom@npm:3.3.4":
-  version: 3.3.4
-  resolution: "@vue/runtime-dom@npm:3.3.4"
+"@vue/server-renderer@npm:3.4.18":
+  version: 3.4.18
+  resolution: "@vue/server-renderer@npm:3.4.18"
   dependencies:
-    "@vue/runtime-core": "npm:3.3.4"
-    "@vue/shared": "npm:3.3.4"
-    csstype: "npm:^3.1.1"
-  checksum: 5f063ccdd6b73602d9dfe345d2c8454794d5329d1365ae8b44d196bb33cfab627433f2e0552b663ef0bc4113a1d6f8205464e15d40ccc9b0bd2ff59d85dced45
-  languageName: node
-  linkType: hard
-
-"@vue/server-renderer@npm:3.3.4":
-  version: 3.3.4
-  resolution: "@vue/server-renderer@npm:3.3.4"
-  dependencies:
-    "@vue/compiler-ssr": "npm:3.3.4"
-    "@vue/shared": "npm:3.3.4"
+    "@vue/compiler-ssr": "npm:3.4.18"
+    "@vue/shared": "npm:3.4.18"
   peerDependencies:
-    vue: 3.3.4
-  checksum: 9029c15d8d9cc69e6cb10b6e38f75d20b72e286e288962abc6f0f7f96c264571839e32d52afd4e6b4613ac97287084f945203ef6fc8787a04708353793166743
+    vue: 3.4.18
+  checksum: 9c82d00cb83167c804b8cbda199ff42f996551713ca4b629891bb599b4646c7bdf606d7a54cda1c9014eb4d00a836a2eb17788c4eaa204e054c871114227b6ec
   languageName: node
   linkType: hard
 
-"@vue/shared@npm:3.3.4":
-  version: 3.3.4
-  resolution: "@vue/shared@npm:3.3.4"
-  checksum: ce01d9cb02ca01fd396e36ad0d75c2ff19e1adb8cf4e3454199511e3192655ae3bd8e8b1b581b529738ae4530f8aadaf09719d5ffe337279f3b47f6031c3f650
+"@vue/shared@npm:3.4.18":
+  version: 3.4.18
+  resolution: "@vue/shared@npm:3.4.18"
+  checksum: 80bb40313eb1705356746b1737c54caa4dbcf82f0b5ce7fb18f11ad02d2f111ab1dd2744614a149b64b68035e915919bd2f9be9fb517446a5882836e3ff423e9
   languageName: node
   linkType: hard
 
@@ -5022,8 +5009,8 @@ __metadata:
     "@angular/platform-browser": "npm:^17.1.0"
     "@angular/platform-browser-dynamic": "npm:^17.1.0"
     "@angular/router": "npm:^17.1.0"
-    "@arcgis/coding-components-angular": "npm:>=4.29.0-beta.100 < 4.30"
-    "@arcgis/core": "npm:>=4.29.0-next.20240207"
+    "@arcgis/coding-components-angular": "npm:next"
+    "@arcgis/core": "npm:rc"
     "@types/jasmine": "npm:~5.1.0"
     "@types/sortablejs": "npm:^1.15.5"
     jasmine-core: "npm:~5.1.0"
@@ -5043,8 +5030,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "coding-components-react-template@workspace:packages/coding-components/templates/react"
   dependencies:
-    "@arcgis/coding-components-react": "npm:>=4.29.0-beta.100 < 4.30"
-    "@arcgis/core": "npm:>=4.29.0-next.20240207"
+    "@arcgis/coding-components-react": "npm:next"
+    "@arcgis/core": "npm:rc"
     "@esri/calcite-components-react": "npm:^2.4.0"
     "@types/react": "npm:^18.2.48"
     "@types/react-dom": "npm:^18.2.18"
@@ -5052,7 +5039,7 @@ __metadata:
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     typescript: "npm:~5.3.0"
-    vite: "npm:^5.0.12"
+    vite: "npm:5.1.1"
   languageName: unknown
   linkType: soft
 
@@ -5060,10 +5047,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "coding-components-vite-template@workspace:packages/coding-components/templates/vite"
   dependencies:
-    "@arcgis/coding-components": "npm:>=4.29.0-beta.100 < 4.30"
-    "@arcgis/core": "npm:>=4.29.0-next.20240207"
-    "@esri/calcite-components": "npm:^2.4.0"
-    vite: "npm:^5.0.12"
+    "@arcgis/coding-components": "npm:next"
+    "@arcgis/core": "npm:rc"
+    "@esri/calcite-components": "npm:*"
+    vite: "npm:5.1.1"
   languageName: unknown
   linkType: soft
 
@@ -5071,12 +5058,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "coding-components-vue-template@workspace:packages/coding-components/templates/vue"
   dependencies:
-    "@arcgis/coding-components": "npm:>=4.29.0-beta.100 < 4.30"
-    "@arcgis/core": "npm:>=4.29.0-next.20240207"
-    "@esri/calcite-components": "npm:^2.4.0"
+    "@arcgis/coding-components": "npm:next"
+    "@arcgis/core": "npm:rc"
+    "@esri/calcite-components": "npm:*"
     "@vitejs/plugin-vue": "npm:^5.0.3"
-    vite: "npm:^5.0.12"
-    vue: "npm:^3.3.4"
+    vite: "npm:5.1.1"
+    vue: "npm:3.4.18"
   languageName: unknown
   linkType: soft
 
@@ -5084,13 +5071,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "coding-components-webpack-template@workspace:packages/coding-components/templates/webpack"
   dependencies:
-    "@arcgis/coding-components": "npm:>=4.29.0-beta.100 < 4.30"
-    "@arcgis/core": "npm:>=4.29.0-next.20240207"
-    "@esri/calcite-components": "npm:^2.4.0"
-    css-loader: "npm:^6.7.2"
+    "@arcgis/coding-components": "npm:next"
+    "@arcgis/core": "npm:rc"
+    "@esri/calcite-components": "npm:*"
+    css-loader: "npm:6.10.0"
     html-webpack-plugin: "npm:^5.5.0"
     style-loader: "npm:^3.3.1"
-    webpack: "npm:^5.84.0"
+    webpack: "npm:5.90.1"
     webpack-cli: "npm:^4.10.0"
     webpack-dev-server: "npm:^4.11.1"
   languageName: unknown
@@ -5466,7 +5453,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "create-a-web-app-using-components-initial@workspace:packages/map-components/tutorials/create-a-web-app-using-components-initial"
   dependencies:
-    vite: "npm:^5.0.12"
+    vite: "npm:5.1.1"
   languageName: unknown
   linkType: soft
 
@@ -5474,10 +5461,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "create-a-web-app-using-components-solution@workspace:packages/map-components/tutorials/create-a-web-app-using-components-solution"
   dependencies:
-    "@arcgis/core": "npm:>=4.29.0-next.20240207"
-    "@arcgis/map-components": "npm:>=4.29.0-beta.100 < 4.30"
-    "@esri/calcite-components": "npm:^2.4.0"
-    vite: "npm:^5.0.12"
+    "@arcgis/core": "npm:rc"
+    "@arcgis/map-components": "npm:next"
+    "@esri/calcite-components": "npm:*"
+    vite: "npm:5.1.1"
   languageName: unknown
   linkType: soft
 
@@ -5514,7 +5501,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-loader@npm:6.8.1, css-loader@npm:^6.7.2":
+"css-loader@npm:6.10.0":
+  version: 6.10.0
+  resolution: "css-loader@npm:6.10.0"
+  dependencies:
+    icss-utils: "npm:^5.1.0"
+    postcss: "npm:^8.4.33"
+    postcss-modules-extract-imports: "npm:^3.0.0"
+    postcss-modules-local-by-default: "npm:^4.0.4"
+    postcss-modules-scope: "npm:^3.1.1"
+    postcss-modules-values: "npm:^4.0.0"
+    postcss-value-parser: "npm:^4.2.0"
+    semver: "npm:^7.5.4"
+  peerDependencies:
+    "@rspack/core": 0.x || 1.x
+    webpack: ^5.0.0
+  peerDependenciesMeta:
+    "@rspack/core":
+      optional: true
+    webpack:
+      optional: true
+  checksum: 1abd52e24a72a4c54762330bab2e0e816778db5bc711a8fc1b1ee99470a1728f2aa9b54b9ebbf2278a1730d68b76303094cc855f9119b2ffc0424fe57fea3bc6
+  languageName: node
+  linkType: hard
+
+"css-loader@npm:6.8.1":
   version: 6.8.1
   resolution: "css-loader@npm:6.8.1"
   dependencies:
@@ -5581,10 +5592,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"csstype@npm:^3.0.2, csstype@npm:^3.1.1":
+"csstype@npm:^3.0.2":
   version: 3.1.2
   resolution: "csstype@npm:3.1.2"
   checksum: 1f39c541e9acd9562996d88bc9fb62d1cb234786ef11ed275567d4b2bd82e1ceacde25debc8de3d3b4871ae02c2933fa02614004c97190711caebad6347debc2
+  languageName: node
+  linkType: hard
+
+"csstype@npm:^3.1.3":
+  version: 3.1.3
+  resolution: "csstype@npm:3.1.3"
+  checksum: f593cce41ff5ade23f44e77521e3a1bcc2c64107041e1bf6c3c32adc5187d0d60983292fda326154d20b01079e24931aa5b08e4467cc488b60bb1e7f6d478ade
   languageName: node
   linkType: hard
 
@@ -6013,7 +6031,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"entities@npm:^4.2.0, entities@npm:^4.3.0, entities@npm:^4.4.0":
+"entities@npm:^4.2.0, entities@npm:^4.3.0, entities@npm:^4.4.0, entities@npm:^4.5.0":
   version: 4.5.0
   resolution: "entities@npm:4.5.0"
   checksum: ede2a35c9bce1aeccd055a1b445d41c75a14a2bb1cd22e242f20cf04d236cdcd7f9c859eb83f76885327bfae0c25bf03303665ee1ce3d47c5927b98b0e3e3d48
@@ -8354,12 +8372,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"magic-string@npm:0.30.5, magic-string@npm:^0.30.0":
+"magic-string@npm:0.30.5":
   version: 0.30.5
   resolution: "magic-string@npm:0.30.5"
   dependencies:
     "@jridgewell/sourcemap-codec": "npm:^1.4.15"
   checksum: c8a6b25f813215ca9db526f3a407d6dc0bf35429c2b8111d6f1c2cf6cf6afd5e2d9f9cd189416a0e3959e20ecd635f73639f9825c73de1074b29331fe36ace59
+  languageName: node
+  linkType: hard
+
+"magic-string@npm:^0.30.6":
+  version: 0.30.7
+  resolution: "magic-string@npm:0.30.7"
+  dependencies:
+    "@jridgewell/sourcemap-codec": "npm:^1.4.15"
+  checksum: 883eaaf6792a3263e44f4bcdcd35ace272268e4b98ed5a770ad711947958d2f9fc683e474945e306e2bdc152b7e44d369ee312690d87025b9879fc63fbe1409c
   languageName: node
   linkType: hard
 
@@ -8446,9 +8473,9 @@ __metadata:
     "@angular/platform-browser": "npm:^17.1.0"
     "@angular/platform-browser-dynamic": "npm:^17.1.0"
     "@angular/router": "npm:^17.1.0"
-    "@arcgis/core": "npm:>=4.29.0-next.20240207"
-    "@arcgis/map-components-angular": "npm:>=4.29.0-beta.100 < 4.30"
-    "@esri/calcite-components": "npm:^2.4.0"
+    "@arcgis/core": "npm:rc"
+    "@arcgis/map-components-angular": "npm:next"
+    "@esri/calcite-components": "npm:*"
     "@stencil/core": "npm:2.22.3"
     karma: "npm:~6.4.0"
     karma-chrome-launcher: "npm:~3.2.0"
@@ -8464,16 +8491,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "map-components-react-template@workspace:packages/map-components/templates/react"
   dependencies:
-    "@arcgis/core": "npm:>=4.29.0-next.20240207"
-    "@arcgis/map-components-react": "npm:>=4.29.0-beta.100 < 4.30"
-    "@esri/calcite-components": "npm:^2.4.0"
+    "@arcgis/core": "npm:rc"
+    "@arcgis/map-components-react": "npm:next"
+    "@esri/calcite-components": "npm:*"
     "@types/react": "npm:^18.2.48"
     "@types/react-dom": "npm:^18.2.18"
     "@vitejs/plugin-react": "npm:^4.2.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     typescript: "npm:~5.3.0"
-    vite: "npm:^5.0.12"
+    vite: "npm:5.1.1"
   languageName: unknown
   linkType: soft
 
@@ -8481,10 +8508,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "map-components-vite-template@workspace:packages/map-components/templates/vite"
   dependencies:
-    "@arcgis/core": "npm:>=4.29.0-next.20240207"
-    "@arcgis/map-components": "npm:>=4.29.0-beta.100 < 4.30"
-    "@esri/calcite-components": "npm:^2.4.0"
-    vite: "npm:^5.0.12"
+    "@arcgis/core": "npm:rc"
+    "@arcgis/map-components": "npm:next"
+    "@esri/calcite-components": "npm:*"
+    vite: "npm:5.1.1"
   languageName: unknown
   linkType: soft
 
@@ -8492,12 +8519,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "map-components-vue-template@workspace:packages/map-components/templates/vue"
   dependencies:
-    "@arcgis/core": "npm:>=4.29.0-next.20240207"
-    "@arcgis/map-components": "npm:>=4.29.0-beta.100 < 4.30"
-    "@esri/calcite-components": "npm:^2.4.0"
+    "@arcgis/core": "npm:rc"
+    "@arcgis/map-components": "npm:next"
+    "@esri/calcite-components": "npm:*"
     "@vitejs/plugin-vue": "npm:^5.0.3"
-    vite: "npm:^5.0.12"
-    vue: "npm:^3.3.4"
+    vite: "npm:5.1.1"
+    vue: "npm:3.4.18"
   languageName: unknown
   linkType: soft
 
@@ -8505,16 +8532,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "map-components-webpack-template@workspace:packages/map-components/templates/webpack"
   dependencies:
-    "@arcgis/core": "npm:>=4.29.0-next.20240207"
-    "@arcgis/map-components": "npm:>=4.29.0-beta.100 < 4.30"
-    "@esri/calcite-components": "npm:^2.4.0"
-    css-loader: "npm:^6.7.2"
+    "@arcgis/core": "npm:rc"
+    "@arcgis/map-components": "npm:next"
+    "@esri/calcite-components": "npm:*"
+    css-loader: "npm:6.10.0"
     html-webpack-plugin: "npm:^5.5.0"
     mini-css-extract-plugin: "npm:^2.7.6"
     source-map-loader: "npm:^4.0.1"
     style-loader: "npm:^3.3.1"
     terser-webpack-plugin: "npm:^5.3.9"
-    webpack: "npm:^5.84.0"
+    webpack: "npm:5.90.1"
     webpack-cli: "npm:^4.10.0"
     webpack-dev-server: "npm:^4.11.1"
   languageName: unknown
@@ -9673,6 +9700,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss-modules-local-by-default@npm:^4.0.4":
+  version: 4.0.4
+  resolution: "postcss-modules-local-by-default@npm:4.0.4"
+  dependencies:
+    icss-utils: "npm:^5.0.0"
+    postcss-selector-parser: "npm:^6.0.2"
+    postcss-value-parser: "npm:^4.1.0"
+  peerDependencies:
+    postcss: ^8.1.0
+  checksum: 45790af417b2ed6ed26e9922724cf3502569995833a2489abcfc2bb44166096762825cc02f6132cc6a2fb235165e76b859f9d90e8a057bc188a1b2c17f2d7af0
+  languageName: node
+  linkType: hard
+
 "postcss-modules-scope@npm:^3.0.0":
   version: 3.0.0
   resolution: "postcss-modules-scope@npm:3.0.0"
@@ -9681,6 +9721,17 @@ __metadata:
   peerDependencies:
     postcss: ^8.1.0
   checksum: cc36b8111c6160a1c21ca0e82de9daf0147be95f3b5403aedd83bcaee44ee425cb62b77f677fc53d0c8d51f7981018c1c8f0a4ad3d6f0138b09326ac48c2b297
+  languageName: node
+  linkType: hard
+
+"postcss-modules-scope@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "postcss-modules-scope@npm:3.1.1"
+  dependencies:
+    postcss-selector-parser: "npm:^6.0.4"
+  peerDependencies:
+    postcss: ^8.1.0
+  checksum: ca035969eba62cf126864b10d7722e49c0d4f050cbd4618b6e9714d81b879cf4c53a5682501e00f9622e8f4ea6d7d7d53af295ae935fa833e0cc0bda416a287b
   languageName: node
   linkType: hard
 
@@ -9723,7 +9774,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.1.10, postcss@npm:^8.2.14, postcss@npm:^8.4.21, postcss@npm:^8.4.23":
+"postcss@npm:^8.2.14, postcss@npm:^8.4.21, postcss@npm:^8.4.23":
   version: 8.4.31
   resolution: "postcss@npm:8.4.31"
   dependencies:
@@ -9731,6 +9782,17 @@ __metadata:
     picocolors: "npm:^1.0.0"
     source-map-js: "npm:^1.0.2"
   checksum: 1a6653e72105907377f9d4f2cd341d8d90e3fde823a5ddea1e2237aaa56933ea07853f0f2758c28892a1d70c53bbaca200eb8b80f8ed55f13093003dbec5afa0
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.4.33, postcss@npm:^8.4.35":
+  version: 8.4.35
+  resolution: "postcss@npm:8.4.35"
+  dependencies:
+    nanoid: "npm:^3.3.7"
+    picocolors: "npm:^1.0.0"
+    source-map-js: "npm:^1.0.2"
+  checksum: 93a7ce50cd6188f5f486a9ca98950ad27c19dfed996c45c414fa242944497e4d084a8760d3537f078630226f2bd3c6ab84b813b488740f4432e7c7039cd73a20
   languageName: node
   linkType: hard
 
@@ -11142,6 +11204,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"terser-webpack-plugin@npm:^5.3.10, terser-webpack-plugin@npm:^5.3.9":
+  version: 5.3.10
+  resolution: "terser-webpack-plugin@npm:5.3.10"
+  dependencies:
+    "@jridgewell/trace-mapping": "npm:^0.3.20"
+    jest-worker: "npm:^27.4.5"
+    schema-utils: "npm:^3.1.1"
+    serialize-javascript: "npm:^6.0.1"
+    terser: "npm:^5.26.0"
+  peerDependencies:
+    webpack: ^5.1.0
+  peerDependenciesMeta:
+    "@swc/core":
+      optional: true
+    esbuild:
+      optional: true
+    uglify-js:
+      optional: true
+  checksum: fb1c2436ae1b4e983be043fa0a3d355c047b16b68f102437d08c736d7960c001e7420e2f722b9d99ce0dc70ca26a68cc63c0b82bc45f5b48671142b352a9d938
+  languageName: node
+  linkType: hard
+
 "terser-webpack-plugin@npm:^5.3.7":
   version: 5.3.9
   resolution: "terser-webpack-plugin@npm:5.3.9"
@@ -11161,28 +11245,6 @@ __metadata:
     uglify-js:
       optional: true
   checksum: 339737a407e034b7a9d4a66e31d84d81c10433e41b8eae2ca776f0e47c2048879be482a9aa08e8c27565a2a949bc68f6e07f451bf4d9aa347dd61b3d000f5353
-  languageName: node
-  linkType: hard
-
-"terser-webpack-plugin@npm:^5.3.9":
-  version: 5.3.10
-  resolution: "terser-webpack-plugin@npm:5.3.10"
-  dependencies:
-    "@jridgewell/trace-mapping": "npm:^0.3.20"
-    jest-worker: "npm:^27.4.5"
-    schema-utils: "npm:^3.1.1"
-    serialize-javascript: "npm:^6.0.1"
-    terser: "npm:^5.26.0"
-  peerDependencies:
-    webpack: ^5.1.0
-  peerDependenciesMeta:
-    "@swc/core":
-      optional: true
-    esbuild:
-      optional: true
-    uglify-js:
-      optional: true
-  checksum: fb1c2436ae1b4e983be043fa0a3d355c047b16b68f102437d08c736d7960c001e7420e2f722b9d99ce0dc70ca26a68cc63c0b82bc45f5b48671142b352a9d938
   languageName: node
   linkType: hard
 
@@ -11676,7 +11738,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:5.0.12, vite@npm:^5.0.12":
+"vite@npm:5.0.12":
   version: 5.0.12
   resolution: "vite@npm:5.0.12"
   dependencies:
@@ -11716,6 +11778,46 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vite@npm:5.1.1":
+  version: 5.1.1
+  resolution: "vite@npm:5.1.1"
+  dependencies:
+    esbuild: "npm:^0.19.3"
+    fsevents: "npm:~2.3.3"
+    postcss: "npm:^8.4.35"
+    rollup: "npm:^4.2.0"
+  peerDependencies:
+    "@types/node": ^18.0.0 || >=20.0.0
+    less: "*"
+    lightningcss: ^1.21.0
+    sass: "*"
+    stylus: "*"
+    sugarss: "*"
+    terser: ^5.4.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@types/node":
+      optional: true
+    less:
+      optional: true
+    lightningcss:
+      optional: true
+    sass:
+      optional: true
+    stylus:
+      optional: true
+    sugarss:
+      optional: true
+    terser:
+      optional: true
+  bin:
+    vite: bin/vite.js
+  checksum: bdb8e683caddaa0a9adcbf40144ca8ea3660836b208862b07d43787ea867845919af16e58745365bd13ed3b7f66bbf9788a6869ee22cfaacac01645b59729c34
+  languageName: node
+  linkType: hard
+
 "void-elements@npm:^2.0.0":
   version: 2.0.1
   resolution: "void-elements@npm:2.0.1"
@@ -11737,16 +11839,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue@npm:^3.3.4":
-  version: 3.3.4
-  resolution: "vue@npm:3.3.4"
+"vue@npm:3.4.18":
+  version: 3.4.18
+  resolution: "vue@npm:3.4.18"
   dependencies:
-    "@vue/compiler-dom": "npm:3.3.4"
-    "@vue/compiler-sfc": "npm:3.3.4"
-    "@vue/runtime-dom": "npm:3.3.4"
-    "@vue/server-renderer": "npm:3.3.4"
-    "@vue/shared": "npm:3.3.4"
-  checksum: ff95b3a4f9cb996ae217158e08d310ca847408634bf9b051a770d4d484a1ebca83885b4367949cb508774b952125a2812f5adec20eb2492f23e6f1edd50b7943
+    "@vue/compiler-dom": "npm:3.4.18"
+    "@vue/compiler-sfc": "npm:3.4.18"
+    "@vue/runtime-dom": "npm:3.4.18"
+    "@vue/server-renderer": "npm:3.4.18"
+    "@vue/shared": "npm:3.4.18"
+  peerDependencies:
+    typescript: "*"
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: c932afe613dc8da43aa2e84a38fed95f8ba1df6f7fa43a44862ad240c9d2e6c7e4b091a83036654a082b8edfe08d4937e96837d303de1a9f76ad4a75b56469a1
   languageName: node
   linkType: hard
 
@@ -11924,7 +12031,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:5.89.0, webpack@npm:^5.84.0":
+"webpack@npm:5.89.0":
   version: 5.89.0
   resolution: "webpack@npm:5.89.0"
   dependencies:
@@ -11958,6 +12065,43 @@ __metadata:
   bin:
     webpack: bin/webpack.js
   checksum: ee19b070279c9bc3bf21eeaac3ea08e6583c1b8da334e595b3c9badedbd7f9fad071b9f785076081af661ef247bb72441e86e8b903bf253ae9300007a048ea6e
+  languageName: node
+  linkType: hard
+
+"webpack@npm:5.90.1":
+  version: 5.90.1
+  resolution: "webpack@npm:5.90.1"
+  dependencies:
+    "@types/eslint-scope": "npm:^3.7.3"
+    "@types/estree": "npm:^1.0.5"
+    "@webassemblyjs/ast": "npm:^1.11.5"
+    "@webassemblyjs/wasm-edit": "npm:^1.11.5"
+    "@webassemblyjs/wasm-parser": "npm:^1.11.5"
+    acorn: "npm:^8.7.1"
+    acorn-import-assertions: "npm:^1.9.0"
+    browserslist: "npm:^4.21.10"
+    chrome-trace-event: "npm:^1.0.2"
+    enhanced-resolve: "npm:^5.15.0"
+    es-module-lexer: "npm:^1.2.1"
+    eslint-scope: "npm:5.1.1"
+    events: "npm:^3.2.0"
+    glob-to-regexp: "npm:^0.4.1"
+    graceful-fs: "npm:^4.2.9"
+    json-parse-even-better-errors: "npm:^2.3.1"
+    loader-runner: "npm:^4.2.0"
+    mime-types: "npm:^2.1.27"
+    neo-async: "npm:^2.6.2"
+    schema-utils: "npm:^3.2.0"
+    tapable: "npm:^2.1.1"
+    terser-webpack-plugin: "npm:^5.3.10"
+    watchpack: "npm:^2.4.0"
+    webpack-sources: "npm:^3.2.3"
+  peerDependenciesMeta:
+    webpack-cli:
+      optional: true
+  bin:
+    webpack: bin/webpack.js
+  checksum: 6ad23518123f1742238177920cefa61152d981f986adac5901236845c86ba9bb375a3ba75e188925c856c3d2a76a2ba119e95b8a608a51424968389041089075
   languageName: node
   linkType: hard
 

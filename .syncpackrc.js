@@ -52,7 +52,7 @@ const config = {
       dependencies: ["@arcgis/core"],
       dependencyTypes: ["dev", "prod"],
       packages: ["**"],
-      pinVersion: "next"
+      pinVersion: "rc"
     },
     {
       label: "ArcGIS Components dev and prod dependency",

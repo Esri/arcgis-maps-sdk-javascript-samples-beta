@@ -6,7 +6,7 @@
     "start": "webpack-dev-server --mode development --open"
   },
   "dependencies": {
-    "@arcgis/core": "next",
+    "@arcgis/core": "rc",
     "@arcgis/map-components": "next",
     "@esri/calcite-components": "*"
   },
