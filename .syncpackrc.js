@@ -52,7 +52,7 @@ const config = {
       dependencies: ["@arcgis/core"],
       dependencyTypes: ["dev", "prod"],
       packages: ["**"],
-      pinVersion: ">=4.29.0-next.20240207"
+      pinVersion: "next"
     },
     {
       label: "ArcGIS Components dev and prod dependency",
@@ -66,14 +66,14 @@ const config = {
         "@arcgis/map-components-react"
       ],
       packages: ["**"],
-      pinVersion: ">=4.29.0-beta.100 < 4.30"
+      pinVersion: "next"
     },
     {
       label: "Calcite Components dev dependency",
       dependencies: ["@esri/calcite-components"],
       packages: ["**"],
       dependencyTypes: ["dev", "prod"],
-      pinVersion: "^2.4.0"
+      pinVersion: "latest"
     },
     {
       label: "React for dev and prod",
@@ -97,6 +97,34 @@ const config = {
       ],
       packages: ["**"],
       pinVersion: "^17.1.0"
+    },
+    {
+      label: "Vite for dev",
+      dependencyTypes: ["dev"],
+      dependencies: ["vite"],
+      packages: ["**"],
+      pinVersion: "5.1.1"
+    },
+    {
+      label: "Webpack for dev",
+      dependencyTypes: ["dev", "prod"],
+      dependencies: ["webpack"],
+      packages: ["**"],
+      pinVersion: "5.90.1"
+    },
+    {
+      label: "vue for dev, prod",
+      dependencyTypes: ["dev", "prod"],
+      dependencies: ["vue"],
+      packages: ["**"],
+      pinVersion: "3.4.18"
+    },
+    {
+      label: "css-loader for dev",
+      dependencyTypes: ["dev"],
+      dependencies: ["css-loader"],
+      packages: ["**"],
+      pinVersion: "6.10.0"
     }
   ]
 };

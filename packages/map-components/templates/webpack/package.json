@@ -6,18 +6,18 @@
     "start": "webpack-dev-server --mode development --open"
   },
   "dependencies": {
-    "@arcgis/core": ">=4.29.0-next.20240207",
-    "@arcgis/map-components": ">=4.29.0-beta.100 < 4.30",
-    "@esri/calcite-components": "^2.4.0"
+    "@arcgis/core": "next",
+    "@arcgis/map-components": "next",
+    "@esri/calcite-components": "*"
   },
   "devDependencies": {
-    "css-loader": "^6.7.2",
+    "css-loader": "6.10.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.6",
     "source-map-loader": "^4.0.1",
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.3.9",
-    "webpack": "^5.84.0",
+    "webpack": "5.90.1",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"
   }
