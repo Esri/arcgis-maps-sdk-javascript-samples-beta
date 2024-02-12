@@ -2603,7 +2603,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@esri/calcite-components@npm:*, @esri/calcite-components@npm:^2.4.0":
+"@esri/calcite-components@npm:2.4.0, @esri/calcite-components@npm:^2.4.0":
   version: 2.4.0
   resolution: "@esri/calcite-components@npm:2.4.0"
   dependencies:
@@ -5049,7 +5049,7 @@ __metadata:
   dependencies:
     "@arcgis/coding-components": "npm:next"
     "@arcgis/core": "npm:rc"
-    "@esri/calcite-components": "npm:*"
+    "@esri/calcite-components": "npm:2.4.0"
     vite: "npm:5.1.1"
   languageName: unknown
   linkType: soft
@@ -5060,7 +5060,7 @@ __metadata:
   dependencies:
     "@arcgis/coding-components": "npm:next"
     "@arcgis/core": "npm:rc"
-    "@esri/calcite-components": "npm:*"
+    "@esri/calcite-components": "npm:2.4.0"
     "@vitejs/plugin-vue": "npm:^5.0.3"
     vite: "npm:5.1.1"
     vue: "npm:3.4.18"
@@ -5073,7 +5073,7 @@ __metadata:
   dependencies:
     "@arcgis/coding-components": "npm:next"
     "@arcgis/core": "npm:rc"
-    "@esri/calcite-components": "npm:*"
+    "@esri/calcite-components": "npm:2.4.0"
     css-loader: "npm:6.10.0"
     html-webpack-plugin: "npm:^5.5.0"
     style-loader: "npm:^3.3.1"
@@ -5463,7 +5463,7 @@ __metadata:
   dependencies:
     "@arcgis/core": "npm:rc"
     "@arcgis/map-components": "npm:next"
-    "@esri/calcite-components": "npm:*"
+    "@esri/calcite-components": "npm:2.4.0"
     vite: "npm:5.1.1"
   languageName: unknown
   linkType: soft
@@ -8475,7 +8475,7 @@ __metadata:
     "@angular/router": "npm:^17.1.0"
     "@arcgis/core": "npm:rc"
     "@arcgis/map-components-angular": "npm:next"
-    "@esri/calcite-components": "npm:*"
+    "@esri/calcite-components": "npm:2.4.0"
     "@stencil/core": "npm:2.22.3"
     karma: "npm:~6.4.0"
     karma-chrome-launcher: "npm:~3.2.0"
@@ -8493,7 +8493,7 @@ __metadata:
   dependencies:
     "@arcgis/core": "npm:rc"
     "@arcgis/map-components-react": "npm:next"
-    "@esri/calcite-components": "npm:*"
+    "@esri/calcite-components": "npm:2.4.0"
     "@types/react": "npm:^18.2.48"
     "@types/react-dom": "npm:^18.2.18"
     "@vitejs/plugin-react": "npm:^4.2.1"
@@ -8510,7 +8510,7 @@ __metadata:
   dependencies:
     "@arcgis/core": "npm:rc"
     "@arcgis/map-components": "npm:next"
-    "@esri/calcite-components": "npm:*"
+    "@esri/calcite-components": "npm:2.4.0"
     vite: "npm:5.1.1"
   languageName: unknown
   linkType: soft
@@ -8521,7 +8521,7 @@ __metadata:
   dependencies:
     "@arcgis/core": "npm:rc"
     "@arcgis/map-components": "npm:next"
-    "@esri/calcite-components": "npm:*"
+    "@esri/calcite-components": "npm:2.4.0"
     "@vitejs/plugin-vue": "npm:^5.0.3"
     vite: "npm:5.1.1"
     vue: "npm:3.4.18"
@@ -8534,7 +8534,7 @@ __metadata:
   dependencies:
     "@arcgis/core": "npm:rc"
     "@arcgis/map-components": "npm:next"
-    "@esri/calcite-components": "npm:*"
+    "@esri/calcite-components": "npm:2.4.0"
     css-loader: "npm:6.10.0"
     html-webpack-plugin: "npm:^5.5.0"
     mini-css-extract-plugin: "npm:^2.7.6"

@@ -20,7 +20,7 @@
     "@angular/router": "^17.1.0",
     "@arcgis/core": "rc",
     "@arcgis/map-components-angular": "next",
-    "@esri/calcite-components": "*",
+    "@esri/calcite-components": "2.4.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"

@@ -10,7 +10,7 @@
   "dependencies": {
     "@arcgis/core": "rc",
     "@arcgis/map-components": "next",
-    "@esri/calcite-components": "*",
+    "@esri/calcite-components": "2.4.0",
     "vue": "3.4.18"
   },
   "devDependencies": {

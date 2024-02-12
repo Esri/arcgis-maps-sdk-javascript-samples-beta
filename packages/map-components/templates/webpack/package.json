@@ -8,7 +8,7 @@
   "dependencies": {
     "@arcgis/core": "rc",
     "@arcgis/map-components": "next",
-    "@esri/calcite-components": "*"
+    "@esri/calcite-components": "2.4.0"
   },
   "devDependencies": {
     "css-loader": "6.10.0",

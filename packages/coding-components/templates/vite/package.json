@@ -10,7 +10,7 @@
   "dependencies": {
     "@arcgis/coding-components": "next",
     "@arcgis/core": "rc",
-    "@esri/calcite-components": "*"
+    "@esri/calcite-components": "2.4.0"
   },
   "devDependencies": {
     "vite": "5.1.1"
