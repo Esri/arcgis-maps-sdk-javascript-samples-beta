@@ -1,13 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "./index.css";
 
 import { ArcgisMap, ArcgisSearch, ArcgisLegend } from "@arcgis/map-components-react";
 // import defineCustomElements to register custom elements with the custom elements registry
 import { defineCustomElements } from "@arcgis/map-components/dist/loader";
 // Register custom elements
 defineCustomElements();
-
-import "@arcgis/core/assets/esri/themes/dark/main.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
