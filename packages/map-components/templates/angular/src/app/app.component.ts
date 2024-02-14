@@ -13,16 +13,22 @@
  * limitations under the License.
  */
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { defineCustomElements } from "@arcgis/map-components/dist/loader";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"]
 })
-export class AppComponent {
-  title = 'map-components-angular-template';
+export class AppComponent implements OnInit {
+  title = "map-components-angular-template";
+
   arcgisViewReadyChange(event: any) {
-    console.log('MapViewready', event);
+    console.log("MapViewready", event);
+  }
+
+  ngOnInit(): void {
+    defineCustomElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/next/assets" });
   }
 }

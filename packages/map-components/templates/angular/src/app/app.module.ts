@@ -13,27 +13,15 @@
  * limitations under the License.
  */
 
-import { APP_INITIALIZER, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ComponentLibraryModule } from '@arcgis/map-components-angular';
 
 import { AppComponent } from './app.component';
-import { defineCustomElements } from '@arcgis/map-components/dist/loader';
-
-const initializeCustomElements = () => defineCustomElements(window, { resourcesUrl: 'https://js.arcgis.com/map-components/next/assets' });
 
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, ComponentLibraryModule],
-  providers: [
-    // initialize custom elements when the app initializes
-    {
-      provide: APP_INITIALIZER,
-      useFactory: () => initializeCustomElements,
-      deps: [ComponentLibraryModule],
-      multi: true
-    }
-  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
