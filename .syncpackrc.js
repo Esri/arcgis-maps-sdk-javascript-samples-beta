@@ -83,7 +83,7 @@ const config = {
       pinVersion: "^18.2.0"
     },
     {
-      label: "Angular for dev and prod",
+      label: "Angular dev and prod deps",
       dependencyTypes: ["dev", "prod"],
       dependencies: [
         "@angular/animations",
@@ -93,10 +93,13 @@ const config = {
         "@angular/forms",
         "@angular/platform-browser",
         "@angular/platform-browser-dynamic",
-        "@angular/router"
+        "@angular/router",
+        "@angular-devkit/build-angular",
+        "@angular/cli",
+        "@angular/compiler-cli"
       ],
       packages: ["**"],
-      pinVersion: "^17.1.0"
+      pinVersion: "^17.2.0"
     },
     {
       label: "Vite for dev",

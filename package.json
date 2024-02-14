@@ -12,9 +12,9 @@
     "update": "yarn up @esri/calcite-components@next @arcgis/core@next @arcgis/map-components@next @arcgis/coding-components@next @arcgis/coding-components-react@next @arcgis/coding-components-angular@next"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.7",
-    "@commitlint/config-conventional": "^17.6.7",
-    "husky": "^8.0.3",
+    "@commitlint/cli": "18.6.1",
+    "@commitlint/config-conventional": "18.6.2",
+    "husky": "9.0.11",
     "prettier": "^3.0.0",
     "syncpack": "^12.3.0"
   },
