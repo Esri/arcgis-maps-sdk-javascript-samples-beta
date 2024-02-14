@@ -2591,6 +2591,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@esri/calcite-components-angular@npm:^2.4.0":
+  version: 2.4.0
+  resolution: "@esri/calcite-components-angular@npm:2.4.0"
+  dependencies:
+    "@esri/calcite-components": "npm:^2.4.0"
+    tslib: "npm:2.6.2"
+  peerDependencies:
+    "@angular/common": ">=16.0.0"
+    "@angular/core": ">=16.0.0"
+  checksum: 66ea6045e70b5d2731678b02d9e764432f121037859dc0de6742b735e8b51dc39ac4c344d12facba4997b144ed67e7d3e9b6ea4db42b665d98e5fe0af1c4d7be
+  languageName: node
+  linkType: hard
+
 "@esri/calcite-components-react@npm:^2.4.0":
   version: 2.4.0
   resolution: "@esri/calcite-components-react@npm:2.4.0"
@@ -5011,6 +5024,7 @@ __metadata:
     "@angular/router": "npm:^17.1.0"
     "@arcgis/coding-components-angular": "npm:next"
     "@arcgis/core": "npm:rc"
+    "@esri/calcite-components-angular": "npm:^2.4.0"
     "@types/jasmine": "npm:~5.1.0"
     "@types/sortablejs": "npm:^1.15.5"
     jasmine-core: "npm:~5.1.0"

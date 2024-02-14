@@ -15,12 +15,11 @@
 
 import { APP_INITIALIZER, NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
-// Must be included for component packages that don't yet have an Angular wrapper
-import { CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { AppComponent } from "./app.component";
 
 // Angular wrapper for coding components
 import { ComponentLibraryModule } from "@arcgis/coding-components-angular";
+import { CalciteComponentsModule } from "@esri/calcite-components-angular";
 import { defineCustomElements as defineCalciteElements } from "@esri/calcite-components/dist/loader";
 import { defineCustomElements as defineCodingElements } from "@arcgis/coding-components/dist/loader";
 
@@ -32,8 +31,7 @@ const initializeCustomElements = () => {
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, ComponentLibraryModule],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  imports: [BrowserModule, ComponentLibraryModule, CalciteComponentsModule],
   providers: [
     {
       provide: APP_INITIALIZER,
