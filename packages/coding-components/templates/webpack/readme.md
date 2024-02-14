@@ -26,7 +26,7 @@ yarn run build
 
 #### JS
 
-We imported the components we need for the coding components by following [Stencil's instructions for integrating components without a JavaScript framework](https://stenciljs.com/docs/javascript).
+Imported the components using [Stencil's instructions for integrating components without a JavaScript framework](https://stenciljs.com/docs/javascript).
 
 ```
 import { defineCustomElements as defineCalciteElements } from "@esri/calcite-components/dist/loader";
@@ -37,7 +37,7 @@ defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-com
 defineCodingElements(window, { resourcesUrl: "https://js.arcgis.com/coding-components/next/assets" });
 ```
 
-We use [`src/index.js`](./src/index.js) to load our data, define our custom elements, and utilize various kinds of properties in the editor. It is a must to define both the Calcite and Coding elements.
+Use [`src/index.js`](./src/index.js) to load the data, define custom elements, and utilize various kinds of properties in the editor. Both the Calcite and Coding elements must be defined.
 
 #### CSS
 
