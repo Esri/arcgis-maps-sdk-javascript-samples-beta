@@ -14,7 +14,7 @@ root.render(
     <ArcgisMap 
       item-id="d5dda743788a4b0688fe48f43ae7beb9" 
       onArcgisViewReadyChange={(event: any) => {
-      console.log('MapViewready', event);
+      console.log('MapView ready', event);
       }}
     >
       <ArcgisSearch position="top-right"></ArcgisSearch>
