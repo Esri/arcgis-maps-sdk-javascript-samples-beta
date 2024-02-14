@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
 root.render(
   <React.StrictMode>
     <ArcgisMap 
-      item-id="d5dda743788a4b0688fe48f43ae7beb9" 
+      itemId="d5dda743788a4b0688fe48f43ae7beb9" 
       onArcgisViewReadyChange={(event: any) => {
       console.log('MapView ready', event);
       }}
