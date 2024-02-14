@@ -19,7 +19,7 @@ defineCustomElements();
 
 const mapElement = document.querySelector("arcgis-map");
 mapElement.addEventListener("arcgisViewReadyChange", (event) => {
-  console.log("Map View ready", event);
+  console.log("MapViewready", event);
 });
 
 // Pure ESM

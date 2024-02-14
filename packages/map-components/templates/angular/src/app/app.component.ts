@@ -23,6 +23,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'map-components-angular-template';
   arcgisViewReadyChange(event: any) {
-    console.log('Map View ready', event);
+    console.log('MapViewready', event);
   }
 }

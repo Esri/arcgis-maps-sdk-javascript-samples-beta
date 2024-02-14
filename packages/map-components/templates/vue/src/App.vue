@@ -3,7 +3,7 @@ import { defineCustomElements } from '@arcgis/map-components/dist/loader'
 defineCustomElements(window)
 
 function onReady(event: any) {
-  console.log("Map View ready", event);
+  console.log("MapViewready", event);
 }
 
 const popupOptions = defineProps({
