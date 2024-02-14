@@ -11,7 +11,12 @@ defineCustomElements();
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <React.StrictMode>
-    <ArcgisMap item-id="d5dda743788a4b0688fe48f43ae7beb9">
+    <ArcgisMap 
+      item-id="d5dda743788a4b0688fe48f43ae7beb9" 
+      onArcgisViewReadyChange={(event: any) => {
+      console.log('Map View ready', event);
+      }}
+    >
       <ArcgisSearch position="top-right"></ArcgisSearch>
       <ArcgisLegend position="bottom-left"></ArcgisLegend>
     </ArcgisMap>

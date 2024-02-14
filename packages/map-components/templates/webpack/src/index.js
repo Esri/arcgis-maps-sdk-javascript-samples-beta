@@ -17,6 +17,11 @@
 import { defineCustomElements } from "@arcgis/map-components/dist/loader";
 defineCustomElements();
 
+const mapElement = document.querySelector("arcgis-map");
+mapElement.addEventListener("arcgisViewReadyChange", (event) => {
+  console.log("Map View ready", event);
+});
+
 // Pure ESM
 // import "@arcgis/map-components/dist/components/arcgis-map";
 // import "@arcgis/map-components/dist/components/arcgis-search";
