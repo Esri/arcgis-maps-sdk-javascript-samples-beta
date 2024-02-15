@@ -106,28 +106,28 @@ const config = {
       dependencyTypes: ["dev"],
       dependencies: ["vite"],
       packages: ["**"],
-      pinVersion: "5.1.1"
+      pinVersion: "^5.1.1"
     },
     {
       label: "Webpack for dev",
       dependencyTypes: ["dev", "prod"],
       dependencies: ["webpack"],
       packages: ["**"],
-      pinVersion: "5.90.1"
+      pinVersion: "^5.90.1"
     },
     {
       label: "vue for dev, prod",
       dependencyTypes: ["dev", "prod"],
       dependencies: ["vue"],
       packages: ["**"],
-      pinVersion: "3.4.18"
+      pinVersion: "^3.4.18"
     },
     {
       label: "css-loader for dev",
       dependencyTypes: ["dev"],
       dependencies: ["css-loader"],
       packages: ["**"],
-      pinVersion: "6.10.0"
+      pinVersion: "^6.10.0"
     }
   ]
 };
