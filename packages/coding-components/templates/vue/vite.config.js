@@ -21,10 +21,14 @@ export default defineConfig({
     vue({
       template: {
         compilerOptions: {
-          isCustomElement: (tag) =>
-            tag.startsWith('arcgis-') || tag.startsWith('calcite-'),
-        },
-      },
-    })
-  ]
-});
+          isCustomElement: (tag) => tag.startsWith('arcgis-') || tag.startsWith('calcite-')
+        }
+      }
+    }),
+  ],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    }
+  }
+})

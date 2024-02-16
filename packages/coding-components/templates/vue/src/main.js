@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import "./style.css"; // App style
+import "./assets/main.css"; // App style
 
 import { createApp } from "vue";
 import App from "./App.vue";
@@ -25,4 +25,4 @@ import { defineCustomElements as defineCodingElements } from "@arcgis/coding-com
 defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-components/2.4.0/assets" });
 defineCodingElements(window, { resourcesUrl: "https://js.arcgis.com/coding-components/next/assets" });
 
-createApp(App).mount("#app");
+createApp(App).mount('#app');
