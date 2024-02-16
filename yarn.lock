@@ -5086,6 +5086,7 @@ __metadata:
   resolution: "coding-components-vue-template@workspace:packages/coding-components/templates/vue"
   dependencies:
     "@arcgis/coding-components": "npm:next"
+    "@arcgis/core": "npm:rc"
     "@esri/calcite-components": "npm:2.4.0"
     "@vitejs/plugin-vue": "npm:^5.0.3"
     vite: "npm:^5.1.1"
