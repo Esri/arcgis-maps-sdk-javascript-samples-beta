@@ -44,8 +44,8 @@ Use [`src/index.js`](./src/index.js) to load the data, define custom elements, a
 You can find all the necessary styling in [`src/index.css`](./src/index.css). Importing the global Calcite and coding components CSS is required.
 
 ```
-@import "~@esri/calcite-components/dist/calcite/calcite.css";
-@import "~@arcgis/coding-components/dist/arcgis-coding-components/arcgis-coding-components.css";
+@import "https://js.arcgis.com/coding-components/next/arcgis-coding-components.css";
+@import "https://js.arcgis.com/calcite-components/2.4.0/calcite.css";
 ```
 
 #### HTML
