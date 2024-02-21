@@ -1,37 +1,29 @@
-# Vue 3 + Vite
+# vue-x
 
-📁 **[Click here to download this directory as a ZIP file](https://download-directory.github.io?url=https://github.com/Esri/arcgis-maps-sdk-javascript-samples-beta/tree/main/packages/map-components/templates/vue)** 📁
+This template should help get you started developing with Vue 3 in Vite.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Recommended IDE Setup
 
-## Commands
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-### Dev
+## Customize configuration
 
-Start local server
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-```
-vite
-```
+## Project Setup
 
-### Build
-
-Build the project to the specified output folder (`/dist`)
-
-```
-vite build
+```sh
+npm install
 ```
 
-### Preview
+### Compile and Hot-Reload for Development
 
-Start local server to serve the specified output folder. You must run `build` before `preview`
-
-```
-vite preview
+```sh
+npm run dev
 ```
 
-## Resources
+### Compile and Minify for Production
 
-[Stencil - Vue Integration](https://stenciljs.com/docs/vue)
-
-[Vue - Components Basics](https://vuejs.org/guide/essentials/component-basics.html)
+```sh
+npm run build
+```

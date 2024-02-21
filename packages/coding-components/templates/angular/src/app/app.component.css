@@ -1,6 +1,3 @@
-@import "@arcgis/coding-components/dist/arcgis-coding-components/arcgis-coding-components.css";
-@import "@esri/calcite-components/dist/calcite/calcite.css";
-
 .editor-wrapper {
     display: flex;
     flex-direction: column;

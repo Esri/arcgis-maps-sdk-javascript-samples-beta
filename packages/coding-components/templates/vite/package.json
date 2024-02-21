@@ -8,13 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@arcgis/coding-components": ">=4.28.0-beta.39 < 4.29",
-    "@arcgis/core": "~4.28.0",
-    "@esri/calcite-components": "^1.9.2"
+    "@arcgis/coding-components": "next",
+    "@arcgis/core": "rc",
+    "@esri/calcite-components": "2.4.0"
   },
   "devDependencies": {
-    "resolve-pkg": "^2.0.0",
-    "vite": "^5.0.12",
-    "vite-plugin-static-copy": "^1.0.1"
+    "vite": "^5.1.1"
   }
 }

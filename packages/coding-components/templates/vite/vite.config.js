@@ -1,4 +1,4 @@
-/* Copyright 2023 Esri
+/* Copyright 2024 Esri
  *
  * Licensed under the Apache License Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,32 +13,14 @@
  * limitations under the License.
  */
 
-import { defineConfig, normalizePath } from "vite";
-import { viteStaticCopy } from "vite-plugin-static-copy";
-import resolvePkg from "resolve-pkg";
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  plugins: [
-    viteStaticCopy({
-      targets: [
-        {
-          src: normalizePath(
-            resolvePkg(
-              "@arcgis/coding-components/dist/arcgis-coding-components/assets/"
-            )
-          ),
-          dest: "./",
-        },
-        {
-          src: normalizePath(
-            resolvePkg("@esri/calcite-components/dist/calcite/assets/")
-          ),
-          dest: "./",
-        },
-      ],
-    }),
-  ],
+  plugins: [],
   build: {
     outDir: "dist",
+  },
+  server: {
+    open: true,
   },
 });

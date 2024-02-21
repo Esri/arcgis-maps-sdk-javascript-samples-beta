@@ -1,4 +1,4 @@
-/* Copyright 2023 Esri
+/* Copyright 2024 Esri
  *
  * Licensed under the Apache License Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,9 +15,6 @@
 
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
 import { AppModule } from "./app/app.module";
-import { defineCustomElements as defineCalciteElements } from "@esri/calcite-components/dist/loader";
-
-defineCalciteElements(window, { resourcesUrl: "./assets" });
 
 platformBrowserDynamic()
   .bootstrapModule(AppModule)
