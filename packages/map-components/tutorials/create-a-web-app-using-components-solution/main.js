@@ -29,14 +29,14 @@ import { defineCustomElements as defineCalciteElements } from "@esri/calcite-com
  * `@esri/calcite-components` installed as a dependency of `@arcgis/map-components`.
  */
 defineCalciteElements(window, {
-  resourcesUrl: "https://js.arcgis.com/calcite-components/2.4.0/assets",
+  resourcesUrl: "https://js.arcgis.com/calcite-components/2.4.0/assets"
 });
 
 /**
  * Use the Map Components to define and lazy load the custom map elements.
  */
 defineMapElements(window, {
-  resourcesUrl: "https://js.arcgis.com/map-components/next/assets",
+  resourcesUrl: "https://js.arcgis.com/map-components/next/assets"
 });
 
 /**
@@ -52,6 +52,7 @@ document.querySelector("arcgis-layer-list").addEventListener("arcgisLayerListRea
   /**
    * Add a listItemCreatedFunction to the layer list.
    * This function will add a legend in the list item panel for all layers except group layers.
+   * https://next.sites.afd.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#listItemCreatedFunction
    */
   arcgisLayerList.listItemCreatedFunction = (event) => {
     const { item } = event;
@@ -70,6 +71,7 @@ document.querySelector("arcgis-layer-list").addEventListener("arcgisLayerListRea
 document.querySelector("arcgis-map").addEventListener("arcgisViewReadyChange", (event) => {
   /**
    * Create a constant for the map's portal item.
+   * https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#portalItem
    */
   const { portalItem } = event.target.map;
 
@@ -83,12 +85,14 @@ document.querySelector("arcgis-map").addEventListener("arcgisViewReadyChange", (
   navigationLogo.thumbnail = portalItem.thumbnailUrl;
 
   /**
-   * Find the accidental deaths layer in the `view.map.layers` collection.
+   * Find the accidental deaths layer in the `event.target.map.layers` collection.
+   * https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#layers
    */
-  const layer = view.map.layers.find((layer) => layer.id === "Accidental_Deaths_8938");
+  const layer = event.target.map.layers.find((layer) => layer.id === "Accidental_Deaths_8938");
 
   /**
    * Modify the layer's popup template title.
+   * https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html
    */
   layer.popupTemplate.title = "Accidental Deaths";
 });
