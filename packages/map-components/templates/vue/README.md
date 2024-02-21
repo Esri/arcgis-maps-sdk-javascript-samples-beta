@@ -1,8 +1,14 @@
 # Vue 3 + Vite
 
-📁 **[Click here to download this directory as a ZIP file](https://download-directory.github.io?url=https://github.com/Esri/arcgis-maps-sdk-javascript-samples-beta/tree/main/packages/map-components/templates/vue)** 📁
-
 This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+
+## Quick links
+
+🔗 **[ArcGIS Maps SDK for JavaScript samples beta repo](https://github.com/Esri/arcgis-maps-sdk-javascript-samples-beta/tree/main)**
+
+📁 **[Download this directory as a ZIP file](https://download-directory.github.io?url=https://github.com/Esri/arcgis-maps-sdk-javascript-samples-beta/tree/main/packages/map-components/templates/vue)** 
+
+💻 **[Open this template in an online IDE (StackBlitz)](https://stackblitz.com/github/Esri/arcgis-maps-sdk-javascript-samples-beta/tree/main/packages/map-components/templates/vue)** 
 
 ## Commands
 
