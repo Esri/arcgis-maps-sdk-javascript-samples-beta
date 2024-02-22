@@ -6,24 +6,24 @@ If you are looking for the ArcGIS Maps SDK for JavaScript core package, it is av
 
 This repository is organized as a monorepo using yarn workspaces.
 
-## Available Templates
-There are download links in the readme for each of the following templates. We recommend downloading a template from the links below and using your package manager of choice.  
+## Available Code Samples
 
-- Coding Components
-    - [AMD Script Tag](./packages/coding-components/templates/amd-script-tag)
-    - [Angular](./packages/coding-components/templates/angular)
-    - [React](./packages/coding-components/templates/react)
-    - [Vite](./packages/coding-components/templates/vite)
-    - [Vue](./packages/coding-components/templates/vue)
-    - [Webpack](./packages/coding-components/templates/webpack)
+Below are a collection of code samples that provide proof-of-concept for using ArcGIS Web Components with a variety of popular JavaScript build tools, frameworks and module bundlers. There are download links in the readme for each of the following samples. We recommend downloading a template from the links below and using your package manager of choice.  
+
 - Map Components
-    - [AMD Script Tag](./packages/map-components/templates/amd-script-tag)
-    - [Angular](./packages/map-components/templates/Angular)
-    - [React](./packages/map-components/templates/react)
-    - [Vite](./packages/map-components/templates/vite)
-    - [Vue](./packages/map-components/templates/vue)
-    - [Webpack](./packages/map-components/templates/webpack)
-
+  - [AMD Script Tag](./packages/map-components/templates/amd-script-tag)
+  - [Angular](./packages/map-components/templates/Angular)
+  - [React](./packages/map-components/templates/react)
+  - [Vite](./packages/map-components/templates/vite)
+  - [Vue](./packages/map-components/templates/vue)
+  - [Webpack](./packages/map-components/templates/webpack)
+- Coding Components
+  - [AMD Script Tag](./packages/coding-components/templates/amd-script-tag)
+  - [Angular](./packages/coding-components/templates/angular)
+  - [React](./packages/coding-components/templates/react)
+  - [Vite](./packages/coding-components/templates/vite)
+  - [Vue](./packages/coding-components/templates/vue)
+  - [Webpack](./packages/coding-components/templates/webpack)
 
 ## Requirements
 
