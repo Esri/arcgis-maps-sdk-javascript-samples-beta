@@ -6,6 +6,25 @@ If you are looking for the ArcGIS Maps SDK for JavaScript core package, it is av
 
 This repository is organized as a monorepo using yarn workspaces.
 
+## Available Templates
+There are download links in the readme for each of the following templates. We recommend downloading a template from the links below and using your package manager of choice.  
+
+- Coding Components
+    - [AMD Script Tag](./packages/coding-components/templates/amd-script-tag)
+    - [Angular](./packages/coding-components/templates/angular)
+    - [React](./packages/coding-components/templates/react)
+    - [Vite](./packages/coding-components/templates/vite)
+    - [Vue](./packages/coding-components/templates/vue)
+    - [Webpack](./packages/coding-components/templates/webpack)
+- Map Components
+    - [AMD Script Tag](./packages/map-components/templates/amd-script-tag)
+    - [Angular](./packages/map-components/templates/Angular)
+    - [React](./packages/map-components/templates/react)
+    - [Vite](./packages/map-components/templates/vite)
+    - [Vue](./packages/map-components/templates/vue)
+    - [Webpack](./packages/map-components/templates/webpack)
+
+
 ## Requirements
 
 Use of the ArcGIS Maps SDK for JavaScript is subject to [System Requirements](https://developers.arcgis.com/javascript/latest/system-requirements/), and the terms described in the product-specific [Terms of Use.](https://www.esri.com/en-us/legal/terms/product-specific-scope-of-use) Learn more about licensing [here](https://developers.arcgis.com/javascript/latest/licensing/).
