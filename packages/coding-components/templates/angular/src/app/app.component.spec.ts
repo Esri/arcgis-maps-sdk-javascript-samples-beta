@@ -37,6 +37,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('calcite-scrim')).toBeDefined();
+    expect(compiled.querySelector('calcite-scrim')).toBeTruthy();
   });
 });
