@@ -34,7 +34,7 @@ import { defineCustomElements as defineCodingElements } from "@arcgis/coding-com
 
 // define custom elements in the browser, and load the assets from the CDN
 defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-components/2.4.0/assets" });
-defineCodingElements(window, { resourcesUrl: "https://js.arcgis.com/coding-components/next/assets" });
+defineCodingElements(window, { resourcesUrl: "https://js.arcgis.com/coding-components/4.29/assets" });
 ```
 
 Use [`src/index.js`](./src/index.js) to load the data, define custom elements, and utilize various kinds of properties in the editor. Both the Calcite and Coding elements must be defined.
@@ -44,7 +44,7 @@ Use [`src/index.js`](./src/index.js) to load the data, define custom elements, a
 You can find all the necessary styling in [`src/index.css`](./src/index.css). Importing the global Calcite and coding components CSS is required.
 
 ```
-@import "https://js.arcgis.com/coding-components/next/arcgis-coding-components.css";
+@import "https://js.arcgis.com/coding-components/4.29/arcgis-coding-components.css";
 @import "https://js.arcgis.com/calcite-components/2.4.0/calcite.css";
 ```
 

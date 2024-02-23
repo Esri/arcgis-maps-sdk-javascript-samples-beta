@@ -15,7 +15,7 @@
 
 // Lazy loading ESM
 import { defineCustomElements } from "@arcgis/map-components/dist/loader";
-defineCustomElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/next/assets" });
+defineCustomElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.29/assets" });
 
 const mapElement = document.querySelector("arcgis-map");
 mapElement.addEventListener("arcgisViewReadyChange", (event) => {

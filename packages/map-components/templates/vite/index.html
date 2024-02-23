@@ -6,7 +6,7 @@
     <title>Map components Vite template</title>
     <link rel="icon" href="data:;base64,=" />
     <style>
-      @import 'https://js.arcgis.com/next/@arcgis/core/assets/esri/themes/dark/main.css';
+      @import 'https://js.arcgis.com/4.29/@arcgis/core/assets/esri/themes/dark/main.css';
 
       html,
       body {
@@ -26,7 +26,7 @@
     <script type="module">
         // Lazy loading ESM
         import { defineCustomElements } from "@arcgis/map-components/dist/loader";
-        defineCustomElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/next/assets" });
+        defineCustomElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.29/assets" });
         
         const mapElement = document.querySelector('arcgis-map');
         mapElement.addEventListener('arcgisViewReadyChange', event => { 

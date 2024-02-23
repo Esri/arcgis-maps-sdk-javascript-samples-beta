@@ -36,7 +36,7 @@ defineCalciteElements(window, {
  * Use the Map Components to define and lazy load the custom map elements.
  */
 defineMapElements(window, {
-  resourcesUrl: "https://js.arcgis.com/map-components/next/assets"
+  resourcesUrl: "https://js.arcgis.com/map-components/4.29/assets"
 });
 
 /**

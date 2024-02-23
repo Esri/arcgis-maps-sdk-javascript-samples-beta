@@ -20,7 +20,7 @@ import { defineCustomElements as defineCalciteElements } from "@esri/calcite-com
 import { defineCustomElements as defineCodingElements } from "@arcgis/coding-components/dist/loader";
 
 // define custom elements in the browser, and load the assets from the CDN
-defineCodingElements(window, { resourcesUrl: "https://js.arcgis.com/coding-components/next/assets" });
+defineCodingElements(window, { resourcesUrl: "https://js.arcgis.com/coding-components/4.29/assets" });
 defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-components/2.4.0/assets" });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
