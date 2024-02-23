@@ -6,9 +6,9 @@ If you are looking for the ArcGIS Maps SDK for JavaScript core package, it is av
 
 This repository is organized as a monorepo using yarn workspaces.
 
-## Available Code Samples
+## Available code samples
 
-Below are a collection of code samples that provide proof-of-concept for using ArcGIS Web Components with a variety of popular JavaScript build tools, frameworks and module bundlers. There are download links in the readme for each of the following samples. We recommend downloading a template from the links below and using your package manager of choice.  
+Below are a collection of code samples that provide proof-of-concept for using ArcGIS Maps SDK for JavaScript components with a variety of popular JavaScript build tools, frameworks and module bundlers. There are download links in the readme for each of the following samples. We recommend downloading a template from the links below and using your package manager of choice.  
 
 - Map Components
   - [AMD Script Tag](./packages/map-components/templates/amd-script-tag)
