@@ -32,7 +32,7 @@ Use of the ArcGIS Maps SDK for JavaScript is subject to [System Requirements](ht
 ## Resources
 
 - [ArcGIS Maps SDK for JavaScript](https://developers.arcgis.com/javascript/)
-- [http://blogs.esri.com/esri/arcgis/tag/javascript/](https://blogs.esri.com/esri/arcgis/tag/javascript/)
+- [https://www.esri.com/arcgis-blog/?s=#&products=js-api-arcgis](https://www.esri.com/arcgis-blog/?s=#&products=js-api-arcgis)
 - [twitter@EsriDevs](https://twitter.com/EsriDevs)
 
 ## Issues
