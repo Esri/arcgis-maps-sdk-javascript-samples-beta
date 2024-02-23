@@ -52,7 +52,7 @@ const config = {
       dependencies: ["@arcgis/core"],
       dependencyTypes: ["dev", "prod"],
       packages: ["**"],
-      pinVersion: "rc"
+      pinVersion: "~4.29.0"
     },
     {
       label: "ArcGIS Components dev and prod dependency",
@@ -66,7 +66,7 @@ const config = {
         "@arcgis/map-components-react"
       ],
       packages: ["**"],
-      pinVersion: "next"
+      pinVersion: "~4.29.0"
     },
     {
       label: "Calcite Components dev dependency",
@@ -106,7 +106,7 @@ const config = {
       dependencyTypes: ["dev"],
       dependencies: ["vite"],
       packages: ["**"],
-      pinVersion: "^5.1.1"
+      pinVersion: "^5.1.3"
     },
     {
       label: "Webpack for dev",
