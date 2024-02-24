@@ -1,4 +1,4 @@
-/* Copyright 2023 Esri
+/* Copyright 2024 Esri
  *
  * Licensed under the Apache License Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,13 +13,13 @@
  * limitations under the License.
  */
 
-import './style.css';
+import "./style.css";
 
-import { createApp } from 'vue';
-import App from './App.vue';
+import { createApp } from "vue";
+import App from "./App.vue";
 
-import { defineCustomElements } from '@arcgis/charts-components/dist/loader';
+import { defineCustomElements } from "@arcgis/charts-components/dist/loader";
 
-defineCustomElements(window, { resourcesUrl: './t9n' });
+defineCustomElements(window, { resourcesUrl: "./t9n" });
 
-createApp(App).mount('#app');
+createApp(App).mount("#app");

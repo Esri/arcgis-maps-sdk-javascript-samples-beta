@@ -1,4 +1,4 @@
-/* Copyright 2023 Esri
+/* Copyright 2024 Esri
  *
  * Licensed under the Apache License Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,15 +13,15 @@
  * limitations under the License.
  */
 
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import Charts from './components/Charts';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Charts from "./components/Charts";
 
 // set the asset path for t9n related files
-import { setAssetPath } from '@arcgis/charts-components/dist/components';
+import { setAssetPath } from "@arcgis/charts-components/dist/components";
 setAssetPath(window.location.href);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Charts />

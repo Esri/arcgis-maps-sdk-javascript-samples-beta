@@ -1,4 +1,4 @@
-/* Copyright 2023 Esri
+/* Copyright 2024 Esri
  *
  * Licensed under the Apache License Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,18 +13,18 @@
  * limitations under the License.
  */
 
-import { useEffect, useRef, useCallback } from 'react';
+import { useEffect, useRef, useCallback } from "react";
 
-import { ArcgisChartsActionBar, ArcgisChartsScatterPlot } from '@arcgis/charts-components-react/src/components';
-import { ScatterPlotModel } from '@arcgis/charts-model';
-import { defineCustomElements as defineCalciteElements } from '@esri/calcite-components/dist/loader';
+import { ArcgisChartsActionBar, ArcgisChartsScatterPlot } from "@arcgis/charts-components-react/src/components";
+import { ScatterPlotModel } from "@arcgis/charts-model";
+import { defineCustomElements as defineCalciteElements } from "@esri/calcite-components/dist/loader";
 
-import { loadFeatureLayer } from '../functions/load-data';
+import { loadFeatureLayer } from "../functions/load-data";
 
-import './Charts.css';
+import "./Charts.css";
 
 defineCalciteElements(window, {
-  resourcesUrl: 'https://js.arcgis.com/calcite-components/2.4.0/assets',
+  resourcesUrl: "https://js.arcgis.com/calcite-components/2.4.0/assets"
 });
 
 // set the default action bar based on the series type
@@ -33,11 +33,11 @@ function setDefaultActionBar(chartElementId, seriesType) {
 
   if (actionBarElement !== null) {
     actionBarElement.actionBarHideActionsProps = {
-      hideRotateChart: seriesType === 'histogramSeries' || seriesType === 'pieSeries' || seriesType === 'scatterSeries',
+      hideRotateChart: seriesType === "histogramSeries" || seriesType === "pieSeries" || seriesType === "scatterSeries",
       hideFilterByExtent: true,
       hideZoom: true,
       hideSelection: true,
-      hideFullExtent: true,
+      hideFullExtent: true
     };
   }
 }
@@ -47,12 +47,12 @@ export default function Charts() {
 
   // useCallback to prevent the function from being recreated when the component rebuilds
   const initializeChart = useCallback(async () => {
-    const featureLayer = await loadFeatureLayer('8871626e970a4f3e9d6113ec63a92f2f');
+    const featureLayer = await loadFeatureLayer("8871626e970a4f3e9d6113ec63a92f2f");
 
     const scatterPlotParams = {
       layer: featureLayer,
-      xAxisFieldName: 'Earnings',
-      yAxisFieldName: 'Cost',
+      xAxisFieldName: "Earnings",
+      yAxisFieldName: "Cost"
     };
 
     const scatterPlotModel = new ScatterPlotModel(scatterPlotParams);
@@ -63,7 +63,7 @@ export default function Charts() {
     scatterPlotRef.current.layer = featureLayer;
 
     // set the default actions for the action bar based on the series type
-    setDefaultActionBar('scatter-plot-action-bar', config.series[0].type);
+    setDefaultActionBar("scatter-plot-action-bar", config.series[0].type);
   }, []);
 
   // Register a function that will execute after the current render cycle
@@ -72,8 +72,8 @@ export default function Charts() {
   }, [initializeChart]);
 
   return (
-    <ArcgisChartsScatterPlot ref={scatterPlotRef} class='chart-component'>
-      <ArcgisChartsActionBar slot='action-bar' id='scatter-plot-action-bar'></ArcgisChartsActionBar>
+    <ArcgisChartsScatterPlot ref={scatterPlotRef} class="chart-component">
+      <ArcgisChartsActionBar slot="action-bar" id="scatter-plot-action-bar"></ArcgisChartsActionBar>
     </ArcgisChartsScatterPlot>
   );
 }

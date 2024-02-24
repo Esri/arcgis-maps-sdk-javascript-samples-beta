@@ -1,4 +1,4 @@
-/* Copyright 2023 Esri
+/* Copyright 2024 Esri
  *
  * Licensed under the Apache License Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import FeatureLayer from '@arcgis/core/layers/FeatureLayer';
+import FeatureLayer from "@arcgis/core/layers/FeatureLayer";
 
 /**
  * Simple data loader against public data.
@@ -22,8 +22,8 @@ import FeatureLayer from '@arcgis/core/layers/FeatureLayer';
 export async function loadFeatureLayer(portalItemId) {
   const featureLayer = new FeatureLayer({
     portalItem: {
-      id: portalItemId,
-    },
+      id: portalItemId
+    }
   });
 
   await featureLayer.load();

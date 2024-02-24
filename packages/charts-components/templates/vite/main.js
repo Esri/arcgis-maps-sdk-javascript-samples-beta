@@ -1,4 +1,4 @@
-/* Copyright 2023 Esri
+/* Copyright 2024 Esri
  *
  * Licensed under the Apache License Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,27 +13,27 @@
  * limitations under the License.
  */
 
-import './style.css';
+import "./style.css";
 
-import { ScatterPlotModel } from '@arcgis/charts-model';
-import { loadFeatureLayer } from './load-data';
+import { ScatterPlotModel } from "@arcgis/charts-model";
+import { loadFeatureLayer } from "./load-data";
 
 // Lazy loading ESM
-import { defineCustomElements as defineChartsElements } from '@arcgis/charts-components/dist/loader';
+import { defineCustomElements as defineChartsElements } from "@arcgis/charts-components/dist/loader";
 
 defineChartsElements(window, {
-  resourcesUrl: './t9n',
+  resourcesUrl: "./t9n"
 });
 
 const createScatterPlot = async () => {
-  const scatterPlotRef = document.querySelector('arcgis-charts-scatter-plot');
+  const scatterPlotRef = document.querySelector("arcgis-charts-scatter-plot");
 
-  const featureLayer = await loadFeatureLayer('8871626e970a4f3e9d6113ec63a92f2f');
+  const featureLayer = await loadFeatureLayer("8871626e970a4f3e9d6113ec63a92f2f");
 
   const scatterPlotParams = {
     layer: featureLayer,
-    xAxisFieldName: 'Earnings',
-    yAxisFieldName: 'Cost',
+    xAxisFieldName: "Earnings",
+    yAxisFieldName: "Cost"
   };
 
   const scatterPlotModel = new ScatterPlotModel(scatterPlotParams);

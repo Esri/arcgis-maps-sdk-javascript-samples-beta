@@ -1,4 +1,4 @@
-/* Copyright 2023 Esri
+/* Copyright 2024 Esri
  *
  * Licensed under the Apache License Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,21 +13,19 @@
  * limitations under the License.
  */
 
-import { Component, ViewChild } from '@angular/core';
-import { loadFeatureLayer } from '../functions/load-data.service';
-import { ScatterPlotModel } from '@arcgis/charts-model';
+import { Component, ViewChild } from "@angular/core";
+import { loadFeatureLayer } from "../functions/load-data.service";
+import { ScatterPlotModel } from "@arcgis/charts-model";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.css"
 })
 export class AppComponent {
-  title = 'charts-components-angular-template';
+  title = "charts-components-angular-template";
 
-  @ViewChild('scatterPlot') scatterPlot:
-    | HTMLArcgisChartsScatterPlotElement
-    | undefined;
+  @ViewChild("scatterPlot") scatterPlot: HTMLArcgisChartsScatterPlotElement | undefined;
 
   ngOnInit() {
     // Call async functions here
@@ -35,14 +33,12 @@ export class AppComponent {
   }
 
   async createScatterPlot() {
-    const featureLayer = await loadFeatureLayer(
-      '8871626e970a4f3e9d6113ec63a92f2f'
-    );
+    const featureLayer = await loadFeatureLayer("8871626e970a4f3e9d6113ec63a92f2f");
 
     const scatterPlotParams: any = {
       layer: featureLayer,
-      xAxisFieldName: 'Earnings',
-      yAxisFieldName: 'Cost',
+      xAxisFieldName: "Earnings",
+      yAxisFieldName: "Cost"
     };
 
     const scatterPlotModel = new ScatterPlotModel(scatterPlotParams);
