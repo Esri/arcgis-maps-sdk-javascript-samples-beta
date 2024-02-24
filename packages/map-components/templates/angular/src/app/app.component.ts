@@ -1,4 +1,4 @@
-/* Copyright 2023 Esri
+/* Copyright 2024 Esri
  *
  * Licensed under the Apache License Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,16 +13,22 @@
  * limitations under the License.
  */
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+import { defineCustomElements } from "@arcgis/map-components/dist/loader";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"]
 })
-export class AppComponent {
-  title = 'map-components-angular-template';
-  onViewReady(event: any) {
-    console.log('Map View ready', event);
+export class AppComponent implements OnInit {
+  title = "map-components-angular-template";
+
+  arcgisViewReadyChange(event: any) {
+    console.log("MapView ready", event);
+  }
+
+  ngOnInit(): void {
+    defineCustomElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/next/assets" });
   }
 }

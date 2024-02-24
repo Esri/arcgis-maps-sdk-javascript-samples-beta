@@ -1,5 +1,5 @@
 <script setup>
-import ArcadeEditor from "./components/ArcadeEditor.vue";
+import ArcadeEditor from "@/components/ArcadeEditor.vue";
 </script>
 
 <template>
