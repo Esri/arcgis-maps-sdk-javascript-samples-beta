@@ -11,6 +11,6 @@
     "@arcgis/map-components": "next"
   },
   "devDependencies": {
-    "vite": "^5.1.3"
+    "vite": "^5.1.1"
   }
 }
