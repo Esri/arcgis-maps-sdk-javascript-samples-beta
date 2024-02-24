@@ -13,22 +13,14 @@
  * limitations under the License.
  */
 
-import { defineConfig, normalizePath } from "vite";
-import { viteStaticCopy } from "vite-plugin-static-copy";
-import resolvePkg from "resolve-pkg";
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-  plugins: [
-    viteStaticCopy({
-      targets: [
-        {
-          src: normalizePath(resolvePkg("@arcgis/charts-components/dist/arcgis-charts-components/t9n/")),
-          dest: "./"
-        }
-      ]
-    })
-  ],
+  plugins: [],
   build: {
-    outDir: "dist"
-  }
+    outDir: 'dist',
+  },
+  server: {
+    open: true,
+  },
 });

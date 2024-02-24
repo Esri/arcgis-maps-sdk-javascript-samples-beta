@@ -13,31 +13,25 @@
  * limitations under the License.
  */
 
-import { useEffect, useRef, useCallback } from "react";
+import { useEffect, useRef, useCallback } from 'react';
 
-import { ArcgisChartsActionBar, ArcgisChartsScatterPlot } from "@arcgis/charts-components-react/src/components";
-import { ScatterPlotModel } from "@arcgis/charts-model";
-import { defineCustomElements as defineCalciteElements } from "@esri/calcite-components/dist/loader";
+import { ArcgisChartsActionBar, ArcgisChartsScatterPlot } from '@arcgis/charts-components-react/src/components';
+import { ScatterPlotModel } from '@arcgis/charts-model';
 
-import { loadFeatureLayer } from "../functions/load-data";
+import { loadFeatureLayer } from '../functions/load-data';
 
-import "./Charts.css";
-
-defineCalciteElements(window, {
-  resourcesUrl: "https://js.arcgis.com/calcite-components/2.4.0/assets"
-});
-
+import './Charts.css';
 // set the default action bar based on the series type
 function setDefaultActionBar(chartElementId, seriesType) {
   const actionBarElement = document.getElementById(chartElementId);
 
   if (actionBarElement !== null) {
     actionBarElement.actionBarHideActionsProps = {
-      hideRotateChart: seriesType === "histogramSeries" || seriesType === "pieSeries" || seriesType === "scatterSeries",
+      hideRotateChart: seriesType === 'histogramSeries' || seriesType === 'pieSeries' || seriesType === 'scatterSeries',
       hideFilterByExtent: true,
       hideZoom: true,
       hideSelection: true,
-      hideFullExtent: true
+      hideFullExtent: true,
     };
   }
 }
@@ -47,12 +41,12 @@ export default function Charts() {
 
   // useCallback to prevent the function from being recreated when the component rebuilds
   const initializeChart = useCallback(async () => {
-    const featureLayer = await loadFeatureLayer("8871626e970a4f3e9d6113ec63a92f2f");
+    const featureLayer = await loadFeatureLayer('8871626e970a4f3e9d6113ec63a92f2f');
 
     const scatterPlotParams = {
       layer: featureLayer,
-      xAxisFieldName: "Earnings",
-      yAxisFieldName: "Cost"
+      xAxisFieldName: 'Earnings',
+      yAxisFieldName: 'Cost',
     };
 
     const scatterPlotModel = new ScatterPlotModel(scatterPlotParams);
@@ -62,8 +56,22 @@ export default function Charts() {
     scatterPlotRef.current.config = config;
     scatterPlotRef.current.layer = featureLayer;
 
+    // add event listener when selection is made on the chart to enable/disable action bar buttons
+    scatterPlotRef.current.addEventListener('arcgisChartsSelectionComplete', (event) => {
+      const actionBarElement = document.getElementById('scatter-plot-action-bar');
+
+      const selectionData = event.detail;
+      if (selectionData.selectionOIDs === undefined || selectionData.selectionOIDs.length === 0) {
+        actionBarElement.disableClearSelection = true;
+        actionBarElement.disableFilterBySelection = true;
+      } else {
+        actionBarElement.disableClearSelection = false;
+        actionBarElement.disableFilterBySelection = false;
+      }
+    });
+
     // set the default actions for the action bar based on the series type
-    setDefaultActionBar("scatter-plot-action-bar", config.series[0].type);
+    setDefaultActionBar('scatter-plot-action-bar', config.series[0].type);
   }, []);
 
   // Register a function that will execute after the current render cycle
@@ -72,8 +80,8 @@ export default function Charts() {
   }, [initializeChart]);
 
   return (
-    <ArcgisChartsScatterPlot ref={scatterPlotRef} class="chart-component">
-      <ArcgisChartsActionBar slot="action-bar" id="scatter-plot-action-bar"></ArcgisChartsActionBar>
+    <ArcgisChartsScatterPlot ref={scatterPlotRef} class='chart-component' id='scatter-plot-chart'>
+      <ArcgisChartsActionBar slot='action-bar' id='scatter-plot-action-bar'></ArcgisChartsActionBar>
     </ArcgisChartsScatterPlot>
   );
 }

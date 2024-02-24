@@ -1,5 +1,7 @@
 # Charts components ESM Webpack template
 
+📁 **[Click here to download this directory as a ZIP file](https://download-directory.github.io?url=https://github.com/Esri/arcgis-maps-sdk-javascript-samples-beta/tree/main/packages/charts-components/templates/webpack)** 📁
+
 This repository showcases how to integrate the charts components using webpack.
 
 ## Project setup
@@ -62,7 +64,7 @@ We use [`src/index.js`](./src/index.js) to load our data, define our custom elem
 
 #### CSS
 
-You can find all the necessary styling in [`src/index.css`](./src/index.css). 
+You can find all the necessary styling in [`src/index.css`](./src/index.css).
 
 #### HTML
 

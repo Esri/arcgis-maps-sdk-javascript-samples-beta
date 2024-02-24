@@ -13,43 +13,43 @@
  * limitations under the License.
  */
 
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
-const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+const path = require('path');
 
 module.exports = {
-  entry: ["./src/index.css", "./src/index.js"],
+  entry: ['./src/index.css', './src/index.js'],
 
   output: {
-    filename: "[id][name].js",
-    chunkFilename: "[id][name].js",
-    path: path.resolve(__dirname, "dist"),
-    clean: true
+    filename: '[id][name].js',
+    chunkFilename: '[id][name].js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
 
-  devtool: "source-map",
+  devtool: 'source-map',
 
   devServer: {
     static: {
-      directory: path.join(__dirname, "dist")
+      directory: path.join(__dirname, 'dist'),
     },
     compress: true,
-    port: 9000
+    port: 9000,
   },
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"] // Collect CSS and insert them into the page
-      }
-    ]
+        use: ['style-loader', 'css-loader'], // Collect CSS and insert them into the page
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Charts components Webpack template",
-      chunksSortMode: "none",
+      title: 'Charts components Webpack template',
+      chunksSortMode: 'none',
       meta: {
-        viewport: "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=no"
+        viewport: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=no',
       },
       templateContent: `
         <!DOCTYPE html>
@@ -60,15 +60,7 @@ module.exports = {
             <body>
               <arcgis-charts-scatter-plot class="chart-container"></arcgis-charts-scatter-plot>
             </body>
-          </html>`
+          </html>`,
     }),
-    new CopyPlugin({
-      patterns: [
-        {
-          from: "./node_modules/@arcgis/charts-components/dist/arcgis-charts-components/t9n",
-          to: "./arcgis-charts/t9n"
-        }
-      ]
-    })
-  ]
+  ],
 };

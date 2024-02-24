@@ -13,27 +13,17 @@
  * limitations under the License.
  */
 
-import { defineConfig, normalizePath } from "vite";
-import vue from "@vitejs/plugin-vue";
-import { viteStaticCopy } from "vite-plugin-static-copy";
-import resolvePkg from "resolve-pkg";
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
   plugins: [
     vue({
       template: {
         compilerOptions: {
-          isCustomElement: (tag) => tag.includes("arcgis-charts")
-        }
-      }
+          isCustomElement: (tag) => tag.includes('arcgis-charts'),
+        },
+      },
     }),
-    viteStaticCopy({
-      targets: [
-        {
-          src: normalizePath(resolvePkg("@arcgis/charts-components/dist/arcgis-charts-components/t9n/")),
-          dest: "./"
-        }
-      ]
-    })
-  ]
+  ],
 });

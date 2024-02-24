@@ -13,17 +13,16 @@
  * limitations under the License.
  */
 
-import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./app.component";
-import { ComponentLibraryModule } from "../../charts-components-angular/src/public-api";
+import { AppComponent } from './app.component';
+import { ComponentLibraryModule } from '../../charts-components-angular/src/public-api';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, ComponentLibraryModule],
+  imports: [BrowserModule, ComponentLibraryModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

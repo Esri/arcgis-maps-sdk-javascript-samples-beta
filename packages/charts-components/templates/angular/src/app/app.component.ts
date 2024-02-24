@@ -13,32 +13,37 @@
  * limitations under the License.
  */
 
-import { Component, ViewChild } from "@angular/core";
-import { loadFeatureLayer } from "../functions/load-data.service";
-import { ScatterPlotModel } from "@arcgis/charts-model";
+import { Component, ViewChild } from '@angular/core';
+import { loadFeatureLayer } from '../functions/load-data.service';
+import { ScatterPlotModel } from '@arcgis/charts-model';
+
+import { defineCustomElements as defineChartsElements } from '@arcgis/charts-components/dist/loader';
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrl: "./app.component.css"
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = "charts-components-angular-template";
+  title = 'charts-components-angular-template';
 
-  @ViewChild("scatterPlot") scatterPlot: HTMLArcgisChartsScatterPlotElement | undefined;
+  @ViewChild('scatterPlot') scatterPlot: HTMLArcgisChartsScatterPlotElement | undefined;
 
   ngOnInit() {
+    // define custom elements in the browser, and load the assets from the CDN
+    defineChartsElements(window, { resourcesUrl: 'https://js.arcgis.com/charts-components/4.29/t9n' });
+
     // Call async functions here
     this.createScatterPlot();
   }
 
   async createScatterPlot() {
-    const featureLayer = await loadFeatureLayer("8871626e970a4f3e9d6113ec63a92f2f");
+    const featureLayer = await loadFeatureLayer('8871626e970a4f3e9d6113ec63a92f2f');
 
-    const scatterPlotParams: any = {
+    const scatterPlotParams = {
       layer: featureLayer,
-      xAxisFieldName: "Earnings",
-      yAxisFieldName: "Cost"
+      xAxisFieldName: 'Earnings',
+      yAxisFieldName: 'Cost',
     };
 
     const scatterPlotModel = new ScatterPlotModel(scatterPlotParams);

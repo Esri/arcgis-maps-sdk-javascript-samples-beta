@@ -13,13 +13,16 @@
  * limitations under the License.
  */
 
-import "./style.css";
+import './assets/main.css';
 
-import { createApp } from "vue";
-import App from "./App.vue";
+import { createApp } from 'vue';
+import App from './App.vue';
 
-import { defineCustomElements } from "@arcgis/charts-components/dist/loader";
+import { defineCustomElements as defineCalciteElements } from '@esri/calcite-components/dist/loader';
+import { defineCustomElements as defineChartsElements } from '@arcgis/charts-components/dist/loader';
 
-defineCustomElements(window, { resourcesUrl: "./t9n" });
+// define custom elements in the browser, and load the assets from the CDN
+defineCalciteElements(window, { resourcesUrl: 'https://js.arcgis.com/calcite-components/2.4.0/assets' });
+defineChartsElements(window, { resourcesUrl: 'https://js.arcgis.com/charts-components/4.29/t9n' });
 
-createApp(App).mount("#app");
+createApp(App).mount('#app');
