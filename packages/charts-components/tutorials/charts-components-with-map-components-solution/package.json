@@ -7,13 +7,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@arcgis/charts-components": "4.29.0",
-    "@arcgis/core": "~4.28.0",
-    "@arcgis/map-components": ">=4.28.0-beta.39 < 4.29",
-    "@esri/calcite-components": "^1.9.2"
+    "@arcgis/charts-components": "next",
+    "@arcgis/map-components": "next",
+    "@arcgis/core": "rc"
   },
   "devDependencies": {
-    "copy-folder-util": "^1.1.3",
     "vite": "^5.1.1"
   }
 }
