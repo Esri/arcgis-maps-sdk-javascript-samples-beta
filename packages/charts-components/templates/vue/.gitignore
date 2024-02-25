@@ -28,6 +28,3 @@ coverage
 *.sw?
 
 *.tsbuildinfo
-
-# t9n folder that gets copied over from node_moduels
-arcgis-charts
