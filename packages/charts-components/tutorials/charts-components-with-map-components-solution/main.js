@@ -23,12 +23,12 @@ import { defineCustomElements as defineMapElements } from "@arcgis/map-component
 /**
  * Use the Charts Components to define and lazy load the custom charts elements.
  */
-defineChartsElements(window, { resourcesUrl: "https://js.arcgis.com/charts-components/4.29/t9n" });
+defineChartsElements(window, { resourcesUrl: "https://js.arcgis.com/charts-components/next/t9n" });
 
 /**
  * Use the Map Components to define and lazy load the custom map elements.
  */
-defineMapElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.29/assets" });
+defineMapElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/next/assets" });
 
 /**
  * Async function to load the feature layer from a pre-configured webmap
