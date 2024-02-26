@@ -1,4 +1,4 @@
-/* Copyright 2023 Esri
+/* Copyright 2024 Esri
  *
  * Licensed under the Apache License Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,10 +13,12 @@
  * limitations under the License.
  */
 
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { loadData } from "../functions/load-data.service";
 import { IEditorProfileDefinition, IPredefinedProfile } from "@arcgis/coding-components/dist/types/utils/profile/types";
 import { IEditorTestContext } from "@arcgis/coding-components/dist/types/utils/arcade-executor";
+import { defineCustomElements as defineCalciteElements } from "@esri/calcite-components/dist/loader";
+import { defineCustomElements as defineCodingElements } from "@arcgis/coding-components/dist/loader";
 
 // Calcite Components
 // import "@esri/calcite-components/dist/components/calcite-scrim";
@@ -27,7 +29,7 @@ import { IEditorTestContext } from "@arcgis/coding-components/dist/types/utils/a
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.css"]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'coding-components-angular-template';
 
   // Property to track loading state
@@ -38,6 +40,9 @@ export class AppComponent {
   public testData!: IEditorTestContext;
 
   ngOnInit() {
+    // define custom elements in the browser, and load the assets from the CDN
+    defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-components/2.4.0/assets" });
+    defineCodingElements(window, { resourcesUrl: "https://js.arcgis.com/coding-components/4.29/assets" });
     // Call async functions here
     this.fetch();
   }

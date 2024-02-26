@@ -1,4 +1,4 @@
-/* Copyright 2023 Esri
+/* Copyright 2024 Esri
  *
  * Licensed under the Apache License Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,24 +17,12 @@ import "./style.css"; // Arcade editor styles
 
 import { loadData } from "./load-data";
 
-// Lazy loading ESM
+import { defineCustomElements as defineCalciteElements } from "@esri/calcite-components/dist/loader";
 import { defineCustomElements as defineCodingElements } from "@arcgis/coding-components/dist/loader";
-import { defineCustomElements as defineCalciteElements } from "@esri/calcite-components/dist/loader"
 
-defineCodingElements(window, {
-  resourcesUrl: "./assets",
-});
-
-defineCalciteElements(window, {
-  resourcesUrl: "./assets",
-});
-
-// Pure ESM
-// import { setAssetPath } from "@arcgis/coding-components/dist/components";
-// import "@arcgis/coding-components/dist/components/arcgis-arcade-editor";
-// import "@esri/calcite-components/dist/components/calcite-scrim";
-
-// setAssetPath(`${location.origin}${location.pathname}assets`);
+// define custom elements in the browser, and load the assets from the CDN
+defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-components/2.4.0/assets" });
+defineCodingElements(window, { resourcesUrl: "https://js.arcgis.com/coding-components/4.29/assets" });
 
 (async () => {
   // Get the Arcade editor element

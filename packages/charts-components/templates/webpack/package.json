@@ -1,0 +1,23 @@
+{
+  "name": "charts-components-webpack-template",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "dependencies": {
+    "@arcgis/charts-components": "~4.29.0",
+    "@arcgis/charts-model": "~4.29.0",
+    "@arcgis/core": "~4.29.0",
+    "@esri/calcite-components": "2.4.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.10.0",
+    "html-loader": "^5.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "3.3.4",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.1"
+  }
+}

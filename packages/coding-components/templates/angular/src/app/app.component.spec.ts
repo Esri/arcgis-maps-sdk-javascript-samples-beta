@@ -1,4 +1,4 @@
-/* Copyright 2023 Esri
+/* Copyright 2024 Esri
  *
  * Licensed under the Apache License Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,10 +33,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('coding-components-angular-template');
   });
 
-  it('should render title', () => {
+  it('should render the calcite scrim on initial render', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('coding-components-angular-template app is running!');
+    expect(compiled.querySelector('calcite-scrim')).toBeTruthy();
   });
 });

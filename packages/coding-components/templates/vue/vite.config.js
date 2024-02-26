@@ -1,4 +1,4 @@
-/* Copyright 2023 Esri
+/* Copyright 2024 Esri
  *
  * Licensed under the Apache License Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -12,13 +12,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-import { fileURLToPath, URL } from "node:url";
-
-import { defineConfig, normalizePath } from "vite";
+import { fileURLToPath, URL } from 'node:url';
+import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import { viteStaticCopy } from "vite-plugin-static-copy";
-import resolvePkg from "resolve-pkg";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -26,33 +22,17 @@ export default defineConfig({
     vue({
       template: {
         compilerOptions: {
-          isCustomElement: (tag) =>
-            ["arcgis-arcade-editor", "calcite-scrim"].includes(tag),
-        },
-      },
-    }),
-    viteStaticCopy({
-      targets: [
-        {
-          src: normalizePath(
-            resolvePkg(
-              "@arcgis/coding-components/dist/arcgis-coding-components/assets/"
-            )
-          ),
-          dest: "./",
-        },
-        {
-          src: normalizePath(
-            resolvePkg("@esri/calcite-components/dist/calcite/assets/")
-          ),
-          dest: "./",
-        },
-      ],
+          isCustomElement: (tag) => tag.startsWith('arcgis-') || tag.startsWith('calcite-')
+        }
+      }
     }),
   ],
+  server: {
+    open: true,
+  },
   resolve: {
     alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url)),
-    },
-  },
-});
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    }
+  }
+})

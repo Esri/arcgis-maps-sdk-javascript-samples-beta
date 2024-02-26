@@ -1,4 +1,4 @@
-/* Copyright 2023 Esri
+/* Copyright 2024 Esri
  *
  * Licensed under the Apache License Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,11 +14,14 @@
  */
 
 import { TestBed } from '@angular/core/testing';
+import { ComponentLibraryModule } from '@arcgis/map-components-angular';
 import { AppComponent } from './app.component';
+
 
 describe('AppComponent', () => {
   beforeEach(() => TestBed.configureTestingModule({
-    declarations: [AppComponent]
+    declarations: [AppComponent],
+    imports: [ComponentLibraryModule]
   }));
 
   it('should create the app', () => {
@@ -33,10 +36,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('map-components-angular-template');
   });
 
-  it('should render title', () => {
+  it('should render the arcgis-map custom element', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('map-components-angular-template app is running!');
+    expect(compiled.querySelector('arcgis-map')).toBeTruthy();
   });
 });

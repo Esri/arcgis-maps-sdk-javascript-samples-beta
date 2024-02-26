@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Charts components AMD template</title>
+    <style>
+        .chart-container {
+            height: 800px;
+        }
+    </style>
+
+    <link rel="icon" href="data:;base64,=" />
+
+    <!-- Load the ArcGIS Maps SDK for JavaScript -->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/dark/main.css" />
+    <script src="https://js.arcgis.com/4.29/"></script>
+
+    <!-- Load the Charts Components -->
+    <script type="module" src="https://js.arcgis.com/charts-components/4.29/arcgis-charts-components.esm.js"></script>
+</head>
+
+<body>
+    <arcgis-charts-scatter-plot id="scatter-plot" class="chart-container"></arcgis-charts-scatter-plot>
+    <script>
+        /**
+         * Simple data loader against public data.
+         * For the test data, we need a feature layer.
+         */
+        async function loadFeatureLayerItem() {
+            const WebMap = await $arcgis.import("esri/WebMap");
+
+            const webmap = new WebMap({
+                portalItem: {
+                    id: "a72bb6468f57491f84409186446808e1"
+                }
+            });
+
+            await webmap.loadAll();
+
+            const featureLayerItem = webmap.layers.items[0];
+
+            return featureLayerItem;
+        }
+
+        (async () => {
+            // Load the feature layer item
+            const layer = await loadFeatureLayerItem();
+
+
+            // Get the first chart's config
+            const config = layer.charts[0];
+
+            // Get the Scatterplot element
+            const scatterPlot = document.getElementById("scatter-plot");
+
+            // Assigning the config and the layer to the chart component to render the chart
+            scatterPlot.config = config;
+            scatterPlot.layer = layer;
+        })()
+    </script>
+</body>
+
+</html>

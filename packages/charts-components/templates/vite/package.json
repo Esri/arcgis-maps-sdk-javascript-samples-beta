@@ -1,0 +1,20 @@
+{
+  "name": "charts-components-vite-template",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@arcgis/charts-components": "~4.29.0",
+    "@arcgis/charts-model": "~4.29.0",
+    "@arcgis/core": "~4.29.0",
+    "@esri/calcite-components": "2.4.0"
+  },
+  "devDependencies": {
+    "resolve-pkg": "^2.0.0",
+    "vite": "^5.1.3"
+  }
+}

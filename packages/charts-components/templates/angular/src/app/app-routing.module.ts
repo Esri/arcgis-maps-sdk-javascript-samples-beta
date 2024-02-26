@@ -1,4 +1,4 @@
-/* Copyright 2023 Esri
+/* Copyright 2024 Esri
  *
  * Licensed under the Apache License Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,14 +13,13 @@
  * limitations under the License.
  */
 
-var ncp = require("ncp").ncp;
-var resolvePkg = require("resolve-pkg");
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
 
-ncp.limit = 16;
+const routes: Routes = [];
 
-ncp(resolvePkg("@arcgis/coding-components/dist/arcgis-coding-components/assets/"), "./src/assets/", function (err) {
-  if (err) {
-    return console.error(err);
-  }
-  console.log("Coding components assets copied!");
-});
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}

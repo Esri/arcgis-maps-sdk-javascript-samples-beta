@@ -8,13 +8,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@arcgis/core": "~4.28.0",
-    "@arcgis/map-components": ">=4.28.0-beta.39 < 4.29",
-    "@esri/calcite-components": "^1.9.2",
-    "vue": "^3.3.4"
+    "@arcgis/core": "~4.29.0",
+    "@arcgis/map-components": "~4.29.0",
+    "@esri/calcite-components": "2.4.0",
+    "vue": "^3.4.18"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.3",
-    "vite": "^5.0.12"
+    "vite": "^5.1.3"
   }
 }

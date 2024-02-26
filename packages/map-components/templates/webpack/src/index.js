@@ -1,4 +1,4 @@
-/* Copyright 2023 Esri
+/* Copyright 2024 Esri
  *
  * Licensed under the Apache License Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 
 // Lazy loading ESM
 import { defineCustomElements } from "@arcgis/map-components/dist/loader";
-defineCustomElements();
+defineCustomElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.29/assets" });
 
-// Pure ESM
-// import "@arcgis/map-components/dist/components/arcgis-map";
-// import "@arcgis/map-components/dist/components/arcgis-search";
-// import "@arcgis/map-components/dist/components/arcgis-legend";
+const mapElement = document.querySelector("arcgis-map");
+mapElement.addEventListener("arcgisViewReadyChange", (event) => {
+  console.log("MapView ready", event);
+});

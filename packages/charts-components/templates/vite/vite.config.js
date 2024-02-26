@@ -1,4 +1,4 @@
-/* Copyright 2023 Esri
+/* Copyright 2024 Esri
  *
  * Licensed under the Apache License Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,14 +13,14 @@
  * limitations under the License.
  */
 
-var ncp = require("ncp").ncp;
-var resolvePkg = require("resolve-pkg");
+import { defineConfig } from 'vite';
 
-ncp.limit = 16;
-
-ncp(resolvePkg("@esri/calcite-components/dist/calcite/assets/"), "./src/assets/", function (err) {
-  if (err) {
-    return console.error(err);
-  }
-  console.log("Calcite components assets copied!");
+export default defineConfig({
+  plugins: [],
+  build: {
+    outDir: 'dist',
+  },
+  server: {
+    open: true,
+  },
 });
