@@ -31,7 +31,7 @@ export class AppComponent {
 
   ngOnInit() {
     // define custom elements in the browser, and load the assets from the CDN
-    defineChartsElements(window, { resourcesUrl: "https://js.arcgis.com/charts-components/next/t9n" });
+    defineChartsElements(window, { resourcesUrl: "https://js.arcgis.com/charts-components/4.29/t9n" });
 
     // Call async functions here
     this.createScatterPlot();

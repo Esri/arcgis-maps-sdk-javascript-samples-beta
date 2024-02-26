@@ -30,12 +30,12 @@ defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-com
 /**
  * Use the Map Components to define and lazy load the custom map elements.
  */
-defineMapElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/next/assets" });
+defineMapElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.29/assets" });
 
 /**
  * Use the Charts Components to define and lazy load the custom charts elements.
  */
-defineChartsElements(window, { resourcesUrl: "https://js.arcgis.com/charts-components/next/t9n" });
+defineChartsElements(window, { resourcesUrl: "https://js.arcgis.com/charts-components/4.29/t9n" });
 
 /**
  * Async function to initialize the scatterplot

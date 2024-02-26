@@ -21,7 +21,7 @@ import { loadFeatureLayer } from './load-data';
 import { defineCustomElements as defineChartsElements } from '@arcgis/charts-components/dist/loader';
 
 // define custom elements in the browser, and load the assets from the CDN
-defineChartsElements(window, { resourcesUrl: 'https://js.arcgis.com/charts-components/next/t9n' });
+defineChartsElements(window, { resourcesUrl: 'https://js.arcgis.com/charts-components/4.29/t9n' });
 
 (async () => {
   const scatterPlotRef = document.querySelector('arcgis-charts-scatter-plot');
