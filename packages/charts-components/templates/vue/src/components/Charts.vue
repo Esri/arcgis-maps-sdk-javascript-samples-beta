@@ -1,7 +1,7 @@
 <script setup>
-import { ref, onMounted } from 'vue';
-import { loadFeatureLayer } from '../utils/load-data';
-import { ScatterPlotModel } from '@arcgis/charts-model';
+import { ref, onMounted } from "vue";
+import { loadFeatureLayer } from "../utils/load-data";
+import { ScatterPlotModel } from "@arcgis/charts-model";
 
 // Read more about ref() at https://vuejs.org/api/reactivity-core.html#ref
 const scatterPlotRef = ref(null);
@@ -10,12 +10,12 @@ const scatterPlotRef = ref(null);
 // See: https://vuejs.org/api/composition-api-lifecycle.html#onmounted
 onMounted(async () => {
   if (scatterPlotRef.value) {
-    const featureLayer = await loadFeatureLayer('8871626e970a4f3e9d6113ec63a92f2f');
+    const featureLayer = await loadFeatureLayer("8871626e970a4f3e9d6113ec63a92f2f");
 
     const scatterPlotParams = {
       layer: featureLayer,
-      xAxisFieldName: 'Earnings',
-      yAxisFieldName: 'Cost',
+      xAxisFieldName: "Earnings",
+      yAxisFieldName: "Cost"
     };
 
     const scatterPlotModel = new ScatterPlotModel(scatterPlotParams);

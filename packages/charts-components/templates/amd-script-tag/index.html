@@ -48,8 +48,9 @@
             // Load the feature layer item
             const layer = await loadFeatureLayerItem();
 
+
             // Get the first chart's config
-            const config = await layer.charts[0];
+            const config = layer.charts[0];
 
             // Get the Scatterplot element
             const scatterPlot = document.getElementById("scatter-plot");
