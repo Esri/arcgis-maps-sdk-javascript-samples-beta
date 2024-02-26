@@ -350,6 +350,63 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@arcgis/charts-components-angular@npm:next":
+  version: 4.29.0-beta.39
+  resolution: "@arcgis/charts-components-angular@npm:4.29.0-beta.39"
+  dependencies:
+    "@arcgis/charts-components": "npm:^4.29.0-beta.39"
+  peerDependencies:
+    "@angular/common": ^17.1.0
+    "@angular/core": ^17.1.0
+  checksum: c90df93dd14d978ca66df6db2a9e703d7f77aa5d0486c550cf9db14c6580766eb91e23c6deeaaa01581eb934f23cd294729f343124e280fd35d75f855b22a5d1
+  languageName: node
+  linkType: hard
+
+"@arcgis/charts-components-react@npm:next":
+  version: 4.29.0-beta.39
+  resolution: "@arcgis/charts-components-react@npm:4.29.0-beta.39"
+  dependencies:
+    "@arcgis/charts-components": "npm:^4.29.0-beta.39"
+    react: "npm:>=18.0.0 <19.0.0"
+    react-dom: "npm:>=18.0.0 <19.0.0"
+  checksum: 5cd9551c1eecfab687aed3fed124e755bb64ff7b7bd0ea60cd99baac95df91093b5e97ccaddc9ed36be9efd854a40ad533abbb9170e4804d27520b38b50445bb
+  languageName: node
+  linkType: hard
+
+"@arcgis/charts-components@npm:^4.29.0-beta.39":
+  version: 4.29.0
+  resolution: "@arcgis/charts-components@npm:4.29.0"
+  dependencies:
+    "@stencil/core": "npm:4.7.1"
+  peerDependencies:
+    "@arcgis/core": ">=4.29.0-next <4.30"
+    "@esri/calcite-components": ">=2.2.0 <3.0.0"
+  checksum: 0d02a0f56153cf0f30f809e1bf83a48a2def26ec3e3dc06d40172ca893a5cde88123cc6bb225d75f1903d703d8ba3dcf831c1746932eec575ca3fffcbbf2af58
+  languageName: node
+  linkType: hard
+
+"@arcgis/charts-components@npm:next":
+  version: 4.29.0-beta.39
+  resolution: "@arcgis/charts-components@npm:4.29.0-beta.39"
+  dependencies:
+    "@stencil/core": "npm:4.7.1"
+  peerDependencies:
+    "@arcgis/core": ">=4.29.0-next <4.30"
+    "@esri/calcite-components": ">=2.2.0 <3.0.0"
+  checksum: 2b960d42fd693a993a4b753dc885e10afe1eb6ba94d49db538d67b7ef065c9bd160e239a4477cc82128138aa00daff4635824da472aa60732ec417e5aa1aebba
+  languageName: node
+  linkType: hard
+
+"@arcgis/charts-model@npm:next":
+  version: 4.29.0-beta.39
+  resolution: "@arcgis/charts-model@npm:4.29.0-beta.39"
+  dependencies:
+    lodash-es: "npm:^4.17.21"
+    p-queue: "npm:^7.2.0"
+  checksum: 0cfcf2d878619945de300b872127677cc72f85a0ec378cfabaea8e7cfed339b0f089c61e6318b236584021ab5d462814b6bafd9236a6b91c1c56e01270290a97
+  languageName: node
+  linkType: hard
+
 "@arcgis/coding-components-angular@npm:~4.29.0":
   version: 4.29.0
   resolution: "@arcgis/coding-components-angular@npm:4.29.0"
@@ -389,6 +446,22 @@ __metadata:
     "@arcgis/core": ">=4.29.0-next <4.30"
     "@esri/calcite-components": ">=2.2.0 <3.0.0"
   checksum: 3c4382920e51cdf0772aba7ae5756297e691721ad43c8525c90fd17e1e5625d5afd922622caa7ca3461c5e7eaec1c064a3a8b5fcd1fd664dcac0d0a5c2cd4d16
+  languageName: node
+  linkType: hard
+
+"@arcgis/core@npm:rc":
+  version: 4.29.0-next.20240209
+  resolution: "@arcgis/core@npm:4.29.0-next.20240209"
+  dependencies:
+    "@esri/arcgis-html-sanitizer": "npm:~3.0.1"
+    "@esri/calcite-colors": "npm:~6.1.0"
+    "@esri/calcite-components": "npm:^2.4.0"
+    "@popperjs/core": "npm:~2.11.8"
+    "@vaadin/grid": "npm:~24.3.5"
+    "@zip.js/zip.js": "npm:~2.7.34"
+    luxon: "npm:~3.4.4"
+    sortablejs: "npm:~1.15.2"
+  checksum: 4bd96ce941b4947554cd860ddf6776f40fc01bc19151f3e9840d859bfbfc1b51b4391e47ee3ff2052ff457789346761e50b8182f7513734d04202b0fa1bb8460
   languageName: node
   linkType: hard
 
@@ -444,6 +517,18 @@ __metadata:
     "@arcgis/core": ">=4.29.0-next <4.30"
     "@esri/calcite-components": ">=2.2.0 <3.0.0"
   checksum: c5000ff7388f14a3c53d9ab901d062538a082d9e87c91f459d835c10ada314db852e6d52adbedba3080654605c15138c5c5258b0fdc282baeea4b28277a66897
+  languageName: node
+  linkType: hard
+
+"@arcgis/map-components@npm:next":
+  version: 4.29.0-beta.104
+  resolution: "@arcgis/map-components@npm:4.29.0-beta.104"
+  dependencies:
+    "@stencil/core": "npm:^4.10.0"
+  peerDependencies:
+    "@arcgis/core": ">=4.29.0-next <4.30"
+    "@esri/calcite-components": ">=2.2.0 <3.0.0"
+  checksum: 37463a9072d46ea028faec230e82bbb9d668fdb4610c391826858d02331dd8f2e38b0fb198f754e6b53b626849b3e4fddab4b52c8b80a9866425cd99961f86b1
   languageName: node
   linkType: hard
 
@@ -3060,6 +3145,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@stencil/core@npm:4.7.1":
+  version: 4.7.1
+  resolution: "@stencil/core@npm:4.7.1"
+  bin:
+    stencil: bin/stencil
+  checksum: 44378670da3a6530769c057841e2b255837b3a47f8558ba61d86b0b847d94ac58f8935a608324444fd4fc3aef67adf266afa76472daea9725e8e2578534f392b
+  languageName: node
+  linkType: hard
+
 "@stencil/core@npm:4.9.0":
   version: 4.9.0
   resolution: "@stencil/core@npm:4.9.0"
@@ -3567,6 +3661,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vaadin/a11y-base@npm:~24.3.5":
+  version: 24.3.5
+  resolution: "@vaadin/a11y-base@npm:24.3.5"
+  dependencies:
+    "@open-wc/dedupe-mixin": "npm:^1.3.0"
+    "@polymer/polymer": "npm:^3.0.0"
+    "@vaadin/component-base": "npm:~24.3.5"
+    lit: "npm:^3.0.0"
+  checksum: 17120df44a410e9c0b449b51c0b3380e6a2a0f92b7ea37746c3b20070849df535fa81ca4513219863e15009a5b04427b294fd467c692330f37b89db333d550f2
+  languageName: node
+  linkType: hard
+
 "@vaadin/a11y-base@npm:~24.3.6":
   version: 24.3.6
   resolution: "@vaadin/a11y-base@npm:24.3.6"
@@ -3576,6 +3682,23 @@ __metadata:
     "@vaadin/component-base": "npm:~24.3.6"
     lit: "npm:^3.0.0"
   checksum: ba101554e829c569fe71cd05642e00437fc3bad7a4a106421843410459bb874eb6f484ca8ebb17f215577aa2e517dd64a84509d07dcd96bd0ab8eb0b62f30346
+  languageName: node
+  linkType: hard
+
+"@vaadin/checkbox@npm:~24.3.5":
+  version: 24.3.5
+  resolution: "@vaadin/checkbox@npm:24.3.5"
+  dependencies:
+    "@open-wc/dedupe-mixin": "npm:^1.3.0"
+    "@polymer/polymer": "npm:^3.0.0"
+    "@vaadin/a11y-base": "npm:~24.3.5"
+    "@vaadin/component-base": "npm:~24.3.5"
+    "@vaadin/field-base": "npm:~24.3.5"
+    "@vaadin/vaadin-lumo-styles": "npm:~24.3.5"
+    "@vaadin/vaadin-material-styles": "npm:~24.3.5"
+    "@vaadin/vaadin-themable-mixin": "npm:~24.3.5"
+    lit: "npm:^3.0.0"
+  checksum: a255ae029001430ab922b837e192b23aeb98758ce38880427155504f02e837f30f75aa9338830f3bdc95e402d55fcd329b20d4a41d13dee856ea578b07f501fe
   languageName: node
   linkType: hard
 
@@ -3596,6 +3719,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vaadin/component-base@npm:~24.3.5":
+  version: 24.3.5
+  resolution: "@vaadin/component-base@npm:24.3.5"
+  dependencies:
+    "@open-wc/dedupe-mixin": "npm:^1.3.0"
+    "@polymer/polymer": "npm:^3.0.0"
+    "@vaadin/vaadin-development-mode-detector": "npm:^2.0.0"
+    "@vaadin/vaadin-usage-statistics": "npm:^2.1.0"
+    lit: "npm:^3.0.0"
+  checksum: cc9ef67334b0f145952d68a5ccf24fcce6a86f6cd548d07356e540a8f84f08d4567182856a597e8ed3c2650ffc0acbde181fe72502a6eb9ecf024afc3a564dde
+  languageName: node
+  linkType: hard
+
 "@vaadin/component-base@npm:~24.3.6":
   version: 24.3.6
   resolution: "@vaadin/component-base@npm:24.3.6"
@@ -3609,6 +3745,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vaadin/field-base@npm:~24.3.5":
+  version: 24.3.5
+  resolution: "@vaadin/field-base@npm:24.3.5"
+  dependencies:
+    "@open-wc/dedupe-mixin": "npm:^1.3.0"
+    "@polymer/polymer": "npm:^3.0.0"
+    "@vaadin/a11y-base": "npm:~24.3.5"
+    "@vaadin/component-base": "npm:~24.3.5"
+    lit: "npm:^3.0.0"
+  checksum: 8ae5844791d1e4385780b254c149f5f320998c36eb932f7d04f08a8fcbb30f41d009e59738823c0b3836ce9214b047a17124721ca3fc622f137ef42030a68c1b
+  languageName: node
+  linkType: hard
+
 "@vaadin/field-base@npm:~24.3.6":
   version: 24.3.6
   resolution: "@vaadin/field-base@npm:24.3.6"
@@ -3619,6 +3768,24 @@ __metadata:
     "@vaadin/component-base": "npm:~24.3.6"
     lit: "npm:^3.0.0"
   checksum: 71f407f8ca1801d7453a49f8d130e66c5a9999c8ddbfd1569a6e5141c372670b71cb195587a2a562a3965d2ac28e5fc022dcef4a98c96568ae78ad759ddb9d7c
+  languageName: node
+  linkType: hard
+
+"@vaadin/grid@npm:~24.3.5":
+  version: 24.3.5
+  resolution: "@vaadin/grid@npm:24.3.5"
+  dependencies:
+    "@open-wc/dedupe-mixin": "npm:^1.3.0"
+    "@polymer/polymer": "npm:^3.0.0"
+    "@vaadin/a11y-base": "npm:~24.3.5"
+    "@vaadin/checkbox": "npm:~24.3.5"
+    "@vaadin/component-base": "npm:~24.3.5"
+    "@vaadin/lit-renderer": "npm:~24.3.5"
+    "@vaadin/text-field": "npm:~24.3.5"
+    "@vaadin/vaadin-lumo-styles": "npm:~24.3.5"
+    "@vaadin/vaadin-material-styles": "npm:~24.3.5"
+    "@vaadin/vaadin-themable-mixin": "npm:~24.3.5"
+  checksum: 80fb36a56634f02d5b8776a4e1802f025acc9794fd4ac07747b0b7deecda98dbad6648f41416041ad1cc0f30435ae4edc7bfe2777b80bdfa369e705da64ec85c
   languageName: node
   linkType: hard
 
@@ -3640,6 +3807,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vaadin/icon@npm:~24.3.5":
+  version: 24.3.5
+  resolution: "@vaadin/icon@npm:24.3.5"
+  dependencies:
+    "@open-wc/dedupe-mixin": "npm:^1.3.0"
+    "@polymer/polymer": "npm:^3.0.0"
+    "@vaadin/component-base": "npm:~24.3.5"
+    "@vaadin/vaadin-lumo-styles": "npm:~24.3.5"
+    "@vaadin/vaadin-themable-mixin": "npm:~24.3.5"
+    lit: "npm:^3.0.0"
+  checksum: f48d647e73e513c4d730faab4f4cd543918574ffdd3bcb6d1586d67b13e5428618b44b034ce49eda68fe2b806ae827f7625fc93eb2d94046128e779783cefe02
+  languageName: node
+  linkType: hard
+
 "@vaadin/icon@npm:~24.3.6":
   version: 24.3.6
   resolution: "@vaadin/icon@npm:24.3.6"
@@ -3651,6 +3832,20 @@ __metadata:
     "@vaadin/vaadin-themable-mixin": "npm:~24.3.6"
     lit: "npm:^3.0.0"
   checksum: cffe77e5b1f6feb44b1f839c462580d5162cc1782e1701c292323068584e2a7747794473e46c3aa22c8fe6f1410a98e3bbd5a220ae6805c6759fec511e14675f
+  languageName: node
+  linkType: hard
+
+"@vaadin/input-container@npm:~24.3.5":
+  version: 24.3.5
+  resolution: "@vaadin/input-container@npm:24.3.5"
+  dependencies:
+    "@polymer/polymer": "npm:^3.0.0"
+    "@vaadin/component-base": "npm:~24.3.5"
+    "@vaadin/vaadin-lumo-styles": "npm:~24.3.5"
+    "@vaadin/vaadin-material-styles": "npm:~24.3.5"
+    "@vaadin/vaadin-themable-mixin": "npm:~24.3.5"
+    lit: "npm:^3.0.0"
+  checksum: b942c6657809e2a65cf317e0526786eb7206abff57dfe9fb0611245a5b5334307a589a78fa358b2d6f02bfe4534691295871db326db34bf4014c50fec5ed1f7f
   languageName: node
   linkType: hard
 
@@ -3668,12 +3863,39 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vaadin/lit-renderer@npm:~24.3.5":
+  version: 24.3.5
+  resolution: "@vaadin/lit-renderer@npm:24.3.5"
+  dependencies:
+    lit: "npm:^3.0.0"
+  checksum: 232437d961102cdf5dee1828f0bd1ec7e2791bbce648cc0ac8860fb4e9a8ccad0dd49daa3bf1cd2d30cd5f0ad9dea149b9963bd847fba0299a7ae6775bf5dfdf
+  languageName: node
+  linkType: hard
+
 "@vaadin/lit-renderer@npm:~24.3.6":
   version: 24.3.6
   resolution: "@vaadin/lit-renderer@npm:24.3.6"
   dependencies:
     lit: "npm:^3.0.0"
   checksum: 5e2c93f9ccbe037a9d20338954dd4cd01511c3f481b0091623892f31194483661781650cbee52c64ebb8c3be99e1500cac90e460b82d781d6bf4c436ca1f2039
+  languageName: node
+  linkType: hard
+
+"@vaadin/text-field@npm:~24.3.5":
+  version: 24.3.5
+  resolution: "@vaadin/text-field@npm:24.3.5"
+  dependencies:
+    "@open-wc/dedupe-mixin": "npm:^1.3.0"
+    "@polymer/polymer": "npm:^3.0.0"
+    "@vaadin/a11y-base": "npm:~24.3.5"
+    "@vaadin/component-base": "npm:~24.3.5"
+    "@vaadin/field-base": "npm:~24.3.5"
+    "@vaadin/input-container": "npm:~24.3.5"
+    "@vaadin/vaadin-lumo-styles": "npm:~24.3.5"
+    "@vaadin/vaadin-material-styles": "npm:~24.3.5"
+    "@vaadin/vaadin-themable-mixin": "npm:~24.3.5"
+    lit: "npm:^3.0.0"
+  checksum: ee7b76bff62b9d1cac678da6686154de0604981e7ec1597d3e667bc83c63364f6b25e71a1182385b9c666eb597c8c0a60b894994bb1d3b741197a4347e6eb22d
   languageName: node
   linkType: hard
 
@@ -3702,6 +3924,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vaadin/vaadin-lumo-styles@npm:~24.3.5":
+  version: 24.3.5
+  resolution: "@vaadin/vaadin-lumo-styles@npm:24.3.5"
+  dependencies:
+    "@polymer/polymer": "npm:^3.0.0"
+    "@vaadin/component-base": "npm:~24.3.5"
+    "@vaadin/icon": "npm:~24.3.5"
+    "@vaadin/vaadin-themable-mixin": "npm:~24.3.5"
+  checksum: d19c0bd8ad03aafee5cf24ef49c1f351972581b70af491e9a6b46011a2c761ec46c0897883f5dd9f6a555c85985d747a97455ebe9ee588ca8e4875a452fc6f1e
+  languageName: node
+  linkType: hard
+
 "@vaadin/vaadin-lumo-styles@npm:~24.3.6":
   version: 24.3.6
   resolution: "@vaadin/vaadin-lumo-styles@npm:24.3.6"
@@ -3714,6 +3948,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vaadin/vaadin-material-styles@npm:~24.3.5":
+  version: 24.3.5
+  resolution: "@vaadin/vaadin-material-styles@npm:24.3.5"
+  dependencies:
+    "@polymer/polymer": "npm:^3.0.0"
+    "@vaadin/component-base": "npm:~24.3.5"
+    "@vaadin/vaadin-themable-mixin": "npm:~24.3.5"
+  checksum: 4685b035992389bf48745a7591380c8fa13dda32b6ff6df8685b16768e52fb35ab23e7e46805dd5eda419417660adf483ce600699fdd0476e9a74226ed3adc39
+  languageName: node
+  linkType: hard
+
 "@vaadin/vaadin-material-styles@npm:~24.3.6":
   version: 24.3.6
   resolution: "@vaadin/vaadin-material-styles@npm:24.3.6"
@@ -3722,6 +3967,16 @@ __metadata:
     "@vaadin/component-base": "npm:~24.3.6"
     "@vaadin/vaadin-themable-mixin": "npm:~24.3.6"
   checksum: 76835be72e6d08727a38cdec11c54565c7319eb1010ee5404f78acc7b6d8e8f5c363f9c5e9c149507a42a7ee7b075e8e0aae78aeaa375f4db3b0a97ee0cabc15
+  languageName: node
+  linkType: hard
+
+"@vaadin/vaadin-themable-mixin@npm:~24.3.5":
+  version: 24.3.5
+  resolution: "@vaadin/vaadin-themable-mixin@npm:24.3.5"
+  dependencies:
+    "@open-wc/dedupe-mixin": "npm:^1.3.0"
+    lit: "npm:^3.0.0"
+  checksum: faab5b044dfae77a5f558d006ca7debc4f6134e7eef47df538c35fd611ba02be0ae59d66d9574c5ce1aeea60a005fc4213f11259760352f370eefa60c47024b6
   languageName: node
   linkType: hard
 
@@ -4875,7 +5130,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^5.3.0":
+"chalk@npm:^5.3.0, chalk@npm:~5.3":
   version: 5.3.0
   resolution: "chalk@npm:5.3.0"
   checksum: 6373caaab21bd64c405bfc4bd9672b145647fc9482657b5ea1d549b3b2765054e9d3d928870cdf764fb4aad67555f5061538ff247b8310f110c5c888d92397ea
@@ -4888,6 +5143,123 @@ __metadata:
   checksum: b0ec668fba5eeec575ed2559a0917ba41a6481f49063c8445400e476754e0957ee09e44dc032310f526182b8f1bf25e9d4ed371f74050af7be1383e06bc44952
   languageName: node
   linkType: hard
+
+"charts-components-angular-template@workspace:packages/charts-components/templates/angular":
+  version: 0.0.0-use.local
+  resolution: "charts-components-angular-template@workspace:packages/charts-components/templates/angular"
+  dependencies:
+    "@angular-devkit/build-angular": "npm:^17.2.0"
+    "@angular/animations": "npm:^17.2.0"
+    "@angular/cli": "npm:^17.2.0"
+    "@angular/common": "npm:^17.2.0"
+    "@angular/compiler": "npm:^17.2.0"
+    "@angular/compiler-cli": "npm:^17.2.0"
+    "@angular/core": "npm:^17.2.0"
+    "@angular/forms": "npm:^17.2.0"
+    "@angular/platform-browser": "npm:^17.2.0"
+    "@angular/platform-browser-dynamic": "npm:^17.2.0"
+    "@angular/router": "npm:^17.2.0"
+    "@arcgis/charts-components-angular": "npm:next"
+    "@arcgis/charts-model": "npm:next"
+    "@arcgis/core": "npm:rc"
+    "@esri/calcite-components": "npm:2.4.0"
+    "@types/jasmine": "npm:~5.1.0"
+    copy-folder-util: "npm:^1.1.3"
+    jasmine-core: "npm:~5.1.0"
+    karma: "npm:~6.4.0"
+    karma-chrome-launcher: "npm:~3.2.0"
+    karma-coverage: "npm:~2.2.0"
+    karma-jasmine: "npm:~5.1.0"
+    karma-jasmine-html-reporter: "npm:~2.1.0"
+    rxjs: "npm:~7.8.0"
+    tslib: "npm:^2.3.0"
+    typescript: "npm:~5.3.2"
+    zone.js: "npm:~0.14.3"
+  languageName: unknown
+  linkType: soft
+
+"charts-components-react-template@workspace:packages/charts-components/templates/react":
+  version: 0.0.0-use.local
+  resolution: "charts-components-react-template@workspace:packages/charts-components/templates/react"
+  dependencies:
+    "@arcgis/charts-components-react": "npm:next"
+    "@arcgis/charts-model": "npm:next"
+    "@arcgis/core": "npm:rc"
+    "@esri/calcite-components-react": "npm:^2.4.0"
+    "@vitejs/plugin-react": "npm:^4.2.1"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    resolve-pkg: "npm:^2.0.0"
+    vite: "npm:^5.1.1"
+  languageName: unknown
+  linkType: soft
+
+"charts-components-vite-template@workspace:packages/charts-components/templates/vite":
+  version: 0.0.0-use.local
+  resolution: "charts-components-vite-template@workspace:packages/charts-components/templates/vite"
+  dependencies:
+    "@arcgis/charts-components": "npm:next"
+    "@arcgis/charts-model": "npm:next"
+    "@arcgis/core": "npm:rc"
+    "@esri/calcite-components": "npm:2.4.0"
+    resolve-pkg: "npm:^2.0.0"
+    vite: "npm:^5.1.1"
+  languageName: unknown
+  linkType: soft
+
+"charts-components-vue-template@workspace:packages/charts-components/templates/vue":
+  version: 0.0.0-use.local
+  resolution: "charts-components-vue-template@workspace:packages/charts-components/templates/vue"
+  dependencies:
+    "@arcgis/charts-components": "npm:next"
+    "@arcgis/charts-model": "npm:next"
+    "@arcgis/core": "npm:rc"
+    "@esri/calcite-components": "npm:2.4.0"
+    "@vitejs/plugin-vue": "npm:^5.0.3"
+    resolve-pkg: "npm:^2.0.0"
+    vite: "npm:^5.1.1"
+    vue: "npm:^3.4.18"
+  languageName: unknown
+  linkType: soft
+
+"charts-components-webpack-template@workspace:packages/charts-components/templates/webpack":
+  version: 0.0.0-use.local
+  resolution: "charts-components-webpack-template@workspace:packages/charts-components/templates/webpack"
+  dependencies:
+    "@arcgis/charts-components": "npm:next"
+    "@arcgis/charts-model": "npm:next"
+    "@arcgis/core": "npm:rc"
+    "@esri/calcite-components": "npm:2.4.0"
+    css-loader: "npm:^6.10.0"
+    html-loader: "npm:^5.0.0"
+    html-webpack-plugin: "npm:^5.6.0"
+    style-loader: "npm:3.3.4"
+    webpack: "npm:^5.90.1"
+    webpack-cli: "npm:^5.1.4"
+    webpack-dev-server: "npm:^5.0.1"
+  languageName: unknown
+  linkType: soft
+
+"charts-components-with-map-components-initial@workspace:packages/charts-components/tutorials/charts-components-with-map-components-initial":
+  version: 0.0.0-use.local
+  resolution: "charts-components-with-map-components-initial@workspace:packages/charts-components/tutorials/charts-components-with-map-components-initial"
+  dependencies:
+    "@arcgis/core": "npm:rc"
+    vite: "npm:^5.1.1"
+  languageName: unknown
+  linkType: soft
+
+"charts-components-with-map-components-solution@workspace:packages/charts-components/tutorials/charts-components-with-map-components-solution":
+  version: 0.0.0-use.local
+  resolution: "charts-components-with-map-components-solution@workspace:packages/charts-components/tutorials/charts-components-with-map-components-solution"
+  dependencies:
+    "@arcgis/charts-components": "npm:next"
+    "@arcgis/core": "npm:rc"
+    "@arcgis/map-components": "npm:next"
+    "@esri/calcite-components": "npm:2.4.0"
+    vite: "npm:^5.1.1"
+  languageName: unknown
+  linkType: soft
 
 "chokidar@npm:>=3.0.0 <4.0.0, chokidar@npm:^3.0.0, chokidar@npm:^3.5.1, chokidar@npm:^3.5.3":
   version: 3.5.3
@@ -4950,10 +5322,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"clean-css@npm:~5.3.2":
+  version: 5.3.3
+  resolution: "clean-css@npm:5.3.3"
+  dependencies:
+    source-map: "npm:~0.6.0"
+  checksum: 2db1ae37b384c8ff0a06a12bfa80f56cc02b4abcaaf340db98c0ae88a61dd67c856653fd8135ace6eb0ec13aeab3089c425d2e4238d2a2ad6b6917e6ccc74729
+  languageName: node
+  linkType: hard
+
 "clean-stack@npm:^2.0.0":
   version: 2.2.0
   resolution: "clean-stack@npm:2.2.0"
   checksum: 2ac8cd2b2f5ec986a3c743935ec85b07bc174d5421a5efc8017e1f146a1cf5f781ae962618f416352103b32c9cd7e203276e8c28241bbe946160cab16149fb68
+  languageName: node
+  linkType: hard
+
+"cli-argv-util@npm:~1.2":
+  version: 1.2.5
+  resolution: "cli-argv-util@npm:1.2.5"
+  dependencies:
+    slash: "npm:~5.1"
+  checksum: 7589a7a6cd17991371cf893784a2674cc9fd80ba9363bf026783ecba8aa3979c37e0b64266942fe82fada39b629b00f2eda2d0c83b7bb98054ad63cf1343a476
   languageName: node
   linkType: hard
 
@@ -5048,8 +5438,8 @@ __metadata:
     karma-jasmine-html-reporter: "npm:~2.1.0"
     rxjs: "npm:~7.8.0"
     tslib: "npm:^2.3.0"
-    typescript: "npm:~5.3.0"
-    zone.js: "npm:~0.14.2"
+    typescript: "npm:~5.3.2"
+    zone.js: "npm:~0.14.3"
   languageName: unknown
   linkType: soft
 
@@ -5065,8 +5455,8 @@ __metadata:
     "@vitejs/plugin-react": "npm:^4.2.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
-    typescript: "npm:~5.3.0"
-    vite: "npm:^5.1.3"
+    typescript: "npm:~5.3.2"
+    vite: "npm:^5.1.1"
   languageName: unknown
   linkType: soft
 
@@ -5102,8 +5492,8 @@ __metadata:
     "@arcgis/core": "npm:~4.29.0"
     "@esri/calcite-components": "npm:2.4.0"
     css-loader: "npm:^6.10.0"
-    html-webpack-plugin: "npm:^5.5.0"
-    style-loader: "npm:^3.3.1"
+    html-webpack-plugin: "npm:^5.6.0"
+    style-loader: "npm:3.3.4"
     webpack: "npm:^5.90.1"
     webpack-cli: "npm:^5.1.4"
     webpack-dev-server: "npm:^5.0.1"
@@ -5185,7 +5575,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^10.0.1":
+"commander@npm:^10.0.0, commander@npm:^10.0.1":
   version: 10.0.1
   resolution: "commander@npm:10.0.1"
   checksum: 8799faa84a30da985802e661cc9856adfaee324d4b138413013ef7f087e8d7924b144c30a1f1405475f0909f467665cd9e1ce13270a2f41b141dab0b7a58f3fb
@@ -5379,6 +5769,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"copy-folder-util@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "copy-folder-util@npm:1.1.3"
+  dependencies:
+    chalk: "npm:~5.3"
+    cli-argv-util: "npm:~1.2"
+    fancy-log: "npm:~2.0"
+    slash: "npm:~5.1"
+  bin:
+    copy-folder: bin/cli.js
+    copy-folder-util: bin/cli.js
+  checksum: 8d63a36d3e747dac6ea36a54e57d5a2499e54e9c35bde8d99f206e37dc2f7bde15a35261793e79d98298924ce81bd15f01dc9987faa08fbda459dfeaff0f2cd5
+  languageName: node
+  linkType: hard
+
 "copy-webpack-plugin@npm:11.0.0":
   version: 11.0.0
   resolution: "copy-webpack-plugin@npm:11.0.0"
@@ -5481,7 +5886,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "create-a-web-app-using-components-initial@workspace:packages/map-components/tutorials/create-a-web-app-using-components-initial"
   dependencies:
-    vite: "npm:^5.1.3"
+    vite: "npm:^5.1.1"
   languageName: unknown
   linkType: soft
 
@@ -5490,7 +5895,7 @@ __metadata:
   resolution: "create-a-web-app-using-components-solution@workspace:packages/map-components/tutorials/create-a-web-app-using-components-solution"
   dependencies:
     "@arcgis/map-components": "npm:~4.29.0"
-    vite: "npm:^5.1.3"
+    vite: "npm:^5.1.1"
   languageName: unknown
   linkType: soft
 
@@ -6374,6 +6779,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eventemitter3@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "eventemitter3@npm:5.0.1"
+  checksum: ac6423ec31124629c84c7077eed1e6987f6d66c31cf43c6fcbf6c87791d56317ce808d9ead483652436df171b526fc7220eccdc9f3225df334e81582c3cf7dd5
+  languageName: node
+  linkType: hard
+
 "events@npm:^3.2.0":
   version: 3.3.0
   resolution: "events@npm:3.3.0"
@@ -6459,6 +6871,15 @@ __metadata:
     iconv-lite: "npm:^0.4.24"
     tmp: "npm:^0.0.33"
   checksum: 776dff1d64a1d28f77ff93e9e75421a81c062983fd1544279d0a32f563c0b18c52abbb211f31262e2827e48edef5c9dc8f960d06dd2d42d1654443b88568056b
+  languageName: node
+  linkType: hard
+
+"fancy-log@npm:~2.0":
+  version: 2.0.0
+  resolution: "fancy-log@npm:2.0.0"
+  dependencies:
+    color-support: "npm:^1.1.3"
+  checksum: 3259c84a7b2e73abde0264f2ecd1db322450256dc9402638543af12c54762d2a407a4563582bfa3e22a546d7a199c1b4f7c4667fe2dfc453c1ce7a5ce54d7b79
   languageName: node
   linkType: hard
 
@@ -7096,6 +7517,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"html-loader@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "html-loader@npm:5.0.0"
+  dependencies:
+    html-minifier-terser: "npm:^7.2.0"
+    parse5: "npm:^7.1.2"
+  peerDependencies:
+    webpack: ^5.0.0
+  checksum: 27db0ac562ba9ac3736f095435e08cc7844ed32029662ebabe7045cf8ba473978a8df6198be0166c0abf456cd8914830083c3f6847c828f51dc6fc13bbd85699
+  languageName: node
+  linkType: hard
+
 "html-minifier-terser@npm:^6.0.2":
   version: 6.1.0
   resolution: "html-minifier-terser@npm:6.1.0"
@@ -7113,9 +7546,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-webpack-plugin@npm:^5.5.0":
-  version: 5.5.3
-  resolution: "html-webpack-plugin@npm:5.5.3"
+"html-minifier-terser@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "html-minifier-terser@npm:7.2.0"
+  dependencies:
+    camel-case: "npm:^4.1.2"
+    clean-css: "npm:~5.3.2"
+    commander: "npm:^10.0.0"
+    entities: "npm:^4.4.0"
+    param-case: "npm:^3.0.4"
+    relateurl: "npm:^0.2.7"
+    terser: "npm:^5.15.1"
+  bin:
+    html-minifier-terser: cli.js
+  checksum: 7320095dbf08c361b45e855bd840d1d21fe86326afee775503594163532ebaaed9bb1c9dc98232b03c169dc24b56f30c294d559bca0cade59f9c950a1992db82
+  languageName: node
+  linkType: hard
+
+"html-webpack-plugin@npm:^5.6.0":
+  version: 5.6.0
+  resolution: "html-webpack-plugin@npm:5.6.0"
   dependencies:
     "@types/html-minifier-terser": "npm:^6.0.0"
     html-minifier-terser: "npm:^6.0.2"
@@ -7123,8 +7573,14 @@ __metadata:
     pretty-error: "npm:^4.0.0"
     tapable: "npm:^2.0.0"
   peerDependencies:
+    "@rspack/core": 0.x || 1.x
     webpack: ^5.20.0
-  checksum: 01d302a434e3db9f0e2db370f06300fb613de0fb8bdcafd4693e44c2528b8608621e5e7ca5d8302446db3f20c5f8875f1f675926d469b13ebab139954d241055
+  peerDependenciesMeta:
+    "@rspack/core":
+      optional: true
+    webpack:
+      optional: true
+  checksum: d651f3a88a7c932c72c6a30f0fdd610b49a864a69f1ddb34562c750f1602ea471e27fd8fc32c01adadd484b38fa6b74f055d1ccce26e5f8fcf814ee0d398a121
   languageName: node
   linkType: hard
 
@@ -8227,7 +8683,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash-es@npm:4.17.21":
+"lodash-es@npm:4.17.21, lodash-es@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash-es@npm:4.17.21"
   checksum: 03f39878ea1e42b3199bd3f478150ab723f93cc8730ad86fec1f2804f4a07c6e30deaac73cad53a88e9c3db33348bb8ceeb274552390e7a75d7849021c02df43
@@ -8505,8 +8961,8 @@ __metadata:
     karma-jasmine-html-reporter: "npm:~2.1.0"
     rxjs: "npm:~7.8.0"
     tslib: "npm:^2.3.0"
-    typescript: "npm:~5.3.0"
-    zone.js: "npm:~0.14.2"
+    typescript: "npm:~5.3.2"
+    zone.js: "npm:~0.14.3"
   languageName: unknown
   linkType: soft
 
@@ -8522,8 +8978,8 @@ __metadata:
     "@vitejs/plugin-react": "npm:^4.2.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
-    typescript: "npm:~5.3.0"
-    vite: "npm:^5.1.3"
+    typescript: "npm:~5.3.2"
+    vite: "npm:^5.1.1"
   languageName: unknown
   linkType: soft
 
@@ -8559,10 +9015,10 @@ __metadata:
     "@arcgis/map-components": "npm:~4.29.0"
     "@esri/calcite-components": "npm:2.4.0"
     css-loader: "npm:^6.10.0"
-    html-webpack-plugin: "npm:^5.5.0"
+    html-webpack-plugin: "npm:^5.6.0"
     mini-css-extract-plugin: "npm:^2.7.6"
     source-map-loader: "npm:5.0.0"
-    style-loader: "npm:^3.3.1"
+    style-loader: "npm:3.3.4"
     terser-webpack-plugin: "npm:^5.3.9"
     webpack: "npm:^5.90.1"
     webpack-cli: "npm:^5.1.4"
@@ -9464,6 +9920,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"p-queue@npm:^7.2.0":
+  version: 7.4.1
+  resolution: "p-queue@npm:7.4.1"
+  dependencies:
+    eventemitter3: "npm:^5.0.1"
+    p-timeout: "npm:^5.0.2"
+  checksum: 82934551f20a38cc19b31cda7200f2db93ca99b8c642d3ac861d12a7a9160eb32235738a8cd53f1a7ea0c7b52d6c0bb27644b6461e9a51e6a59f1e8d65904b78
+  languageName: node
+  linkType: hard
+
 "p-retry@npm:^4.5.0":
   version: 4.6.2
   resolution: "p-retry@npm:4.6.2"
@@ -9482,6 +9948,13 @@ __metadata:
     is-network-error: "npm:^1.0.0"
     retry: "npm:^0.13.1"
   checksum: 1a5ac16828c96c03c354f78d643dfc7aa8f8b998e1b60e27533da2c75e5cabfb1c7f88ce312e813e09a80b056011fbb372d384132e9c92d27d052bd7c282a978
+  languageName: node
+  linkType: hard
+
+"p-timeout@npm:^5.0.2":
+  version: 5.1.0
+  resolution: "p-timeout@npm:5.1.0"
+  checksum: f5cd4e17301ff1ff1d8dbf2817df0ad88c6bba99349fc24d8d181827176ad4f8aca649190b8a5b1a428dfd6ddc091af4606835d3e0cb0656e04045da5c9e270c
   languageName: node
   linkType: hard
 
@@ -9578,7 +10051,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"parse5@npm:^7.0.0":
+"parse5@npm:^7.0.0, parse5@npm:^7.1.2":
   version: 7.1.2
   resolution: "parse5@npm:7.1.2"
   dependencies:
@@ -10003,7 +10476,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^18.2.0":
+"react-dom@npm:>=18.0.0 <19.0.0, react-dom@npm:^18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
   dependencies:
@@ -10022,7 +10495,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^18.2.0":
+"react@npm:>=18.0.0 <19.0.0, react@npm:^18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
@@ -10281,6 +10754,15 @@ __metadata:
   dependencies:
     global-dirs: "npm:^0.1.1"
   checksum: c4e11d33e84bde7516b824503ffbe4b6cce863d5ce485680fd3db997b7c64da1df98321b1fd0703b58be8bc9bc83bc96bd83043f96194386b45eb47229efb6b6
+  languageName: node
+  linkType: hard
+
+"resolve-pkg@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "resolve-pkg@npm:2.0.0"
+  dependencies:
+    resolve-from: "npm:^5.0.0"
+  checksum: 4a14cc38effed20ff362c8f377719af9a45ebe27ee07d79d4802b4568858cd96033f4edc3a2add7fd27e361d24101a042047297a9ef9476696ba16b72e0a05fc
   languageName: node
   linkType: hard
 
@@ -10826,6 +11308,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"slash@npm:~5.1":
+  version: 5.1.0
+  resolution: "slash@npm:5.1.0"
+  checksum: 2c41ec6fb1414cd9bba0fa6b1dd00e8be739e3fe85d079c69d4b09ca5f2f86eafd18d9ce611c0c0f686428638a36c272a6ac14799146a8295f259c10cc45cde4
+  languageName: node
+  linkType: hard
+
 "smart-buffer@npm:^4.2.0":
   version: 4.2.0
   resolution: "smart-buffer@npm:4.2.0"
@@ -11166,12 +11655,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"style-loader@npm:^3.3.1":
-  version: 3.3.3
-  resolution: "style-loader@npm:3.3.3"
+"style-loader@npm:3.3.4":
+  version: 3.3.4
+  resolution: "style-loader@npm:3.3.4"
   peerDependencies:
     webpack: ^5.0.0
-  checksum: 6c13d5075b5a5d69602215a242ef157460766e6e8a2e48276eb5da5b9852716910b48b3f120d492bbc7cd825dfa940b35fc84e1a9ab2a8792fd8d568b6b3e87a
+  checksum: 2dd2a77d4fc689e1f73836ed7653830cb4e628af0b2979dcf6f31524c72bf44fca4bac8aebe62df95a5f9be19bea18f952a2cfcaaeff32c524c4402226d9c58f
   languageName: node
   linkType: hard
 
@@ -11326,6 +11815,20 @@ __metadata:
   bin:
     terser: bin/terser
   checksum: e5407f9a143e7f9306f1b585b16dbb03df19b93318b55a26b542e12b74cc792dcf6961d9a2cab6778b20d7b591f498c200376d282a300cf9999ca40bccbc047c
+  languageName: node
+  linkType: hard
+
+"terser@npm:^5.15.1":
+  version: 5.28.1
+  resolution: "terser@npm:5.28.1"
+  dependencies:
+    "@jridgewell/source-map": "npm:^0.3.3"
+    acorn: "npm:^8.8.2"
+    commander: "npm:^2.20.0"
+    source-map-support: "npm:~0.5.20"
+  bin:
+    terser: bin/terser
+  checksum: 922159f036a89a7d01b8b67e0eacb4425c20cf19067d2e82c1523153ed3bf66c36b945fd16c610b7ea41fedb867b189d2a350415fb566f4668a1701ab768728e
   languageName: node
   linkType: hard
 
@@ -11522,7 +12025,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:~5.3.0":
+"typescript@npm:~5.3.2":
   version: 5.3.3
   resolution: "typescript@npm:5.3.3"
   bin:
@@ -11532,7 +12035,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A~5.3.0#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A~5.3.2#optional!builtin<compat/typescript>":
   version: 5.3.3
   resolution: "typescript@patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"
   bin:
@@ -11744,6 +12247,46 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: ed0bb26a0d0c8e1dae0b70af9e36adffd7e15d80297443fe4da762596dc81570bad7f0291f590a57c1553f5e435338d8c7ffc483bd9431a95c09d9ac90665fad
+  languageName: node
+  linkType: hard
+
+"vite@npm:^5.1.1":
+  version: 5.1.3
+  resolution: "vite@npm:5.1.3"
+  dependencies:
+    esbuild: "npm:^0.19.3"
+    fsevents: "npm:~2.3.3"
+    postcss: "npm:^8.4.35"
+    rollup: "npm:^4.2.0"
+  peerDependencies:
+    "@types/node": ^18.0.0 || >=20.0.0
+    less: "*"
+    lightningcss: ^1.21.0
+    sass: "*"
+    stylus: "*"
+    sugarss: "*"
+    terser: ^5.4.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@types/node":
+      optional: true
+    less:
+      optional: true
+    lightningcss:
+      optional: true
+    sass:
+      optional: true
+    stylus:
+      optional: true
+    sugarss:
+      optional: true
+    terser:
+      optional: true
+  bin:
+    vite: bin/vite.js
+  checksum: 6ba2223157e2cc2fa62dff9004ccba20fc409c6baf7354c64ed0f8e4bcd853092d08d06ec4dec37143e794a96e061879a870d85bad4f1eb9ee5c6d0a13cef30f
   languageName: node
   linkType: hard
 
@@ -12381,11 +12924,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zone.js@npm:~0.14.2":
-  version: 0.14.3
-  resolution: "zone.js@npm:0.14.3"
+"zone.js@npm:~0.14.3":
+  version: 0.14.4
+  resolution: "zone.js@npm:0.14.4"
   dependencies:
     tslib: "npm:^2.3.0"
-  checksum: 863a98942d3eb451540c8b7ddd9414433c9de1021675010bdc3b465a094cbf3a7ca061845792e0502b774e6e99bcba448061f338a16d17c6cf53dc81ef41be2b
+  checksum: 4a6079d71e4e9c86dd5db4726e01cfe6ceeb9212ff86be3c168fc07f649f0b300f425175aa6b8cee5702d407f18b610b662a854d94cc65de0417e9cafb3e3d82
   languageName: node
   linkType: hard
