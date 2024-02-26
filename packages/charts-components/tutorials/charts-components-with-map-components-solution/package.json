@@ -9,7 +9,8 @@
   "dependencies": {
     "@arcgis/charts-components": "next",
     "@arcgis/map-components": "next",
-    "@arcgis/core": "rc"
+    "@arcgis/core": "rc",
+    "@esri/calcite-components": "2.4.0"
   },
   "devDependencies": {
     "vite": "^5.1.1"
