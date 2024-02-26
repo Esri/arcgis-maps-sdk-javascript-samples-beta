@@ -1,14 +1,15 @@
 {
-  "name": "coding-components-angular-template",
+  "name": "charts-components-angular-template",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --force-esbuild",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "start": "yarn copy && ng serve",
+    "build": "yarn copy && ng build",
+    "watch": "yarn copy && ng build --watch --configuration development",
+    "test": "ng test",
+    "copy": "copy-folder ./node_modules/@arcgis/charts-components-angular ./charts-components-angular"
   },
+  "private": true,
   "dependencies": {
     "@angular/animations": "^17.2.0",
     "@angular/common": "^17.2.0",
@@ -18,9 +19,10 @@
     "@angular/platform-browser": "^17.2.0",
     "@angular/platform-browser-dynamic": "^17.2.0",
     "@angular/router": "^17.2.0",
-    "@arcgis/coding-components-angular": "next",
+    "@arcgis/charts-components-angular": "next",
+    "@arcgis/charts-model": "next",
     "@arcgis/core": "rc",
-    "@esri/calcite-components-angular": "^2.4.0",
+    "@esri/calcite-components": "2.4.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
@@ -30,7 +32,7 @@
     "@angular/cli": "^17.2.0",
     "@angular/compiler-cli": "^17.2.0",
     "@types/jasmine": "~5.1.0",
-    "@types/sortablejs": "^1.15.5",
+    "copy-folder-util": "^1.1.3",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
