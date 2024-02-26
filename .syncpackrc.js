@@ -63,7 +63,11 @@ const config = {
         "@arcgis/coding-components-react",
         "@arcgis/map-components",
         "@arcgis/map-components-angular",
-        "@arcgis/map-components-react"
+        "@arcgis/map-components-react",
+        "@arcgis/charts-components",
+        "@arcgis/charts-model",
+        "@arcgis/charts-components-angular",
+        "@arcgis/charts-components-react"
       ],
       packages: ["**"],
       pinVersion: "next"

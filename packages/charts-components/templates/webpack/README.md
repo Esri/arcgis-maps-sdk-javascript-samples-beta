@@ -26,28 +26,6 @@ yarn build
 
 ## Bundling details
 
-### Config
-
-Charts components assets need to be copied over to our `./arcgis-charts/t9n` folder for Stencil to load them properly.
-
-```
-// webpack.config.js
-const CopyPlugin = require("copy-webpack-plugin");
-
-module.exports = {
-  plugins: [
-    new CopyPlugin({
-      patterns: [
-        {
-          from: "./node_modules/@arcgis/charts-components/dist/arcgis-charts-components/t9n",
-          to: "./arcgis-charts/t9n"
-        }
-      ],
-    }),
-  ],
-};
-```
-
 #### JS
 
 We imported the components we need for the coding components by following [Stencil's instructions for integrating components without a JavaScript framework](https://stenciljs.com/docs/javascript).
@@ -123,8 +101,6 @@ module.exports = {
 ## Resources
 
 [Webpack's getting started guide](https://webpack.js.org/guides/getting-started/)
-
-[Webpack 5's `experiments` option](https://webpack.js.org/configuration/experiments/)
 
 [Defining custom elements](https://stenciljs.com/docs/custom-elements-bundle)
 

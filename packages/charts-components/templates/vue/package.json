@@ -8,8 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@arcgis/charts-components": "^4.29.0-beta.41",
-    "@arcgis/charts-model": "^4.29.0-beta.41",
+    "@arcgis/charts-components": "next",
+    "@arcgis/charts-model": "next",
     "@arcgis/core": "rc",
     "@esri/calcite-components": "2.4.0",
     "vue": "^3.4.18"
