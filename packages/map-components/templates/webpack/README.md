@@ -26,7 +26,7 @@ npm run build
 
 #### JS
 
-Imported the components using [Stencil's instructions for integrating components without a JavaScript framework](https://stenciljs.com/docs/javascript).
+Imported the components using [Stencil's pattern for integrating components without a JavaScript framework](https://stenciljs.com/docs/javascript).
 
 ```
 import { defineCustomElements } from "@esri/map-components/dist/loader";
