@@ -28,7 +28,7 @@ yarn build
 
 #### JS
 
-We imported the components we need for the coding components by following [Stencil's instructions for integrating components without a JavaScript framework](https://stenciljs.com/docs/javascript).
+We imported the components we need for the coding components by following [Stencil's pattern for integrating components without a JavaScript framework](https://stenciljs.com/docs/javascript).
 
 ```
 import { defineCustomElements as defineChartsElements } from "@arcgis/charts-components/dist/loader";

@@ -9,24 +9,24 @@ This repository showcases how to integrate the coding components using webpack.
 ### Install dependencies
 
 ```
-yarn install
+npm install
 ```
 
 ### Start the development server
 
 ```
-yarn run start
+npm run start
 ```
 
 ### Generate the production-ready compiled code
 
 ```
-yarn run build
+npm run build
 ```
 
 #### JS
 
-Imported the components using [Stencil's instructions for integrating components without a JavaScript framework](https://stenciljs.com/docs/javascript).
+Imported the components using [Stencil's pattern for integrating components without a JavaScript framework](https://stenciljs.com/docs/javascript).
 
 ```
 import { defineCustomElements as defineCalciteElements } from "@esri/calcite-components/dist/loader";
