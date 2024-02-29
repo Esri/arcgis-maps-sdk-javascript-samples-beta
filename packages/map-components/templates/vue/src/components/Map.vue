@@ -1,5 +1,5 @@
-<script setup lang="ts">
-function onReady(event: any) {
+<script setup>
+function onReady(event) {
   console.log("MapView ready", event);
 }
 </script>
