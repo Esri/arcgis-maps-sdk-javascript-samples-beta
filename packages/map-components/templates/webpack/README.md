@@ -9,19 +9,19 @@ This repository showcases how to integrate the map components using webpack.
 ### Install dependencies
 
 ```
-yarn install
+npm install
 ```
 
 ### Start the development server
 
 ```
-yarn run start
+npm run start
 ```
 
 ### Generate the production-ready compiled code
 
 ```
-yarn run build
+npm run build
 ```
 
 #### JS
