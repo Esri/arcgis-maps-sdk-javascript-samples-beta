@@ -15,15 +15,15 @@
 
 import { useEffect, useRef, useCallback } from 'react';
 
-import { ArcgisChartsActionBar, ArcgisChartsScatterPlot } from '@arcgis/charts-components-react/src/components';
+import { ArcgisChartsActionBar, ArcgisChartsScatterPlot } from '@arcgis/charts-components-react';
 import { ScatterPlotModel } from '@arcgis/charts-model';
 
 import { loadFeatureLayer } from '../functions/load-data';
 
 import './Charts.css';
 // set the default action bar based on the series type
-function setDefaultActionBar(chartElementId, seriesType) {
-  const actionBarElement = document.getElementById(chartElementId);
+function setDefaultActionBar(chartElementId: string, seriesType: string) {
+  const actionBarElement = document.getElementById(chartElementId) as HTMLArcgisChartsActionBarElement;
 
   if (actionBarElement !== null) {
     actionBarElement.actionBarHideActionsProps = {
@@ -37,11 +37,11 @@ function setDefaultActionBar(chartElementId, seriesType) {
 }
 
 export default function Charts() {
-  const scatterPlotRef = useRef();
+  const scatterPlotRef = useRef(null);
 
   // useCallback to prevent the function from being recreated when the component rebuilds
   const initializeChart = useCallback(async () => {
-    const featureLayer = await loadFeatureLayer('8871626e970a4f3e9d6113ec63a92f2f');
+    const featureLayer = await loadFeatureLayer();
 
     const scatterPlotParams = {
       layer: featureLayer,
@@ -57,8 +57,8 @@ export default function Charts() {
     scatterPlotRef.current.layer = featureLayer;
 
     // add event listener when selection is made on the chart to enable/disable action bar buttons
-    scatterPlotRef.current.addEventListener('arcgisChartsSelectionComplete', (event) => {
-      const actionBarElement = document.getElementById('scatter-plot-action-bar');
+    scatterPlotRef.current.addEventListener('arcgisChartsSelectionComplete', (event: CustomEvent) => {
+      const actionBarElement = document.getElementById('scatter-plot-action-bar') as HTMLArcgisChartsActionBarElement;
 
       const selectionData = event.detail;
       if (selectionData.selectionOIDs === undefined || selectionData.selectionOIDs.length === 0) {

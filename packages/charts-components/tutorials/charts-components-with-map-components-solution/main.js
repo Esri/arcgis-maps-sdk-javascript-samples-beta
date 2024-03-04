@@ -38,48 +38,39 @@ defineMapElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/
 defineChartsElements(window, { resourcesUrl: "https://js.arcgis.com/charts-components/4.29/t9n" });
 
 /**
- * Async function to initialize the scatterplot
+ * Add an event listener for the `arcgis-map` component's `arcgisViewReadyChange` event.
  */
-(async () => {
+document.querySelector("arcgis-map").addEventListener("arcgisViewReadyChange", (event) => {
   /**
-   * Use `document.querySelector()` to get a reference to the `arcgis-map` component and `arcgis-charts-scatter-plot` component.
-   * Add an event listener for the `arcgis-map` component's `arcgisViewReadyChange` event.
+   * Get the map and the view from the event target
+   */
+  const { map, view } = event.target;
+
+  /**
+   * Get the layer from the mapElement and the config from the layer
+   */
+  const layer = map.layers.items[0];
+  const config = layer.charts[0];
+
+  /**
+   * Use `document.getElementById()` to get a reference to the `arcgis-charts-scatter-plot` element
    */
   const scatterPlotElement = document.getElementById("scatter-plot");
-  const mapElement = document.querySelector("arcgis-map");
 
-  mapElement.addEventListener("arcgisViewReadyChange", async (event) => {
-    /**
-     * Get the map and the view from the event
-     */
-    const { map, view } = event.target;
+  /**
+   * Assign the config and the layer to the chart element to render the chart
+   */
+  scatterPlotElement.layer = layer;
+  scatterPlotElement.config = config;
 
-    /**
-     * Wait for all the map resources to load
-     */
-    await map.loadAll();
+  /**
+   * Get the layerView from the view
+   * Add event listener to the scatter plot to listen to the selection complete event, and highlight the selected features on the map
+   */
+  const featureLayerViews = view.layerViews;
 
-    /**
-     * Get the layer from the mapElement and the config from the layer
-     */
-    const layer = await map.layers.items[0];
-    const config = layer.charts[0];
-
-    /**
-     * Assign the config and the layer to the chart component to render the chart
-     */
-    scatterPlotElement.layer = layer;
-    scatterPlotElement.config = config;
-
-    /**
-     * Get the layerView from the view
-     * Add event listener to the scatter plot to listen to the selection complete event, and highlight the selected features on the map
-     */
-    const featureLayerViews = view.layerViews;
-
-    scatterPlotElement.addEventListener("arcgisChartsSelectionComplete", (event) => {
-      map.highlightSelect?.remove();
-      map.highlightSelect = featureLayerViews.items[0].highlight(event.detail.selectionOIDs);
-    });
+  scatterPlotElement.addEventListener("arcgisChartsSelectionComplete", (event) => {
+    map.highlightSelect?.remove();
+    map.highlightSelect = featureLayerViews.items[0].highlight(event.detail.selectionOIDs);
   });
-})();
+});

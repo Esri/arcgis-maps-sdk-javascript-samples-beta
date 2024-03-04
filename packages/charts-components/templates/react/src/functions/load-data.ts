@@ -13,19 +13,18 @@
  * limitations under the License.
  */
 
-import FeatureLayer from "@arcgis/core/layers/FeatureLayer";
+import FeatureLayer from '@arcgis/core/layers/FeatureLayer';
 
 /**
  * Simple data loader against public data.
  * For the test data, we need a feature layer.
  */
-export async function loadFeatureLayer(portalItemId) {
+export async function loadFeatureLayer() {
   const featureLayer = new FeatureLayer({
     portalItem: {
-      id: portalItemId
-    }
+      id: '8871626e970a4f3e9d6113ec63a92f2f',
+    },
   });
-
   await featureLayer.load();
 
   return featureLayer;

@@ -13,11 +13,12 @@
  * limitations under the License.
  */
 
+// app.module
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ComponentLibraryModule } from '../../charts-components-angular/src/public-api';
+import { ComponentLibraryModule } from '@arcgis/charts-components-angular/src';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,4 +26,8 @@ import { ComponentLibraryModule } from '../../charts-components-angular/src/publ
   providers: [],
   bootstrap: [AppComponent],
 })
+
+// app.component.html
+<arcgis-charts-scatter-plot #scatterPlot class="chart-component"></arcgis-charts-scatter-plot>
+
 export class AppModule {}

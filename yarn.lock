@@ -385,6 +385,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@arcgis/charts-components@npm:~4.29.4":
+  version: 4.29.4
+  resolution: "@arcgis/charts-components@npm:4.29.4"
+  dependencies:
+    "@stencil/core": "npm:4.7.1"
+  peerDependencies:
+    "@arcgis/core": ">=4.29.0-next <4.30"
+    "@esri/calcite-components": ">=2.2.0 <3.0.0"
+  checksum: 6afffe29d837fcf5b39b582e122fb50041a6a479406ac6e61268f5d3333bd9ec38eea349bb304d38631ab7c35bc9a2d50dfb444afe09011928f2e8056f494cb4
+  languageName: node
+  linkType: hard
+
 "@arcgis/charts-model@npm:~4.29.0":
   version: 4.29.0
   resolution: "@arcgis/charts-model@npm:4.29.0"
@@ -5052,7 +5064,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "charts-components-with-map-components-solution@workspace:packages/charts-components/tutorials/charts-components-with-map-components-solution"
   dependencies:
-    "@arcgis/charts-components": "npm:~4.29.0"
+    "@arcgis/charts-components": "npm:~4.29.4"
     "@arcgis/core": "npm:~4.29.0"
     "@arcgis/map-components": "npm:~4.29.0"
     "@esri/calcite-components": "npm:2.4.0"
