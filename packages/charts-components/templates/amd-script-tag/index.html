@@ -10,7 +10,6 @@
             height: 800px;
         }
     </style>
-
     <link rel="icon" href="data:;base64,=" />
 
     <!-- Load the ArcGIS Maps SDK for JavaScript -->
@@ -30,35 +29,27 @@
          */
         async function loadFeatureLayerItem() {
             const WebMap = await $arcgis.import("esri/WebMap");
-
             const webmap = new WebMap({
                 portalItem: {
                     id: "a72bb6468f57491f84409186446808e1"
                 }
             });
-
             await webmap.loadAll();
-
             const featureLayerItem = webmap.layers.items[0];
 
             return featureLayerItem;
         }
-
-        (async () => {
-            // Load the feature layer item
+        /**
+         * Listen for the `arcgisChartsUpdateComplete` event to update the chart with the feature layer.
+         */
+        document.querySelector("arcgis-charts-scatter-plot").addEventListener("arcgisChartsUpdateComplete", async (event) => {
             const layer = await loadFeatureLayerItem();
-
-
-            // Get the first chart's config
             const config = layer.charts[0];
-
-            // Get the Scatterplot element
             const scatterPlot = document.getElementById("scatter-plot");
 
-            // Assigning the config and the layer to the chart component to render the chart
             scatterPlot.config = config;
             scatterPlot.layer = layer;
-        })()
+        });
     </script>
 </body>
 

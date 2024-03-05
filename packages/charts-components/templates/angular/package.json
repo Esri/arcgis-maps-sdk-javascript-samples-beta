@@ -1,15 +1,14 @@
 {
   "name": "charts-components-angular-template",
   "version": "0.0.0",
+  "private": true,
   "scripts": {
     "ng": "ng",
-    "start": "yarn copy && ng serve",
-    "build": "yarn copy && ng build",
-    "watch": "yarn copy && ng build --watch --configuration development",
-    "test": "ng test",
-    "copy": "copy-folder ./node_modules/@arcgis/charts-components-angular ./charts-components-angular"
+    "start": "ng serve  --force-esbuild",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^17.2.0",
     "@angular/common": "^17.2.0",
@@ -32,7 +31,6 @@
     "@angular/cli": "^17.2.0",
     "@angular/compiler-cli": "^17.2.0",
     "@types/jasmine": "~5.1.0",
-    "copy-folder-util": "^1.1.3",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

@@ -13,13 +13,19 @@
  * limitations under the License.
  */
 
-import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
+import FeatureLayer from '@arcgis/core/layers/FeatureLayer';
 
-const routes: Routes = [];
+/**
+ * Simple data loader against public data.
+ * For the test data, we need a feature layer.
+ */
+export async function loadFeatureLayer() {
+  const featureLayer = new FeatureLayer({
+    portalItem: {
+      id: '8871626e970a4f3e9d6113ec63a92f2f',
+    },
+  });
+  await featureLayer.load();
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule {}
+  return featureLayer;
+}
