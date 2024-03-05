@@ -53,7 +53,7 @@ document.querySelector("arcgis-map").addEventListener("arcgisViewReadyChange", (
   const config = layer.charts[0];
 
   /**
-   * Use `document.getElementById()` to get a reference to the `arcgis-charts-scatter-plot` element
+   * Get a reference to the `arcgis-charts-scatter-plot` element
    */
   const scatterPlotElement = document.getElementById("scatter-plot");
 
@@ -65,7 +65,7 @@ document.querySelector("arcgis-map").addEventListener("arcgisViewReadyChange", (
 
   /**
    * Get the layerView from the view
-   * Add event listener to the scatter plot to listen to the selection complete event, and highlight the selected features on the map
+   * Add an event listener to the scatter plot element to listen to the selection complete event, and highlight the selected features on the map
    */
   const featureLayerViews = view.layerViews;
 
