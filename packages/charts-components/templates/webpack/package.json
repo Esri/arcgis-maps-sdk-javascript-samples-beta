@@ -6,8 +6,8 @@
     "start": "webpack-dev-server --mode development --open"
   },
   "dependencies": {
-    "@arcgis/charts-components": "~4.29.4",
-    "@arcgis/charts-model": "~4.29.4",
+    "@arcgis/charts-components": "~4.29.0",
+    "@arcgis/charts-model": "~4.29.0",
     "@arcgis/core": "~4.29.0",
     "@esri/calcite-components": "2.4.0"
   },
