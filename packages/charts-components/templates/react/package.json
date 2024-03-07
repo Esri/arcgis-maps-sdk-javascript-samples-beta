@@ -8,9 +8,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@arcgis/charts-components-react": "~4.29.0",
-    "@arcgis/charts-model": "~4.29.0",
-    "@arcgis/core": "~4.29.0",
+    "@arcgis/charts-components-react": "~4.29.6",
+    "@arcgis/charts-model": "~4.29.6",
+    "@arcgis/core": "~4.29.6",
     "@esri/calcite-components-react": "^2.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
