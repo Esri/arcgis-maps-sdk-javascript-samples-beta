@@ -5,33 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Map components Vite template</title>
     <link rel="icon" href="data:;base64,=" />
-    <style>
-      @import 'https://js.arcgis.com/4.29/@arcgis/core/assets/esri/themes/dark/main.css';
-
-      html,
-      body {
-        background-color: var(--calcite-ui-foreground-2);
-        padding: 0;
-        margin: 0;
-        width: 100vw;
-        height: 100vh;
-      }
-    </style>
   </head>
   <body>
     <arcgis-map item-id="d5dda743788a4b0688fe48f43ae7beb9">
       <arcgis-search position="top-right"></arcgis-search>
       <arcgis-legend position="bottom-left"></arcgis-legend>
     </arcgis-map>
-    <script type="module">
-        // Lazy loading ESM
-        import { defineCustomElements } from "@arcgis/map-components/dist/loader";
-        defineCustomElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.29/assets" });
-        
-        const mapElement = document.querySelector('arcgis-map');
-        mapElement.addEventListener('arcgisViewReadyChange', event => { 
-          console.log('MapView ready', event);
-        })
-    </script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
