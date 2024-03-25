@@ -1,42 +1,77 @@
-# Vue 3 + Vite
+# Map components Vue 3 + Vite template
 
 📁 **[Click here to download this directory as a ZIP file](https://download-directory.github.io?url=https://github.com/Esri/arcgis-maps-sdk-javascript-samples-beta/tree/main/packages/map-components/templates/vue)** 📁
 
+This project showcases how to integrate the map components using Vite.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Get started
 
-## Recommended IDE Setup
+The project was created using [`npm create vite`](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) with the [vanilla JavaScript template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-vanilla).
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### Commands
 
-## Customize configuration
+Instructions for setup after you save this directory to your machine.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+### Install dependencies
 
-## Project Setup
+#### npm
 
-```sh
+```
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+#### yarn
 
-```sh
+```
+yarn install
+```
+
+### Dev
+
+Start local server
+
+#### npm
+
+```
 npm run dev
 ```
 
-### Compile and Minify for Production
+#### yarn
 
-```sh
+```
+yarn dev
+```
+
+### Build
+
+Build the project to the specified output folder (`/dist`)
+
+#### npm
+
+```
 npm run build
 ```
 
-### Preview production
+#### yarn
 
-Start local server to serve the build output. You must run `build` before `preview`
+```
+yarn build
+```
+
+### Preview
+
+Start local server to serve the specified output folder. You must run `build` before `preview`
+
+#### npm
 
 ```
 npm run preview
+```
+
+#### yarn
+
+```
+yarn preview
 ```
 
 ## Resources
