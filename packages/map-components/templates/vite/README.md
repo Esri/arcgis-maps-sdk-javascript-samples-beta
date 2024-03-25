@@ -10,28 +10,66 @@ The project was created using [`npm create vite`](https://vitejs.dev/guide/#scaf
 
 ### Commands
 
-#### Dev
+### Install dependencies
+
+#### npm
+
+```
+npm install
+```
+
+#### yarn
+
+```
+yarn install
+```
+
+### Dev
 
 Start local server
 
+#### npm
+
 ```
-npm run start
+npm run dev
 ```
 
-#### Build
+#### yarn
+
+```
+yarn dev
+```
+
+### Build
 
 Build the project to the specified output folder (`/dist`)
+
+#### npm
 
 ```
 npm run build
 ```
 
-#### Preview
+#### yarn
+
+```
+yarn build
+```
+
+### Preview
 
 Start local server to serve the specified output folder. You must run `build` before `preview`
 
+#### npm
+
 ```
 npm run preview
+```
+
+#### yarn
+
+```
+yarn preview
 ```
 
 ## Resources

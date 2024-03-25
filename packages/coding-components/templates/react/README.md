@@ -8,30 +8,68 @@ This repository showcases how to integrate the coding components with [React](ht
 
 The project was created using [`yarn create vite`](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) with the [React template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react).
 
-### Commands
+## Commands
 
-#### Dev
+### Install dependencies
+
+#### npm
+
+```
+npm install
+```
+
+#### yarn
+
+```
+yarn install
+```
+
+### Dev
 
 Start local server
 
+#### npm
+
 ```
-vite
+npm run dev
 ```
 
-#### Build
+#### yarn
+
+```
+yarn dev
+```
+
+### Build
 
 Build the project to the specified output folder (`/dist`)
 
+#### npm
+
 ```
-vite build
+npm run build
 ```
 
-#### Preview
+#### yarn
+
+```
+yarn build
+```
+
+### Preview
 
 Start local server to serve the specified output folder. You must run `build` before `preview`
 
+#### npm
+
 ```
-vite preview
+npm run preview
+```
+
+#### yarn
+
+```
+yarn preview
 ```
 
 ## Learn More
