@@ -26,6 +26,7 @@ In this case, you would need to `cd` into each template and then install your de
 
 This monorepo was built using [yarn workspaces](https://yarnpkg.com/features/workspaces). 
 You only need to run `yarn install` once to get a root `/node_modules` for all the code samples and templates. 
+
 If you want to test a specific template, you can use the `yarn workspaces` command.
 
 E.g., running the development server for the map components vue template
