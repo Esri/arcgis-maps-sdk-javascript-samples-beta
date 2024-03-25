@@ -18,7 +18,7 @@ Each component package template provides a direct link to download the template'
 
 You can download all the templates for a specific component package if you'd like to test a component package in different frontends.
 
-E.g., the README of [./packages/map-components/templates](./packages/map-components/templates) has a link to download a download all map component templates as a ZIP file
+E.g., the README of [./packages/map-components](./packages/map-components) has a link to download a download all map component templates as a ZIP file
 
 In this case, you would need to `cd` into each template and then install your dependencies.
 
