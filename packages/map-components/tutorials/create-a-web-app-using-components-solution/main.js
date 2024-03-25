@@ -29,7 +29,7 @@ import { defineCustomElements as defineCalciteElements } from "@esri/calcite-com
  * `@esri/calcite-components` installed as a dependency of `@arcgis/map-components`.
  */
 defineCalciteElements(window, {
-  resourcesUrl: "https://js.arcgis.com/calcite-components/2.4.0/assets"
+  resourcesUrl: "https://js.arcgis.com/calcite-components/2.5.1/assets"
 });
 
 /**
