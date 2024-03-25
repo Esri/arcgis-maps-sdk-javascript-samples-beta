@@ -6,6 +6,8 @@ This repository showcases how to integrate the map components using webpack.
 
 ## Project setup
 
+Instructions for setup after you save this directory to your machine.
+
 ### Install dependencies
 
 #### npm

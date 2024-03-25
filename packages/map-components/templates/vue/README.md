@@ -10,6 +10,8 @@ The project was created using [`npm create vite`](https://vitejs.dev/guide/#scaf
 
 ### Commands
 
+Instructions for setup after you save this directory to your machine.
+
 ### Install dependencies
 
 #### npm
