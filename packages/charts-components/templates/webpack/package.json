@@ -9,7 +9,7 @@
     "@arcgis/charts-components": "~4.29.6",
     "@arcgis/charts-model": "~4.29.6",
     "@arcgis/core": "~4.29.6",
-    "@esri/calcite-components": "2.4.0"
+    "@esri/calcite-components": "^2.5.1"
   },
   "devDependencies": {
     "css-loader": "^6.10.0",

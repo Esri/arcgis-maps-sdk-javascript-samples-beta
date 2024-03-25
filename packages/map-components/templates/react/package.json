@@ -10,7 +10,7 @@
   "dependencies": {
     "@arcgis/core": "~4.29.6",
     "@arcgis/map-components-react": "~4.29.6",
-    "@esri/calcite-components": "2.4.0",
+    "@esri/calcite-components": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

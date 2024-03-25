@@ -21,7 +21,7 @@
     "@arcgis/charts-components-angular": "~4.29.6",
     "@arcgis/charts-model": "~4.29.6",
     "@arcgis/core": "~4.29.6",
-    "@esri/calcite-components": "2.4.0",
+    "@esri/calcite-components": "^2.5.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
