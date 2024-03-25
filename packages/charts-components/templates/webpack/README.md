@@ -6,19 +6,45 @@ This repository showcases how to integrate the charts components using webpack.
 
 ## Project setup
 
+Instructions for setup after you save this directory to your machine.
+
 ### Install dependencies
 
+#### npm
+
 ```
-yarn
+npm install
+```
+
+#### yarn
+
+```
+yarn install
 ```
 
 ### Start the development server
+
+#### npm
+
+```
+npm run start
+```
+
+#### yarn
 
 ```
 yarn start
 ```
 
 ### Generate the production-ready compiled code
+
+#### npm
+
+```
+npm run build
+```
+
+#### yarn
 
 ```
 yarn build
@@ -30,7 +56,7 @@ yarn build
 
 We imported the components we need for the coding components by following [Stencil's pattern for integrating components without a JavaScript framework](https://stenciljs.com/docs/javascript).
 
-```
+```js
 import { defineCustomElements as defineChartsElements } from "@arcgis/charts-components/dist/loader";
 
 defineChartsElements(window, {
@@ -48,7 +74,7 @@ You can find all the necessary styling in [`src/index.css`](./src/index.css).
 
 The generation of our `index.html` was simplified by using the HtmlWebpackPlugin in the webpack configuration file.
 
-```
+```js
 // webpack.config.js
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 

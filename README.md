@@ -4,26 +4,62 @@ This repository contains code samples and templates for coding with the ArcGIS M
 
 If you are looking for the ArcGIS Maps SDK for JavaScript core package, it is available on [npm](https://www.npmjs.com/package/@arcgis/core).
 
-This repository is organized as a monorepo using yarn workspaces.
+## How to use this repository
+
+This repository is organized as a [monorepo](https://en.wikipedia.org/wiki/Monorepo).
+
+### Download directories
+
+#### A single template of a component package
+
+Each component package template provides a direct link to download the template's directory as a zip file. Once the file has been unzipped, you can install your dependencies with yarn or npm, and then run the development server. 
+
+#### All templates of a component package
+
+You can download all the templates for a specific component package if you'd like to test a component package in different frontends.
+
+E.g., the README of [./packages/map-components](./packages/map-components) has a link to download a download all map component templates as a ZIP file
+
+In this case, you would need to `cd` into each template and then install your dependencies.
+
+### Clone this repository
+
+This monorepo was built using [yarn workspaces](https://yarnpkg.com/features/workspaces). 
+After cloning, you only need to run `yarn install` in the root of the repository once to get a single `/node_modules` for all the code samples and templates. 
+
+If you want to test a specific template, you can use the `yarn workspaces` command.
+
+E.g., running the development server for the map components vue template
+
+```
+yarn workspace map-components-vue-template dev
+```
 
 ## Available code samples
 
 Below are a collection of code samples that provide proof-of-concept for using ArcGIS Maps SDK for JavaScript components with a variety of popular JavaScript build tools, frameworks and module bundlers. There are download links in the readme for each of the following samples. We recommend downloading a template from the links below and using your package manager of choice.  
 
-- Map Components
+- Map components
   - [AMD Script Tag](./packages/map-components/templates/amd-script-tag)
   - [Angular](./packages/map-components/templates/Angular)
   - [React](./packages/map-components/templates/react)
   - [Vite](./packages/map-components/templates/vite)
   - [Vue](./packages/map-components/templates/vue)
   - [Webpack](./packages/map-components/templates/webpack)
-- Coding Components
+- Coding components
   - [AMD Script Tag](./packages/coding-components/templates/amd-script-tag)
   - [Angular](./packages/coding-components/templates/angular)
   - [React](./packages/coding-components/templates/react)
   - [Vite](./packages/coding-components/templates/vite)
   - [Vue](./packages/coding-components/templates/vue)
   - [Webpack](./packages/coding-components/templates/webpack)
+- Charts components
+  - [AMD Script Tag](./packages/charts-components/templates/amd-script-tag)
+  - [Angular](./packages/charts-components/templates/angular)
+  - [React](./packages/charts-components/templates/react)
+  - [Vite](./packages/charts-components/templates/vite)
+  - [Vue](./packages/charts-components/templates/vue)
+  - [Webpack](./packages/charts-components/templates/webpack)
 
 ## Requirements
 
