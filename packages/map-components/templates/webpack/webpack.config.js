@@ -24,10 +24,8 @@ module.exports = {
   },
   node: false,
   optimization: {
-    minimizer: [
-      new TerserPlugin({extractComments: false}),
-    ],
-  },  
+    minimizer: [new TerserPlugin({ extractComments: false })]
+  },
   output: {
     path: path.join(__dirname, "dist"),
     chunkFilename: "chunks/[id].js",
@@ -36,30 +34,27 @@ module.exports = {
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, "dist"),
+      directory: path.join(__dirname, "dist")
     },
     compress: true,
-    port: 3001,
+    port: 8080
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         enforce: "pre",
-        use: ["source-map-loader"],
+        use: ["source-map-loader"]
       },
       {
         test: /\.css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader"
-        ]
-      },
+        use: [MiniCssExtractPlugin.loader, "css-loader"]
+      }
     ]
   },
   plugins: [
     new HtmlWebPackPlugin({
-      title: "ArcGIS Maps SDK  for JavaScript",
+      title: "Map components Webpack template",
       template: "./public/index.html",
       filename: "./index.html",
       chunksSortMode: "none",

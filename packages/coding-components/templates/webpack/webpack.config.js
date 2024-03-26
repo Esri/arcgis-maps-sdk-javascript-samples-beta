@@ -12,74 +12,67 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-
 const path = require("path");
 
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
+
 module.exports = {
-  entry: ["./src/index.css", "./src/index.js"],
-
-  output: {
-    filename: "[id][name].js",
-    chunkFilename: "[id][name].js",
-    path: path.resolve(__dirname, "dist"),
-    clean: true,
+  entry: {
+    index: ["./src/index.css", "./src/index.js"]
   },
-
-  devtool: "source-map",
-
+  node: false,
+  optimization: {
+    minimizer: [new TerserPlugin({ extractComments: false })]
+  },
+  output: {
+    path: path.join(__dirname, "dist"),
+    chunkFilename: "chunks/[id].js",
+    publicPath: "",
+    clean: true
+  },
   devServer: {
     static: {
-      directory: path.join(__dirname, "dist"),
+      directory: path.join(__dirname, "dist")
     },
     compress: true,
-    port: 9000,
+    port: 8080
   },
-
   experiments: {
     // Because we are using async/await in index.js
-    topLevelAwait: true,
+    topLevelAwait: true
   },
-
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"], // Collect CSS and insert them into the page
+        test: /\.js$/,
+        enforce: "pre",
+        use: ["source-map-loader"]
       },
-    ],
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader"]
+      }
+    ]
   },
-
   plugins: [
     // This plugin simplifies creation of HTML files to serve your webpack bundles.
     new HtmlWebPackPlugin({
       title: "Coding components Webpack template",
-      favicon: "./src/icons/favicon.png",
+      template: "./public/index.html",
+      filename: "./index.html",
       chunksSortMode: "none",
-      meta: {
-        viewport:
-          "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=no",
-      },
-      templateContent: `
-        <!DOCTYPE html>
-          <html dir="ltr" lang="en">
-            <head>
-              <meta charset="utf-8">
-            </head>
-            <body>
-              <div class="editor-wrapper">
-                <arcgis-arcade-editor />
-              </div>
-              <calcite-scrim id="scrim" loading />
-            </body>
-          </html>`,
+      inlineSource: ".(css)$"
     }),
+    new MiniCssExtractPlugin({
+      filename: "[name].[chunkhash].css",
+      chunkFilename: "[id].css"
+    })
   ],
-
   // Resolve property for importing files
   resolve: {
     modules: [path.resolve(__dirname, "/src"), "node_modules/"],
-    extensions: [".js", ".css"],
-  },
+    extensions: [".js", ".css"]
+  }
 };

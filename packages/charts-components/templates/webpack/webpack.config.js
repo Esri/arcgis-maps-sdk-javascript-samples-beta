@@ -12,54 +12,57 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
-module.exports = {
-  entry: ["./src/index.css", "./src/index.js"],
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
+module.exports = {
+  entry: {
+    index: ["./src/index.css", "./src/index.js"]
+  },
+  node: false,
+  optimization: {
+    minimizer: [new TerserPlugin({ extractComments: false })]
+  },
   output: {
-    filename: "[id][name].js",
-    chunkFilename: "[id][name].js",
     path: path.resolve(__dirname, "dist"),
+    chunkFilename: "chunks/[id].js",
+    publicPath: "",
     clean: true
   },
-
-  devtool: "source-map",
-
   devServer: {
     static: {
       directory: path.join(__dirname, "dist")
     },
     compress: true,
-    port: 9000
+    port: 8080
   },
   module: {
     rules: [
       {
+        test: /\.js$/,
+        enforce: "pre",
+        use: ["source-map-loader"]
+      },
+      {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"] // Collect CSS and insert them into the page
+        use: [MiniCssExtractPlugin.loader, "css-loader"]
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: "Charts components Webpack template",
+      template: "./public/index.html",
+      filename: "./index.html",
       chunksSortMode: "none",
-      meta: {
-        viewport: "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=no"
-      },
-      templateContent: `
-        <!DOCTYPE html>
-          <html dir="ltr" lang="en">
-            <head>
-              <meta charset="utf-8">
-            </head>
-            <body>
-              <arcgis-charts-scatter-plot class="chart-container"></arcgis-charts-scatter-plot>
-            </body>
-          </html>`
+      inlineSource: ".(css)$"
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].[chunkhash].css",
+      chunkFilename: "[id].css"
     })
   ]
 };

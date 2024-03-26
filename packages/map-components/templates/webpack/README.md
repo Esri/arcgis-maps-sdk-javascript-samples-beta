@@ -54,7 +54,7 @@ yarn build
 
 Imported the components using [Stencil's pattern for integrating components without a JavaScript framework](https://stenciljs.com/docs/javascript).
 
-```
+```js
 import { defineCustomElements } from "@esri/map-components/dist/loader";
 
 // define custom elements in the browser, and load the assets from the CDN
@@ -73,7 +73,7 @@ You can find all the necessary styling in [`src/index.css`](./src/index.css). Im
 
 #### HTML
 
-The parsing of our `index.html` was simplified by using the HtmlWebpackPlugin in the webpack configuration file.
+Parsing the `index.html` was simplified by using the HtmlWebpackPlugin in the webpack configuration file.
 
 ```js
 // webpack.config.js
@@ -82,7 +82,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
-      title: "ArcGIS Maps SDK  for JavaScript",
+      title: "Map components Webpack template",
       template: "./public/index.html",
       filename: "./index.html",
       chunksSortMode: "none",
@@ -107,4 +107,6 @@ For the webpack configuration file ([`webpack.config.js`](webpack.config.js))
 
 [html-webpack-plugin](https://webpack.js.org/plugins/html-webpack-plugin/)
 
-[copy-webpack-plugin](https://webpack.js.org/plugins/copy-webpack-plugin/)
+[mini-css-extract-plugin](https://webpack.js.org/plugins/mini-css-extract-plugin/)
+
+[terser-webpack-plugin](https://webpack.js.org/plugins/terser-webpack-plugin/)

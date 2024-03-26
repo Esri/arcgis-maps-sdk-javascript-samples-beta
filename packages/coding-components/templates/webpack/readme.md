@@ -1,4 +1,4 @@
-# Coding components ESM Webpack template
+# Coding components Webpack template
 
 📁 **[Click here to download this directory as a ZIP file](https://download-directory.github.io?url=https://github.com/Esri/arcgis-maps-sdk-javascript-samples-beta/tree/main/packages/coding-components/templates/webpack)** 📁
 
@@ -54,7 +54,7 @@ yarn build
 
 Imported the components using [Stencil's pattern for integrating components without a JavaScript framework](https://stenciljs.com/docs/javascript).
 
-```
+```js
 import { defineCustomElements as defineCalciteElements } from "@esri/calcite-components/dist/loader";
 import { defineCustomElements as defineCodingElements } from "@arcgis/coding-components/dist/loader";
 
@@ -76,37 +76,23 @@ You can find all the necessary styling in [`src/index.css`](./src/index.css). Im
 
 #### HTML
 
-The generation of our `index.html` was simplified by using the HtmlWebpackPlugin in the webpack configuration file.
+Parsing the `index.html` was simplified by using the HtmlWebpackPlugin in the webpack configuration file.
 
-```
+```js
 // webpack.config.js
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   plugins: [
-     new HtmlWebPackPlugin({
-      title: "Coding components",
-      favicon: "./src/icons/favicon.png",
+    new HtmlWebPackPlugin({
+      title: "Coding components Webpack template",
+      template: "./public/index.html",
+      filename: "./index.html",
       chunksSortMode: "none",
-      meta: {
-        viewport:
-          "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=no",
-      },
-      templateContent: `
-        <!DOCTYPE html>
-          <html dir="ltr" lang="en">
-            <head>
-              <meta charset="utf-8">
-            </head>
-            <body>
-              <div class="editor-wrapper">
-                <arcgis-arcade-editor />
-              </div>
-              <calcite-scrim id="scrim" loading></calcite-scrim>
-            </body>
-          </html>`,
+      inlineSource: ".(css)$"
     }),
-  ],
+    ...
+  ]
 };
 ```
 
@@ -124,4 +110,6 @@ For the webpack configuration file ([`webpack.config.js`](webpack.config.js))
 
 [html-webpack-plugin](https://webpack.js.org/plugins/html-webpack-plugin/)
 
-[copy-webpack-plugin](https://webpack.js.org/plugins/copy-webpack-plugin/)
+[mini-css-extract-plugin](https://webpack.js.org/plugins/mini-css-extract-plugin/)
+
+[terser-webpack-plugin](https://webpack.js.org/plugins/terser-webpack-plugin/)
