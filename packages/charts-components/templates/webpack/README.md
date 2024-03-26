@@ -33,7 +33,7 @@ npm run start
 #### yarn
 
 ```
-npm run start
+yarn start
 ```
 
 ### Generate the production-ready compiled code
@@ -47,7 +47,7 @@ npm run build
 #### yarn
 
 ```
-npm run build
+yarn build
 ```
 
 #### JS
@@ -69,7 +69,7 @@ You can find all the necessary styling in [`src/index.css`](./src/index.css).
 
 #### HTML
 
-The parsing of our `index.html` was simplified by using the HtmlWebpackPlugin in the webpack configuration file.
+Parsing the `index.html` was simplified by using the HtmlWebpackPlugin in the webpack configuration file.
 
 ```js
 // webpack.config.js

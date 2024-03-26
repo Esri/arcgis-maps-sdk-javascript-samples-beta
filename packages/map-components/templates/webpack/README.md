@@ -73,7 +73,7 @@ You can find all the necessary styling in [`src/index.css`](./src/index.css). Im
 
 #### HTML
 
-The parsing of our `index.html` was simplified by using the HtmlWebpackPlugin in the webpack configuration file.
+Parsing the `index.html` was simplified by using the HtmlWebpackPlugin in the webpack configuration file.
 
 ```js
 // webpack.config.js
