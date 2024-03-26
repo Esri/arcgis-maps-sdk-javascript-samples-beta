@@ -15,6 +15,8 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "./index.css";
+
 import ArcadeEditor from "./components/ArcadeEditor";
 import { defineCustomElements as defineCalciteElements } from "@esri/calcite-components/dist/loader";
 import { defineCustomElements as defineCodingElements } from "@arcgis/coding-components/dist/loader";

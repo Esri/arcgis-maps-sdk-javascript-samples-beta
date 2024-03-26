@@ -6,28 +6,68 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 ## Commands
 
+Instructions for setup after you save this directory to your machine.
+
+### Install dependencies
+
+#### npm
+
+```
+npm install
+```
+
+#### yarn
+
+```
+yarn install
+```
+
 ### Dev
 
 Start local server
 
+#### npm
+
 ```
-vite
+npm run dev
+```
+
+#### yarn
+
+```
+yarn dev
 ```
 
 ### Build
 
 Build the project to the specified output folder (`/dist`)
 
+#### npm
+
 ```
-vite build
+npm run build
+```
+
+#### yarn
+
+```
+yarn build
 ```
 
 ### Preview
 
 Start local server to serve the specified output folder. You must run `build` before `preview`
 
+#### npm
+
 ```
-vite preview
+npm run preview
+```
+
+#### yarn
+
+```
+yarn preview
 ```
 
 ## Resources
