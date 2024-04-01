@@ -49,19 +49,19 @@ document.querySelector("arcgis-map").addEventListener("arcgisViewReadyChange", (
   /**
    * Get the layer from the mapElement and the config from the layer
    */
-  const layer = map.layers.items[0];
-  const config = layer.charts[0];
+  const featureLayer = map.layers.find((layer) => layer.title === "CollegeScorecard_Charts");
+  const scatterplotConfig = featureLayer.charts[0];
 
   /**
    * Get a reference to the `arcgis-charts-scatter-plot` element
    */
-  const scatterPlotElement = document.getElementById("scatter-plot");
+  const scatterplotElement = document.querySelector("arcgis-charts-scatter-plot");
 
   /**
    * Assign the config and the layer to the chart element to render the chart
    */
-  scatterPlotElement.layer = layer;
-  scatterPlotElement.config = config;
+  scatterplotElement.config = scatterplotConfig;
+  scatterplotElement.layer = featureLayer;
 
   /**
    * Get the layerView from the view
@@ -69,7 +69,7 @@ document.querySelector("arcgis-map").addEventListener("arcgisViewReadyChange", (
    */
   const featureLayerViews = view.layerViews;
 
-  scatterPlotElement.addEventListener("arcgisChartsSelectionComplete", (event) => {
+  scatterplotElement.addEventListener("arcgisChartsSelectionComplete", (event) => {
     map.highlightSelect?.remove();
     map.highlightSelect = featureLayerViews.items[0].highlight(event.detail.selectionOIDs);
   });
