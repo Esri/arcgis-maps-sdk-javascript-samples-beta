@@ -8,9 +8,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@arcgis/coding-components": "~4.29.6",
-    "@arcgis/core": "~4.29.6",
-    "@esri/calcite-components": "^2.5.1"
+    "@arcgis/coding-components": "next",
+    "@arcgis/core": "next",
+    "@esri/calcite-components": "^2.7.1"
   },
   "devDependencies": {
     "vite": "^5.1.3"

@@ -8,10 +8,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@arcgis/charts-components": "~4.29.6",
-    "@arcgis/charts-model": "~4.29.6",
-    "@arcgis/core": "~4.29.6",
-    "@esri/calcite-components": "^2.5.1"
+    "@arcgis/charts-components": "next",
+    "@arcgis/charts-model": "next",
+    "@arcgis/core": "next",
+    "@esri/calcite-components": "^2.7.1"
   },
   "devDependencies": {
     "resolve-pkg": "^2.0.0",
