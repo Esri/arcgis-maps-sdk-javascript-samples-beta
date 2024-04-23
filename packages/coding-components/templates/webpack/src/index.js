@@ -27,13 +27,13 @@ import { loadData } from "./load-data";
   const arcadeEditorElt = document.querySelector("arcgis-arcade-editor");
 
   // Log script change events
-  arcadeEditorElt.addEventListener("scriptChange", async (e) => {
+  arcadeEditorElt.addEventListener("arcgisScriptChange", async (e) => {
     console.log("script:", e.detail);
     // console.log("outputType on script:", await arcadeEditorElt.getOutputType());
   });
 
   // Log editor diagnostics
-  arcadeEditorElt.addEventListener("diagnosticsChange", async (e) => {
+  arcadeEditorElt.addEventListener("arcgisDiagnosticsChange", async (e) => {
     console.log("diagnostics:", e.detail);
   });
 

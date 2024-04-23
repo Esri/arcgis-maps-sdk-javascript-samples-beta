@@ -44,12 +44,12 @@ export default function ArcadeEditor() {
             // Set the script on the editor
             script="$feature"
             // Log script change events
-            onScriptChange={async (e) => {
+            onArcgisScriptChange={async (e) => {
               console.log("script:", e.detail);
               // console.log("outputType on script:", await arcadeEditorElt.getOutputType());
             }}
             // Log editor diagnostics
-            onDiagnosticsChange={async (e) => {
+            onArcgisDiagnosticsChange={async (e) => {
               console.log("diagnostics:", e.detail);
             }}
             // Tells Arcade editor to use the 'popup' profile and provides the necessary data used as

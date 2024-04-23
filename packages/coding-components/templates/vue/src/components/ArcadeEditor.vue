@@ -73,13 +73,13 @@ onMounted(async () => {
         :script="`$feature;`"
         :profile="toRaw(profile)"
         :testData="toRaw(testData)"
-        @scriptChange="
+        @arcgisScriptChange="
           async (e) => {
             console.log('script:', e.detail);
             console.log('outputType on script:', await editor.getOutputType());
           }
         "
-        @diagnosticsChange="
+        @arcgisDiagnosticsChange="
           (e) => {
             console.log('diagnostics:', e.detail);
           }
