@@ -2598,6 +2598,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@esri/calcite-components-react@npm:^2.7.1":
+  version: 2.7.1
+  resolution: "@esri/calcite-components-react@npm:2.7.1"
+  dependencies:
+    "@esri/calcite-components": "npm:^2.7.1"
+  peerDependencies:
+    react: ">=16.7"
+    react-dom: ">=16.7"
+  checksum: 7ab4a667eac952ea061151df05e74d3e218742d30df189c8d1d1dcd91d3798070fe0fbd35cf64e77390b48e6e114b732dbd1ed30f2fe049c262492d07e5411d3
+  languageName: node
+  linkType: hard
+
 "@esri/calcite-components@npm:^2.4.0":
   version: 2.4.0
   resolution: "@esri/calcite-components@npm:2.4.0"
@@ -8757,7 +8769,7 @@ __metadata:
   dependencies:
     "@arcgis/core": "npm:^4.30.0-next.20240424"
     "@arcgis/map-components-react": "npm:^4.30.0-next.47"
-    "@esri/calcite-components": "npm:^2.7.1"
+    "@esri/calcite-components-react": "npm:^2.7.1"
     "@types/react": "npm:^18.2.48"
     "@types/react-dom": "npm:^18.2.18"
     "@vitejs/plugin-react": "npm:^4.2.1"
