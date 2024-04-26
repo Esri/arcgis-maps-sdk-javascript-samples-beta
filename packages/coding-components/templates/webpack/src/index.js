@@ -77,17 +77,6 @@ import { loadData } from "./load-data";
   // Set a script on the editor
   arcadeEditorElt.script = "$feature";
 
-  // Wait for the editorInstance to be defined
-  const editorInstance = await arcadeEditorElt.getEditorInstance();
-
-  // Make changes to the Monaco editor's options
-  editorInstance.updateOptions({
-    // Enable the minimap in the editor
-    // minimap: {
-    //   enabled: true,
-    // },
-  });
-
   // Everything has been loaded and assigned, we can remove scrim
   document.getElementById("scrim").remove();
 })();

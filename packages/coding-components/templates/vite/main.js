@@ -82,16 +82,4 @@ defineCodingElements(window, { resourcesUrl: "https://js.arcgis.com/coding-compo
 
   // Everything has been loaded and assigned, we can remove scrim
   document.getElementById("scrim").remove();
-
-  // Make changes to the Monaco editor's options
-  // Wait for the editorInstance to be defined
-  const editorInstance = await arcadeEditorElt.getEditorInstance();
-
-  // Enable the minimap in the editor
-  editorInstance.updateOptions({
-    // minimap: {
-    //   enabled: true,
-    // },
-    // lineNumbers: "off",
-  });
 })();

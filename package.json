@@ -8,7 +8,12 @@
   ],
   "license": "SEE LICENSE IN LICENSE.md",
   "scripts": {
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "update:all": "yarn update:core && yarn update:map-components && yarn update:coding-components && yarn update:charts-components",
+    "update:core": "yarn up @arcgis/core@next",
+    "update:map-components": "yarn up @arcgis/map-components@next @arcgis/map-components-react@next @arcgis/map-components-angular@next",
+    "update:coding-components": "yarn up @arcgis/coding-components@next @arcgis/coding-components-react@next @arcgis/coding-components-angular@next",
+    "update:charts-components": "yarn up @arcgis/charts-components@next @arcgis/charts-components-react@next @arcgis/charts-components-angular@next"
   },
   "devDependencies": {
     "@commitlint/cli": "19.2.2",
