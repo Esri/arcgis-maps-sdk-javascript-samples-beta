@@ -1,0 +1,16 @@
+# Don't execute the hook for merge commits.
+if [ -e ".git/MERGE_HEAD" ]; then
+  exit 0
+fi
+ 
+# Redirect output to stderr.
+exec 1>&2
+ 
+yarn lint
+ 
+exit_code=$?
+if [ $exit_code -ne 0 ]; then
+  echo "Error: 'yarn lint' failed. Please fix the issues before committing."
+ 
+  exit $exit_code
+fi
