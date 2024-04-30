@@ -17,31 +17,22 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
-import { CalciteShell, CalciteNavigation, CalciteNavigationLogo } from "@esri/calcite-components-react";
 import { ArcgisMap, ArcgisSearch, ArcgisLegend } from "@arcgis/map-components-react";
-
-import { defineCustomElements as defineCalciteElements } from "@esri/calcite-components/dist/loader";
 import { defineCustomElements as defineMapElements } from "@arcgis/map-components/dist/loader";
 
 defineMapElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.30/assets" });
-defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-components/2.7.1/assets" });
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <React.StrictMode>
-    <CalciteShell className="calcite-mode-dark">
-      <CalciteNavigation slot="header">
-        <CalciteNavigationLogo slot="logo" heading="ArcGIS Maps SDK for JavaScript" />
-      </CalciteNavigation>
-      <ArcgisMap
-        itemId="d5dda743788a4b0688fe48f43ae7beb9"
-        onArcgisViewReadyChange={(event: any) => {
-          console.log("MapView ready", event);
-        }}
-      >
-        <ArcgisSearch position="top-right"></ArcgisSearch>
-        <ArcgisLegend position="bottom-left"></ArcgisLegend>
-      </ArcgisMap>
-    </CalciteShell>
+    <ArcgisMap
+      itemId="d5dda743788a4b0688fe48f43ae7beb9"
+      onArcgisViewReadyChange={(event: any) => {
+        console.log("MapView ready", event);
+      }}
+    >
+      <ArcgisSearch position="top-right"></ArcgisSearch>
+      <ArcgisLegend position="bottom-left"></ArcgisLegend>
+    </ArcgisMap>
   </React.StrictMode>
 );

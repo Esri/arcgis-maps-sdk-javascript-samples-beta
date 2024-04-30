@@ -15,10 +15,6 @@
         padding: 0;
       }
     </style>
-    <!-- Load Calcite components -->
-    <script type="module" src="https://js.arcgis.com/calcite-components/2.7.1/calcite.esm.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/2.7.1/calcite.css" />
-
     <!-- Load the ArcGIS Maps SDK for JavaScript -->
     <link rel="stylesheet" href="https://js.arcgis.com/4.30/esri/themes/dark/main.css" />
     <script src="https://js.arcgis.com/4.30/"></script>
@@ -27,16 +23,11 @@
     <script type="module" src="https://js.arcgis.com/map-components/4.30/arcgis-map-components.esm.js"></script>
   </head>
   <body>
-    <calcite-shell class="calcite-mode-dark">
-      <calcite-navigation slot="header">
-        <calcite-navigation-logo slot="logo" heading="ArcGIS Maps SDK for JavaScript" />
-      </calcite-navigation>
-      <arcgis-map item-id="d5dda743788a4b0688fe48f43ae7beb9">
-        <arcgis-expand position="top-right">
-          <arcgis-search></arcgis-search>
-        </arcgis-expand>
-        <arcgis-legend position="bottom-left"></arcgis-legend>
-      </arcgis-map>
-    </calcite-shell>
+    <arcgis-map item-id="d5dda743788a4b0688fe48f43ae7beb9">
+      <arcgis-expand position="top-right">
+        <arcgis-search></arcgis-search>
+      </arcgis-expand>
+      <arcgis-legend position="bottom-left"></arcgis-legend>
+    </arcgis-map>
   </body>
 </html>
