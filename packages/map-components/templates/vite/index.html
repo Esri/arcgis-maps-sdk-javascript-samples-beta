@@ -7,10 +7,17 @@
     <link rel="icon" href="data:;base64,=" />
   </head>
   <body>
-    <arcgis-map item-id="d5dda743788a4b0688fe48f43ae7beb9">
-      <arcgis-search position="top-right"></arcgis-search>
-      <arcgis-legend position="bottom-left"></arcgis-legend>
-    </arcgis-map>
+    <calcite-shell class="calcite-mode-dark">
+      <calcite-navigation slot="header">
+        <calcite-navigation-logo slot="logo" heading="ArcGIS Maps SDK for JavaScript" />
+      </calcite-navigation>
+      <arcgis-map item-id="d5dda743788a4b0688fe48f43ae7beb9">
+        <arcgis-expand position="top-right">
+          <arcgis-search></arcgis-search>
+        </arcgis-expand>
+        <arcgis-legend position="bottom-left"></arcgis-legend>
+      </arcgis-map>
+    </calcite-shell>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
