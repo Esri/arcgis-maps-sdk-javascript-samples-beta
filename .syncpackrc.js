@@ -74,10 +74,14 @@ const config = {
     },
     {
       label: "Calcite Components dev dependency",
-      dependencies: ["@esri/calcite-components"],
+      dependencies: [
+        "@esri/calcite-components", 
+        "@esri/calcite-components-angular",
+        "@esri/calcite-components-react"
+      ],
       packages: ["**"],
       dependencyTypes: ["dev", "prod"],
-      pinVersion: "^2.7.1"
+      pinVersion: "^2.8.0"
     },
     {
       label: "React for dev and prod",
