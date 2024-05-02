@@ -25,17 +25,17 @@ import { defineCustomElements as defineMapElements } from "@arcgis/map-component
  * you need to keep the version number in the path the same as the version of
  * `@esri/calcite-components` installed as a dependency of `@arcgis/map-components`.
  */
-defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-components/2.5.1/assets" });
+defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-components/2.8.0/assets" });
 
 /**
  * Use the Map Components to define and lazy load the custom map elements.
  */
-defineMapElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.29/assets" });
+defineMapElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.30/assets" });
 
 /**
  * Use the Charts Components to define and lazy load the custom charts elements.
  */
-defineChartsElements(window, { resourcesUrl: "https://js.arcgis.com/charts-components/4.29/t9n" });
+defineChartsElements(window, { resourcesUrl: "https://js.arcgis.com/charts-components/4.30/t9n" });
 
 /**
  * Add an event listener for the `arcgis-map` component's `arcgisViewReadyChange` event.

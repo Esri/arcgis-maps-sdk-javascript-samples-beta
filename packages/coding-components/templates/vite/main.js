@@ -21,8 +21,8 @@ import { defineCustomElements as defineCalciteElements } from "@esri/calcite-com
 import { defineCustomElements as defineCodingElements } from "@arcgis/coding-components/dist/loader";
 
 // define custom elements in the browser, and load the assets from the CDN
-defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-components/2.5.1/assets" });
-defineCodingElements(window, { resourcesUrl: "https://js.arcgis.com/coding-components/4.29/assets" });
+defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-components/2.8.0/assets" });
+defineCodingElements(window, { resourcesUrl: "https://js.arcgis.com/coding-components/4.30/assets" });
 
 (async () => {
   // Get the Arcade editor element

@@ -58,7 +58,7 @@ Imported the components using [Stencil's pattern for integrating components with
 import { defineCustomElements as defineChartsElements } from "@arcgis/charts-components/dist/loader";
 
 // define custom elements in the browser, and load the assets from the CDN
-defineChartsElements(window, { resourcesUrl: "https://js.arcgis.com/charts-components/4.29/t9n" });
+defineChartsElements(window, { resourcesUrl: "https://js.arcgis.com/charts-components/4.30/t9n" });
 ```
 
 Use [`src/index.js`](./src/index.js) to load the data, define custom elements, and utilize various kinds of properties in the editor. Both the Calcite and Charts elements must be defined.

@@ -58,7 +58,7 @@ Imported the components using [Stencil's pattern for integrating components with
 import { defineCustomElements } from "@esri/map-components/dist/loader";
 
 // define custom elements in the browser, and load the assets from the CDN
-defineCustomElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.29/assets" });
+defineCustomElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.30/assets" });
 ```
 
 Use [`src/index.js`](./src/index.js) to load the data, define custom elements.
@@ -68,7 +68,7 @@ Use [`src/index.js`](./src/index.js) to load the data, define custom elements.
 You can find all the necessary styling in [`src/index.css`](./src/index.css). Importing the global @arcgis/core CSS is required.
 
 ```
-@import 'https://js.arcgis.com/4.29/@arcgis/core/assets/esri/themes/dark/main.css';
+@import 'https://js.arcgis.com/4.30/@arcgis/core/assets/esri/themes/dark/main.css';
 ```
 
 #### HTML

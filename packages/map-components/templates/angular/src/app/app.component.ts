@@ -29,6 +29,6 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    defineCustomElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.29/assets" });
+    defineCustomElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.30/assets" });
   }
 }
