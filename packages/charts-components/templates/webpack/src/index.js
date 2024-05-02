@@ -13,25 +13,25 @@
  * limitations under the License.
  */
 
-import { ScatterPlotModel } from '@arcgis/charts-model';
-import { loadFeatureLayer } from './load-data';
+import { ScatterPlotModel } from "@arcgis/charts-model";
+import { loadFeatureLayer } from "./load-data";
 
-import { defineCustomElements as defineCalciteElements } from '@esri/calcite-components/dist/loader';
-import { defineCustomElements as defineChartsElements } from '@arcgis/charts-components/dist/loader';
+import { defineCustomElements as defineCalciteElements } from "@esri/calcite-components/dist/loader";
+import { defineCustomElements as defineChartsElements } from "@arcgis/charts-components/dist/loader";
 
 // define custom elements in the browser, and load the assets from the CDN
-defineCalciteElements(window, { resourcesUrl: 'https://js.arcgis.com/calcite-components/4.29/assets' });
-defineChartsElements(window, { resourcesUrl: 'https://js.arcgis.com/charts-components/4.29/t9n' });
+defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-components/4.29/assets" });
+defineChartsElements(window, { resourcesUrl: "https://js.arcgis.com/charts-components/4.29/t9n" });
 
 (async () => {
-  const scatterPlotRef = document.querySelector('arcgis-charts-scatter-plot');
+  const scatterPlotRef = document.querySelector("arcgis-charts-scatter-plot");
 
-  const featureLayer = await loadFeatureLayer('8871626e970a4f3e9d6113ec63a92f2f');
+  const featureLayer = await loadFeatureLayer("8871626e970a4f3e9d6113ec63a92f2f");
 
   const scatterPlotParams = {
     layer: featureLayer,
-    xAxisFieldName: 'Earnings',
-    yAxisFieldName: 'Cost',
+    xAxisFieldName: "Earnings",
+    yAxisFieldName: "Cost"
   };
 
   const scatterPlotModel = new ScatterPlotModel(scatterPlotParams);
