@@ -73,9 +73,3 @@ npm run preview
 ```
 yarn preview
 ```
-
-## Learn More
-
-You can learn more in the [Vite guides](https://vitejs.dev/guide/).
-
-To learn React, check out the [React documentation](https://react.dev/).

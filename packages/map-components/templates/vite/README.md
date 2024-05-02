@@ -73,11 +73,3 @@ npm run preview
 ```
 yarn preview
 ```
-
-## Resources
-
-[ArcGIS Core - Build with ES modules](https://developers.arcgis.com/javascript/latest/es-modules/)
-
-[ViteJS - Why Vite](https://vitejs.dev/guide/why.html)
-
-[ViteJS - Getting Started](https://vitejs.dev/guide/)

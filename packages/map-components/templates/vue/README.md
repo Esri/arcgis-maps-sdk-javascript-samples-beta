@@ -73,9 +73,3 @@ npm run preview
 ```
 yarn preview
 ```
-
-## Resources
-
-[Stencil - Vue Integration](https://stenciljs.com/docs/vue)
-
-[Vue - Components Basics](https://vuejs.org/guide/essentials/component-basics.html)
