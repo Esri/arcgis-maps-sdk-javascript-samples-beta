@@ -86,9 +86,14 @@ const config = {
     {
       label: "React for dev and prod",
       dependencyTypes: ["dev", "prod"],
-      dependencies: ["react", "react-dom"],
+      dependencies: [
+        "react", 
+        "react-dom", 
+        "@types/react-dom", 
+        "@types/react"
+      ],
       packages: ["**"],
-      pinVersion: "^18.2.0"
+      pinVersion: "^18.3.0"
     },
     {
       label: "Angular dev and prod deps",
@@ -128,7 +133,7 @@ const config = {
       dependencyTypes: ["dev", "prod"],
       dependencies: ["vue"],
       packages: ["**"],
-      pinVersion: "^3.4.18"
+      pinVersion: "^3.4.19"
     },
     {
       label: "css-loader for dev",
