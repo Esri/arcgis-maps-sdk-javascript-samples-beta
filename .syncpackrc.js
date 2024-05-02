@@ -107,7 +107,7 @@ const config = {
         "@angular/compiler-cli"
       ],
       packages: ["**"],
-      pinVersion: "^17.2.0"
+      pinVersion: "^17.3.6"
     },
     {
       label: "Vite for dev",
