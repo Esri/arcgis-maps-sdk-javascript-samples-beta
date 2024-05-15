@@ -52,7 +52,7 @@ const config = {
       dependencies: ["@arcgis/core"],
       dependencyTypes: ["dev", "prod"],
       packages: ["**"],
-      pinVersion: "next"
+      pinVersion: "rc"
     },
     {
       label: "ArcGIS Components dev and prod dependency",
@@ -64,6 +64,14 @@ const config = {
         "@arcgis/map-components",
         "@arcgis/map-components-angular",
         "@arcgis/map-components-react",
+      ],
+      packages: ["**"],
+      pinVersion: "rc"
+    },
+    {
+      label: "ArcGIS Charts Components dev and prod dependency",
+      dependencyTypes: ["dev", "prod"],
+      dependencies: [
         "@arcgis/charts-components",
         "@arcgis/charts-model",
         "@arcgis/charts-components-angular",
@@ -81,7 +89,7 @@ const config = {
       ],
       packages: ["**"],
       dependencyTypes: ["dev", "prod"],
-      pinVersion: "^2.8.0"
+      pinVersion: "^2.8.1"
     },
     {
       label: "React for dev and prod",

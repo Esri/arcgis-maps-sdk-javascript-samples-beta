@@ -6,9 +6,9 @@
     "start": "webpack serve --mode development"
   },
   "dependencies": {
-    "@arcgis/coding-components": "next",
-    "@arcgis/core": "next",
-    "@esri/calcite-components": "^2.8.0"
+    "@arcgis/coding-components": "rc",
+    "@arcgis/core": "rc",
+    "@esri/calcite-components": "^2.8.1"
   },
   "devDependencies": {
     "css-loader": "^6.10.0",

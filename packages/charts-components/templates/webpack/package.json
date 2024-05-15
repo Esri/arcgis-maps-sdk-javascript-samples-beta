@@ -8,8 +8,8 @@
   "dependencies": {
     "@arcgis/charts-components": "next",
     "@arcgis/charts-model": "next",
-    "@arcgis/core": "next",
-    "@esri/calcite-components": "^2.8.0"
+    "@arcgis/core": "rc",
+    "@esri/calcite-components": "^2.8.1"
   },
   "devDependencies": {
     "css-loader": "^6.10.0",
