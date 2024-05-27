@@ -13,47 +13,52 @@
  * limitations under the License.
  */
 
-import { Component, ViewChild } from '@angular/core';
-import { loadFeatureLayer } from '../functions/load-data.service';
-import { ScatterPlotModel } from '@arcgis/charts-model';
+import { Component, ViewChild } from "@angular/core";
+import { createFeatureLayer } from "../functions/create-feature-layer.service";
+import { ScatterPlotModel } from "@arcgis/charts-model";
 
-import { defineCustomElements as defineChartsElements } from '@arcgis/charts-components/dist/loader';
+import { defineCustomElements as defineChartsElements } from "@arcgis/charts-components/dist/loader";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.css"
 })
 export class AppComponent {
-  title = 'charts-components-angular-template';
+  title = "charts-components-angular-template";
 
-  @ViewChild('scatterPlot') scatterPlot: HTMLArcgisChartsScatterPlotElement | undefined;
+  @ViewChild("scatterplot") scatterplot: HTMLArcgisChartsScatterPlotElement | undefined;
 
   ngOnInit() {
     // define custom elements in the browser, and load the assets from the CDN
-    defineChartsElements(window, { resourcesUrl: 'https://js.arcgis.com/charts-components/4.30/t9n' });
-
-    // Call async functions here
-    this.createScatterPlot();
+    defineChartsElements(window, { resourcesUrl: "https://js.arcgis.com/charts-components/4.30/t9n" });
   }
 
-  // Async function to create a scatter plot
-  async createScatterPlot() {
-    const featureLayer = await loadFeatureLayer('8871626e970a4f3e9d6113ec63a92f2f');
+  ngAfterViewInit() {
+    this.initScatterplot();
+  }
 
-    const scatterPlotParams = {
-      layer: featureLayer,
-      xAxisFieldName: 'Earnings',
-      yAxisFieldName: 'Cost',
-    };
+  /**
+   * Function to initialize the scatterplot.
+   */
+  async initScatterplot() {
+    const layer = await createFeatureLayer(
+      "https://services.arcgis.com/V6ZHFr6zdgNZuVG0/ArcGIS/rest/services/ChicagoCr/FeatureServer/0"
+    );
 
-    const scatterPlotModel = new ScatterPlotModel(scatterPlotParams);
+    // Create a new ScatterPlotModel and set the x and y axis fields.
+    const scatterplotModel = new ScatterPlotModel();
+    await scatterplotModel.setup({ layer });
 
-    const config = await scatterPlotModel.config;
+    await scatterplotModel.setXAxisField("Ward");
+    await scatterplotModel.setYAxisField("Beat");
 
-    if (this.scatterPlot !== undefined) {
-      this.scatterPlot.config = config;
-      this.scatterPlot.layer = featureLayer;
+    // Set the scatterplot element's config and layer properties.
+    const config = scatterplotModel.getConfig();
+
+    if (this.scatterplot !== undefined) {
+      this.scatterplot.config = config;
+      this.scatterplot.layer = layer;
     }
   }
 }

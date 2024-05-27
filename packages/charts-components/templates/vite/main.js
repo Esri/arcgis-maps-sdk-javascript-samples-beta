@@ -16,28 +16,32 @@
 import './style.css';
 
 import { ScatterPlotModel } from '@arcgis/charts-model';
-import { loadFeatureLayer } from './load-data';
+import { createFeatureLayer } from './create-feature-layer';
 
 import { defineCustomElements as defineChartsElements } from '@arcgis/charts-components/dist/loader';
 
-// define custom elements in the browser, and load the assets from the CDN
+// Define custom elements in the browser, and load the assets from the CDN
 defineChartsElements(window, { resourcesUrl: 'https://js.arcgis.com/charts-components/4.30/t9n' });
 
-(async () => {
-  const scatterPlotRef = document.querySelector('arcgis-charts-scatter-plot');
+// Function to initialize the scatterplot.
+async function initScatterplot() {
+  const layer = await createFeatureLayer('https://services.arcgis.com/V6ZHFr6zdgNZuVG0/ArcGIS/rest/services/ChicagoCr/FeatureServer/0');
 
-  const featureLayer = await loadFeatureLayer('8871626e970a4f3e9d6113ec63a92f2f');
+  const scatterplotElement = document.getElementById('scatterplot');
 
-  const scatterPlotParams = {
-    layer: featureLayer,
-    xAxisFieldName: 'Earnings',
-    yAxisFieldName: 'Cost',
-  };
+  // Create a new ScatterPlotModel and set the x and y axis fields.
+  const scatterplotModel = new ScatterPlotModel();
+  await scatterplotModel.setup({ layer });
 
-  const scatterPlotModel = new ScatterPlotModel(scatterPlotParams);
+  await scatterplotModel.setXAxisField('Ward');
+  await scatterplotModel.setYAxisField('Beat');
 
-  const config = await scatterPlotModel.config;
+  // Set the scatterplot element's config and layer properties.
+  const config = scatterplotModel.getConfig();
 
-  scatterPlotRef.config = config;
-  scatterPlotRef.layer = featureLayer;
-})();
+  scatterplotElement.config = config;
+  scatterplotElement.layer = layer;
+}
+
+// Call initScatterplot() function to render the chart.
+initScatterplot();

@@ -15,7 +15,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Charts from './components/Charts';
+import Scatterplot from './components/Scatterplot';
 import { defineCustomElements as defineCalciteElements } from '@esri/calcite-components/dist/loader';
 import { defineCustomElements as defineChartsElements } from '@arcgis/charts-components/dist/loader';
 
@@ -26,6 +26,6 @@ defineCalciteElements(window, { resourcesUrl: 'https://js.arcgis.com/calcite-com
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Charts />
+    <Scatterplot />
   </React.StrictMode>
 );
