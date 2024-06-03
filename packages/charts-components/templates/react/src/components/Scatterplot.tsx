@@ -61,7 +61,7 @@ export default function Scatterplot() {
 
     // Add event listener when selection is made on the chart to enable/disable action bar buttons.
     scatterplotRef.current.addEventListener("arcgisChartsSelectionComplete", (event: CustomEvent) => {
-      const actionBarElement = document.getElementById("scatter-plot-action-bar") as HTMLArcgisChartsActionBarElement;
+      const actionBarElement = document.getElementById("scatterplot-action-bar") as HTMLArcgisChartsActionBarElement;
 
       const selectionData = event.detail;
       if (selectionData.selectionOIDs === undefined || selectionData.selectionOIDs.length === 0) {
