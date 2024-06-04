@@ -8,8 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@arcgis/coding-components-react": "rc",
-    "@arcgis/core": "rc",
+    "@arcgis/coding-components-react": "^4.31.0-next.0",
+    "@arcgis/core": "^4.31.0-next.20240604",
     "@esri/calcite-components-react": "^2.8.1",
     "react": "^18.3.0",
     "react-dom": "^18.3.0"
