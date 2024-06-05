@@ -8,8 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@arcgis/coding-components": "^4.31.0-next.0",
-    "@arcgis/core": "^4.31.0-next.20240604",
+    "@arcgis/coding-components": "^4.30.0-next.99",
+    "@arcgis/core": "^4.30.0-next.20240605",
     "@esri/calcite-components": "^2.8.1",
     "vue": "^3.4.19"
   },
