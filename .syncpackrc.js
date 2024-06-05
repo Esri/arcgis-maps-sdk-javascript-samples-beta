@@ -78,7 +78,7 @@ const config = {
         "@arcgis/charts-components-react"
       ],
       packages: ["**"],
-      pinVersion: "next"
+      pinVersion: "rc"
     },
     {
       label: "Calcite Components dev dependency",
