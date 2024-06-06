@@ -10,13 +10,12 @@
   "scripts": {
     "postinstall": "husky install",
     "update:all": "yarn update:core && yarn update:map-components && yarn update:coding-components && yarn update:charts-components",
-    "update:core": "yarn up \"@arcgis/core@$(npm pkg get 'devDependencies.@arcgis/core' | tr -d '\"')\"",
+    "update:core": "yarn up @arcgis/core@rc",
     "update:map-components": "yarn up @arcgis/map-components@rc @arcgis/map-components-react@rc @arcgis/map-components-angular@rc",
     "update:coding-components": "yarn up @arcgis/coding-components@rc @arcgis/coding-components-react@rc @arcgis/coding-components-angular@rc",
     "update:charts-components": "yarn up @arcgis/charts-components@rc @arcgis/charts-components-react@rc @arcgis/charts-components-angular@rc"
   },
   "devDependencies": {
-    "@arcgis/core": ">=4.30-next <4.31",
     "@commitlint/cli": "19.3.0",
     "@commitlint/config-conventional": "19.2.2",
     "husky": "9.0.11",

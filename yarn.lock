@@ -479,9 +479,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@arcgis/core@npm:>=4.30.0-next <4.31":
-  version: 4.30.0-next.20240606
-  resolution: "@arcgis/core@npm:4.30.0-next.20240606"
+"@arcgis/core@npm:^4.30.0-next.20240605":
+  version: 4.30.0-next.20240605
+  resolution: "@arcgis/core@npm:4.30.0-next.20240605"
   dependencies:
     "@esri/arcgis-html-sanitizer": "npm:~4.0.1"
     "@esri/calcite-colors": "npm:~6.1.0"
@@ -491,7 +491,7 @@ __metadata:
     luxon: "npm:~3.4.4"
     marked: "npm:~12.0.2"
     sortablejs: "npm:~1.15.2"
-  checksum: fcf65dcc277aa7e584643fe81b5fb5176617c639eded7e60a43d23ce4b3d33e1c74ac8d1db8c13c1bd70506a46ae0137b40124811facacdeb312603f43d0b4a1
+  checksum: 2833b809586099f4a23975b3c9414d9da4611100df0c06e09ee760c49a21707e2db3b2eb89c04463a6953a4f40d78f9b24c247db888be26f72518d61119287fc
   languageName: node
   linkType: hard
 
@@ -4722,7 +4722,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "arcgis-maps-sdk-javascript-samples-beta@workspace:."
   dependencies:
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
     "@commitlint/cli": "npm:19.3.0"
     "@commitlint/config-conventional": "npm:19.2.2"
     husky: "npm:9.0.11"
@@ -5278,7 +5277,7 @@ __metadata:
     "@angular/router": "npm:^17.3.6"
     "@arcgis/charts-components-angular": "npm:^4.30.0-next.52"
     "@arcgis/charts-model": "npm:next"
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
+    "@arcgis/core": "npm:^4.30.0-next.20240605"
     "@esri/calcite-components": "npm:^2.8.1"
     "@types/jasmine": "npm:~5.1.0"
     jasmine-core: "npm:~5.1.0"
@@ -5300,7 +5299,7 @@ __metadata:
   dependencies:
     "@arcgis/charts-components-react": "npm:^4.30.0-next.52"
     "@arcgis/charts-model": "npm:next"
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
+    "@arcgis/core": "npm:^4.30.0-next.20240605"
     "@esri/calcite-components-react": "npm:^2.8.1"
     "@types/react": "npm:^18.3.0"
     "@types/react-dom": "npm:^18.3.0"
@@ -5318,7 +5317,7 @@ __metadata:
   dependencies:
     "@arcgis/charts-components": "npm:^4.30.0-next.52"
     "@arcgis/charts-model": "npm:next"
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
+    "@arcgis/core": "npm:^4.30.0-next.20240605"
     "@esri/calcite-components": "npm:^2.8.1"
     resolve-pkg: "npm:^2.0.0"
     vite: "npm:^5.1.3"
@@ -5331,7 +5330,7 @@ __metadata:
   dependencies:
     "@arcgis/charts-components": "npm:^4.30.0-next.52"
     "@arcgis/charts-model": "npm:next"
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
+    "@arcgis/core": "npm:^4.30.0-next.20240605"
     "@esri/calcite-components": "npm:^2.8.1"
     "@vitejs/plugin-vue": "npm:^5.0.3"
     resolve-pkg: "npm:^2.0.0"
@@ -5346,7 +5345,7 @@ __metadata:
   dependencies:
     "@arcgis/charts-components": "npm:^4.30.0-next.52"
     "@arcgis/charts-model": "npm:next"
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
+    "@arcgis/core": "npm:^4.30.0-next.20240605"
     "@esri/calcite-components": "npm:^2.8.1"
     css-loader: "npm:^6.10.0"
     html-webpack-plugin: "npm:^5.6.0"
@@ -5364,7 +5363,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "charts-components-with-map-components-initial@workspace:packages/charts-components/tutorials/charts-components-with-map-components-initial"
   dependencies:
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
+    "@arcgis/core": "npm:^4.30.0-next.20240605"
     vite: "npm:^5.1.3"
   languageName: unknown
   linkType: soft
@@ -5374,7 +5373,7 @@ __metadata:
   resolution: "charts-components-with-map-components-solution@workspace:packages/charts-components/tutorials/charts-components-with-map-components-solution"
   dependencies:
     "@arcgis/charts-components": "npm:^4.30.0-next.52"
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
+    "@arcgis/core": "npm:^4.30.0-next.20240605"
     "@arcgis/map-components": "npm:^4.30.0-next.99"
     "@esri/calcite-components": "npm:^2.8.1"
     vite: "npm:^5.1.3"
@@ -5528,7 +5527,7 @@ __metadata:
     "@angular/platform-browser-dynamic": "npm:^17.3.6"
     "@angular/router": "npm:^17.3.6"
     "@arcgis/coding-components-angular": "npm:^4.30.0-next.99"
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
+    "@arcgis/core": "npm:^4.30.0-next.20240605"
     "@esri/calcite-components-angular": "npm:^2.8.1"
     "@types/jasmine": "npm:~5.1.0"
     "@types/sortablejs": "npm:^1.15.5"
@@ -5550,7 +5549,7 @@ __metadata:
   resolution: "coding-components-react-template@workspace:packages/coding-components/templates/react"
   dependencies:
     "@arcgis/coding-components-react": "npm:^4.30.0-next.99"
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
+    "@arcgis/core": "npm:^4.30.0-next.20240605"
     "@esri/calcite-components-react": "npm:^2.8.1"
     "@types/react": "npm:^18.3.0"
     "@types/react-dom": "npm:^18.3.0"
@@ -5567,7 +5566,7 @@ __metadata:
   resolution: "coding-components-vite-template@workspace:packages/coding-components/templates/vite"
   dependencies:
     "@arcgis/coding-components": "npm:^4.30.0-next.99"
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
+    "@arcgis/core": "npm:^4.30.0-next.20240605"
     "@esri/calcite-components": "npm:^2.8.1"
     vite: "npm:^5.1.3"
   languageName: unknown
@@ -5578,7 +5577,7 @@ __metadata:
   resolution: "coding-components-vue-template@workspace:packages/coding-components/templates/vue"
   dependencies:
     "@arcgis/coding-components": "npm:^4.30.0-next.99"
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
+    "@arcgis/core": "npm:^4.30.0-next.20240605"
     "@esri/calcite-components": "npm:^2.8.1"
     "@vitejs/plugin-vue": "npm:^5.0.3"
     vite: "npm:^5.1.3"
@@ -5591,7 +5590,7 @@ __metadata:
   resolution: "coding-components-webpack-template@workspace:packages/coding-components/templates/webpack"
   dependencies:
     "@arcgis/coding-components": "npm:^4.30.0-next.99"
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
+    "@arcgis/core": "npm:^4.30.0-next.20240605"
     "@esri/calcite-components": "npm:^2.8.1"
     css-loader: "npm:^6.10.0"
     html-webpack-plugin: "npm:^5.6.0"
@@ -5967,7 +5966,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "create-a-web-app-using-components-solution@workspace:packages/map-components/tutorials/create-a-web-app-using-components-solution"
   dependencies:
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
+    "@arcgis/core": "npm:^4.30.0-next.20240605"
     "@arcgis/map-components": "npm:^4.30.0-next.99"
     "@esri/calcite-components": "npm:^2.8.1"
     vite: "npm:^5.1.3"
@@ -8988,7 +8987,7 @@ __metadata:
     "@angular/platform-browser": "npm:^17.3.6"
     "@angular/platform-browser-dynamic": "npm:^17.3.6"
     "@angular/router": "npm:^17.3.6"
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
+    "@arcgis/core": "npm:^4.30.0-next.20240605"
     "@arcgis/map-components-angular": "npm:^4.30.0-next.99"
     "@esri/calcite-components": "npm:^2.8.1"
     "@types/jasmine": "npm:~5.1.0"
@@ -9009,7 +9008,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "map-components-react-template@workspace:packages/map-components/templates/react"
   dependencies:
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
+    "@arcgis/core": "npm:^4.30.0-next.20240605"
     "@arcgis/map-components-react": "npm:^4.30.0-next.99"
     "@esri/calcite-components-react": "npm:^2.8.1"
     "@types/react": "npm:^18.3.0"
@@ -9026,7 +9025,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "map-components-vite-template@workspace:packages/map-components/templates/vite"
   dependencies:
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
+    "@arcgis/core": "npm:^4.30.0-next.20240605"
     "@arcgis/map-components": "npm:^4.30.0-next.99"
     "@esri/calcite-components": "npm:^2.8.1"
     vite: "npm:^5.1.3"
@@ -9037,7 +9036,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "map-components-vue-template@workspace:packages/map-components/templates/vue"
   dependencies:
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
+    "@arcgis/core": "npm:^4.30.0-next.20240605"
     "@arcgis/map-components": "npm:^4.30.0-next.99"
     "@esri/calcite-components": "npm:^2.8.1"
     "@vitejs/plugin-vue": "npm:^5.0.3"
@@ -9050,7 +9049,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "map-components-webpack-template@workspace:packages/map-components/templates/webpack"
   dependencies:
-    "@arcgis/core": "npm:>=4.30.0-next <4.31"
+    "@arcgis/core": "npm:^4.30.0-next.20240605"
     "@arcgis/map-components": "npm:^4.30.0-next.99"
     "@esri/calcite-components": "npm:^2.8.1"
     css-loader: "npm:^6.10.0"
