@@ -6,10 +6,10 @@
     "start": "webpack serve --mode development"
   },
   "dependencies": {
-    "@arcgis/charts-components": "rc",
-    "@arcgis/charts-model": "rc",
-    "@arcgis/core": ">=4.30.0-next <4.31",
-    "@esri/calcite-components": "^2.8.1"
+    "@arcgis/charts-components": "~4.30.0",
+    "@arcgis/charts-model": "~4.30.0",
+    "@arcgis/core": "~4.30.0",
+    "@esri/calcite-components": "^2.8.5"
   },
   "devDependencies": {
     "css-loader": "^6.10.0",
