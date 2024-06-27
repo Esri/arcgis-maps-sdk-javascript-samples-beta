@@ -1,7 +1,5 @@
 # Coding components React using Vite template
 
-📁 **[Click here to download this directory as a ZIP file](https://download-directory.github.io?url=https://github.com/Esri/arcgis-maps-sdk-javascript-samples-beta/tree/main/packages/coding-components/templates/react)** 📁
-
 This repository showcases how to integrate the coding components with [React](https://react.dev/).
 
 ## Get started
@@ -73,9 +71,3 @@ npm run preview
 ```
 yarn preview
 ```
-
-## Learn More
-
-You can learn more in the [Vite guides](https://vitejs.dev/guide/).
-
-To learn React, check out the [React documentation](https://react.dev/).

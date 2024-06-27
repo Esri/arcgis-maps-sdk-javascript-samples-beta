@@ -13,35 +13,41 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 4rem 2rem;
         height: 70vh;
         min-height: 400px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1rem;
       }
+
       arcgis-arcade-editor {
-        max-width: 80%;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
       }
     </style>
 
     <link rel="icon" href="data:;base64,=" />
 
     <!-- Load Calcite Components. Note this could be after loading the ArcGIS Maps SDK for JS but before loading the Coding Components  -->
-    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/2.4.0/calcite.css" />
-    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/4.29/@arcgis/core/assets/esri/themes/dark/main.css" />
-    <script type="module" src="https://js.arcgis.com/calcite-components/2.4.0/calcite.esm.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/2.8.0/calcite.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://js.arcgis.com/4.30/@arcgis/core/assets/esri/themes/dark/main.css"
+    />
+    <script type="module" src="https://js.arcgis.com/calcite-components/2.8.0/calcite.esm.js"></script>
 
     <!-- Load the ArcGIS Maps SDK for JavaScript -->
-    <script src="https://js.arcgis.com/4.29/"></script>
+    <script src="https://js.arcgis.com/4.30/"></script>
 
     <!-- Load the Coding Components -->
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://js.arcgis.com/coding-components/4.29/arcgis-coding-components.css"
+      href="https://js.arcgis.com/coding-components/4.30/arcgis-coding-components.css"
     />
-    <script
-      type="module"
-      src="https://js.arcgis.com/coding-components/4.29/arcgis-coding-components.esm.js"
-    ></script>
+    <script type="module" src="https://js.arcgis.com/coding-components/4.30/arcgis-coding-components.esm.js"></script>
   </head>
   <body>
     <div class="editor-wrapper">
@@ -87,13 +93,13 @@
         const arcadeEditorElt = document.querySelector("arcgis-arcade-editor");
 
         // Log script change events
-        arcadeEditorElt.addEventListener("scriptChange", async (e) => {
+        arcadeEditorElt.addEventListener("arcgisScriptChange", async (e) => {
           console.log("script:", e.detail);
           // console.log("outputType on script:", await arcadeEditorElt.getOutputType());
         });
 
         // Log editor diagnostics
-        arcadeEditorElt.addEventListener("diagnosticsChange", async (e) => {
+        arcadeEditorElt.addEventListener("arcgisDiagnosticsChange", async (e) => {
           console.log("diagnostics:", e.detail);
         });
 

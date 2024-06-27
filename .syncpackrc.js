@@ -52,7 +52,7 @@ const config = {
       dependencies: ["@arcgis/core"],
       dependencyTypes: ["dev", "prod"],
       packages: ["**"],
-      pinVersion: "~4.29.6"
+      pinVersion: "~4.30.0"
     },
     {
       label: "ArcGIS Components dev and prod dependency",
@@ -64,27 +64,44 @@ const config = {
         "@arcgis/map-components",
         "@arcgis/map-components-angular",
         "@arcgis/map-components-react",
+      ],
+      packages: ["**"],
+      pinVersion: "~4.30.0"
+    },
+    {
+      label: "ArcGIS Charts Components dev and prod dependency",
+      dependencyTypes: ["dev", "prod"],
+      dependencies: [
         "@arcgis/charts-components",
         "@arcgis/charts-model",
         "@arcgis/charts-components-angular",
         "@arcgis/charts-components-react"
       ],
       packages: ["**"],
-      pinVersion: "~4.29.6"
+      pinVersion: "~4.30.0"
     },
     {
       label: "Calcite Components dev dependency",
-      dependencies: ["@esri/calcite-components"],
+      dependencies: [
+        "@esri/calcite-components", 
+        "@esri/calcite-components-angular",
+        "@esri/calcite-components-react"
+      ],
       packages: ["**"],
       dependencyTypes: ["dev", "prod"],
-      pinVersion: "^2.5.1"
+      pinVersion: "^2.8.5"
     },
     {
       label: "React for dev and prod",
       dependencyTypes: ["dev", "prod"],
-      dependencies: ["react", "react-dom"],
+      dependencies: [
+        "react", 
+        "react-dom", 
+        "@types/react-dom", 
+        "@types/react"
+      ],
       packages: ["**"],
-      pinVersion: "^18.2.0"
+      pinVersion: "^18.3.0"
     },
     {
       label: "Angular dev and prod deps",
@@ -103,7 +120,7 @@ const config = {
         "@angular/compiler-cli"
       ],
       packages: ["**"],
-      pinVersion: "^17.2.0"
+      pinVersion: "^17.3.6"
     },
     {
       label: "Vite for dev",
@@ -117,14 +134,14 @@ const config = {
       dependencyTypes: ["dev", "prod"],
       dependencies: ["webpack"],
       packages: ["**"],
-      pinVersion: "^5.90.1"
+      pinVersion: "^5.90.3"
     },
     {
       label: "vue for dev, prod",
       dependencyTypes: ["dev", "prod"],
       dependencies: ["vue"],
       packages: ["**"],
-      pinVersion: "^3.4.18"
+      pinVersion: "^3.4.19"
     },
     {
       label: "css-loader for dev",

@@ -1,16 +1,10 @@
-@import "https://js.arcgis.com/coding-components/4.29/arcgis-coding-components.css";
-@import "https://js.arcgis.com/calcite-components/2.5.1/calcite.css";
-@import "https://js.arcgis.com/4.29/@arcgis/core/assets/esri/themes/light/main.css";
+@import "https://js.arcgis.com/coding-components/4.30/arcgis-coding-components.css";
+@import "https://js.arcgis.com/calcite-components/2.8.0/calcite.css";
+@import "https://js.arcgis.com/4.30/@arcgis/core/assets/esri/themes/light/main.css";
 
 html,
 body {
   background-color: var(--calcite-ui-foreground-2);
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
 }
 
 .editor-wrapper {
@@ -19,11 +13,15 @@ body {
   align-items: center;
   height: 70vh;
   min-height: 400px;
-  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
 arcgis-arcade-editor {
-  flex: 1 1 auto;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 calcite-scrim {

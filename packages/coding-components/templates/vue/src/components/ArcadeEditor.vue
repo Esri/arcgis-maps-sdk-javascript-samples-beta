@@ -38,15 +38,6 @@ onMounted(async () => {
       },
     };
 
-    // Wait for the editorInstance to be defined
-    const editorInstance = await editor.value.getEditorInstance();
-
-    // Make changes to the editor's options
-    editorInstance.updateOptions({
-      // Enable the minimap in the editor
-      // minimap: { enabled: true },
-    });
-
     // Remove the scrim from the UI
     scrim.value.remove();
   } else {
@@ -73,13 +64,13 @@ onMounted(async () => {
         :script="`$feature;`"
         :profile="toRaw(profile)"
         :testData="toRaw(testData)"
-        @scriptChange="
+        @arcgisScriptChange="
           async (e) => {
             console.log('script:', e.detail);
             console.log('outputType on script:', await editor.getOutputType());
           }
         "
-        @diagnosticsChange="
+        @arcgisDiagnosticsChange="
           (e) => {
             console.log('diagnostics:', e.detail);
           }

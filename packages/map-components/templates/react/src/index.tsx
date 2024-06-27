@@ -1,20 +1,34 @@
+/* Copyright 2024 Esri
+ *
+ * Licensed under the Apache License Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
 import { ArcgisMap, ArcgisSearch, ArcgisLegend } from "@arcgis/map-components-react";
-// import defineCustomElements to register custom elements with the custom elements registry
-import { defineCustomElements } from "@arcgis/map-components/dist/loader";
-// Register custom elements
-defineCustomElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.29/assets" });
+import { defineCustomElements as defineMapElements } from "@arcgis/map-components/dist/loader";
+
+defineMapElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.30/assets" });
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <React.StrictMode>
-    <ArcgisMap 
-      itemId="d5dda743788a4b0688fe48f43ae7beb9" 
+    <ArcgisMap
+      itemId="d5dda743788a4b0688fe48f43ae7beb9"
       onArcgisViewReadyChange={(event: any) => {
-      console.log('MapView ready', event);
+        console.log("MapView ready", event);
       }}
     >
       <ArcgisSearch position="top-right"></ArcgisSearch>

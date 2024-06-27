@@ -17,8 +17,8 @@ import { defineCustomElements as defineCalciteElements } from "@esri/calcite-com
 import { defineCustomElements as defineCodingElements } from "@arcgis/coding-components/dist/loader";
 
 // define custom elements in the browser, and load the assets from the CDN
-defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-components/2.5.1/assets" });
-defineCodingElements(window, { resourcesUrl: "https://js.arcgis.com/coding-components/4.29/assets" });
+defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-components/2.8.0/assets" });
+defineCodingElements(window, { resourcesUrl: "https://js.arcgis.com/coding-components/4.30/assets" });
 
 import { loadData } from "./load-data";
 
@@ -27,13 +27,13 @@ import { loadData } from "./load-data";
   const arcadeEditorElt = document.querySelector("arcgis-arcade-editor");
 
   // Log script change events
-  arcadeEditorElt.addEventListener("scriptChange", async (e) => {
+  arcadeEditorElt.addEventListener("arcgisScriptChange", async (e) => {
     console.log("script:", e.detail);
     // console.log("outputType on script:", await arcadeEditorElt.getOutputType());
   });
 
   // Log editor diagnostics
-  arcadeEditorElt.addEventListener("diagnosticsChange", async (e) => {
+  arcadeEditorElt.addEventListener("arcgisDiagnosticsChange", async (e) => {
     console.log("diagnostics:", e.detail);
   });
 
@@ -76,17 +76,6 @@ import { loadData } from "./load-data";
 
   // Set a script on the editor
   arcadeEditorElt.script = "$feature";
-
-  // Wait for the editorInstance to be defined
-  const editorInstance = await arcadeEditorElt.getEditorInstance();
-
-  // Make changes to the Monaco editor's options
-  editorInstance.updateOptions({
-    // Enable the minimap in the editor
-    // minimap: {
-    //   enabled: true,
-    // },
-  });
 
   // Everything has been loaded and assigned, we can remove scrim
   document.getElementById("scrim").remove();

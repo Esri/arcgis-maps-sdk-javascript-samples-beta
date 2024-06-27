@@ -25,22 +25,29 @@ import { defineCustomElements as defineMapElements } from "@arcgis/map-component
  * you need to keep the version number in the path the same as the version of
  * `@esri/calcite-components` installed as a dependency of `@arcgis/map-components`.
  */
-defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-components/2.5.1/assets" });
+defineCalciteElements(window, { resourcesUrl: "https://js.arcgis.com/calcite-components/2.8.0/assets" });
 
 /**
  * Use the Map Components to define and lazy load the custom map elements.
  */
-defineMapElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.29/assets" });
+defineMapElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.30/assets" });
 
 /**
  * Use the Charts Components to define and lazy load the custom charts elements.
  */
-defineChartsElements(window, { resourcesUrl: "https://js.arcgis.com/charts-components/4.29/t9n" });
+defineChartsElements(window, { resourcesUrl: "https://js.arcgis.com/charts-components/4.30/t9n" });
+
+/**
+ * Get a reference to the `arcgis-charts-scatter-plot` element
+ */
+const mapElement = document.querySelector("arcgis-map");
+const scatterplotElement = document.querySelector("arcgis-charts-scatter-plot");
+const actionBarElement = document.querySelector("arcgis-charts-action-bar");
 
 /**
  * Add an event listener for the `arcgis-map` component's `arcgisViewReadyChange` event.
  */
-document.querySelector("arcgis-map").addEventListener("arcgisViewReadyChange", (event) => {
+mapElement.addEventListener("arcgisViewReadyChange", (event) => {
   /**
    * Get the map and the view from the event target
    */
@@ -51,11 +58,6 @@ document.querySelector("arcgis-map").addEventListener("arcgisViewReadyChange", (
    */
   const featureLayer = map.layers.find((layer) => layer.title === "CollegeScorecard_Charts");
   const scatterplotConfig = featureLayer.charts[0];
-
-  /**
-   * Get a reference to the `arcgis-charts-scatter-plot` element
-   */
-  const scatterplotElement = document.querySelector("arcgis-charts-scatter-plot");
 
   /**
    * Assign the config and the layer to the chart element to render the chart
@@ -73,4 +75,43 @@ document.querySelector("arcgis-map").addEventListener("arcgisViewReadyChange", (
     map.highlightSelect?.remove();
     map.highlightSelect = featureLayerViews.items[0].highlight(event.detail.selectionOIDs);
   });
+
+  /**
+   * Add an event listener to the action bar element to listen to the default action select event.
+   */
+  actionBarElement.addEventListener("arcgisChartsDefaultActionSelect", (event) => {
+    // Get the actionId and actionActive from the event detail
+    const { actionId, actionActive } = event.detail;
+
+    if (actionId === "filterByExtent") {
+      if (mapElement.view !== undefined) {
+        // Set the view of the scatterplot element to the map view if the Filter By Extent action is toggled on
+        scatterplotElement.view = actionActive ? mapElement.view : undefined;
+      }
+    }
+  });
+});
+
+/**
+ * Add an event listener to the `arcgisViewClick` event on the `arcgis-map` element.
+ * This is used to sync up a selection on the map with the scatterplot.
+ */
+mapElement.addEventListener("arcgisViewClick", (event) => {
+  // Get the view from the event target
+  const { view } = event.target;
+
+  // Get the screen points from the event detail
+  var screenPoints = event.detail.screenPoint;
+  view.hitTest(screenPoints).then(getFeatures);
+
+  // Get the features from the hitTest
+  function getFeatures(response) {
+    // Get the selected feature OID
+    const selectedFeatureOID = response.results[0].graphic.attributes["ObjectId"];
+
+    // Set the selection data on the scatterplot element
+    scatterplotElement.selectionData = {
+      selectionOIDs: [selectedFeatureOID]
+    };
+  }
 });

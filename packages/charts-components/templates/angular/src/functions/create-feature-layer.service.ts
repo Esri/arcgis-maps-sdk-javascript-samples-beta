@@ -16,14 +16,11 @@
 import FeatureLayer from "@arcgis/core/layers/FeatureLayer";
 
 /**
- * Simple data loader against public data.
- * For the test data, we need a feature layer.
+ * Create a feature layer with a service URL. This will be used to create a chart later.
  */
-export async function loadFeatureLayer(portalItemId) {
+export async function createFeatureLayer(url: string): Promise<any> {
   const featureLayer = new FeatureLayer({
-    portalItem: {
-      id: portalItemId
-    }
+    url: url
   });
 
   await featureLayer.load();

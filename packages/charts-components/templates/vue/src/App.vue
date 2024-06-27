@@ -1,7 +1,7 @@
 <script setup>
-import Charts from "./components/Charts.vue";
+import Scatterplot from "./components/Scatterplot.vue";
 </script>
 
 <template>
-  <Charts />
+  <Scatterplot />
 </template>

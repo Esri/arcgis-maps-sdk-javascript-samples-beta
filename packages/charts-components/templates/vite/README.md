@@ -1,7 +1,5 @@
 # Charts components Vite template
 
-📁 **[Click here to download this directory as a ZIP file](https://download-directory.github.io?url=https://github.com/Esri/arcgis-maps-sdk-javascript-samples-beta/tree/main/packages/charts-components/templates/vite)** 📁
-
 This project showcases how to integrate the charts components using vite.
 
 ## Get started
@@ -73,11 +71,3 @@ npm run preview
 ```
 yarn preview
 ```
-
-## Resources
-
-[ArcGIS Core - Build with ES modules](https://developers.arcgis.com/javascript/latest/es-modules/)
-
-[ViteJS - Why Vite](https://vitejs.dev/guide/why.html)
-
-[ViteJS - Getting Started](https://vitejs.dev/guide/)
