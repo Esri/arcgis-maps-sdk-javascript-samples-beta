@@ -1,4 +1,4 @@
-# ArcGIS Maps SDK for JavaScript samples ([beta](https://developers.arcgis.com/javascript/latest/faq/#what-does-the-beta-tag-mean))
+# ArcGIS Maps SDK for JavaScript samples
 
 This repository contains code samples and templates for coding with the ArcGIS Maps SDK for JavaScript.
 
@@ -23,7 +23,7 @@ yarn workspace map-components-vue-template dev
 
 ## Available code samples
 
-Below are a collection of code samples that provide proof-of-concept for using ArcGIS Maps SDK for JavaScript components with a variety of popular JavaScript build tools, frameworks and module bundlers. There are download links in the readme for each of the following samples. We recommend downloading a template from the links below and using your package manager of choice.  
+Below are a collection of code samples that provide proof-of-concept for using ArcGIS Maps SDK for JavaScript components with a variety of popular JavaScript build tools, frameworks and module bundlers.
 
 - Map components
   - [AMD Script Tag](./packages/map-components/templates/amd-script-tag)
