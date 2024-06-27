@@ -1,7 +1,5 @@
 # Map components Vue 3 + Vite template
 
-📁 **[Click here to download this directory as a ZIP file](https://download-directory.github.io?url=https://github.com/Esri/arcgis-maps-sdk-javascript-samples-beta/tree/main/packages/map-components/templates/vue)** 📁
-
 This project showcases how to integrate the map components using Vite.
 
 ## Get started
