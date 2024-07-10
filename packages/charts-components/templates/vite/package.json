@@ -8,9 +8,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@arcgis/charts-components": "~4.30.0",
-    "@arcgis/charts-model": "~4.30.0",
-    "@arcgis/core": "~4.30.0",
+    "@arcgis/charts-components": "~4.30.2",
+    "@arcgis/charts-model": "~4.30.2",
+    "@arcgis/core": "~4.30.8",
     "@esri/calcite-components": "^2.8.5"
   },
   "devDependencies": {
