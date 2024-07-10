@@ -1,3 +1,5 @@
+> ⚠️ ArcGIS Maps SDK for JavaScript components are no longer in beta. This repository has been archived. Please visit https://github.com/Esri/jsapi-resources for the latest samples.
+
 # ArcGIS Maps SDK for JavaScript samples
 
 This repository contains code samples and templates for coding with the ArcGIS Maps SDK for JavaScript.
